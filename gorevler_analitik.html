@@ -190,11 +190,11 @@ async function fetchAllTasks(){
 }
 
 function ini(n){return(n||'?').split(' ').map(w=>w[0]||'').slice(0,2).join('').toUpperCase()||'?';}
-function isLate(t){return t.STATUS!=='5'&&t.DEADLINE&&new Date(t.DEADLINE)<new Date();}
+function isLate(t){return t.status!=='5'&&t.deadline&&new Date(t.deadline)<new Date();}
 function badge(t){
-  if(t.STATUS==='5') return '<span class="sbadge s-done">Tamamlandı</span>';
+  if(t.status==='5') return '<span class="sbadge s-done">Tamamlandı</span>';
   if(isLate(t)) return '<span class="sbadge s-late">Gecikmiş</span>';
-  if(t.STATUS==='3') return '<span class="sbadge s-prog">Devam Ediyor</span>';
+  if(t.status==='3') return '<span class="sbadge s-prog">Devam Ediyor</span>';
   return '<span class="sbadge s-wait">Bekliyor</span>';
 }
 
@@ -208,9 +208,9 @@ let stChart,pfChart;
 function makeCharts(tasks){
   let wait=0,prog=0,done=0,late=0;
   tasks.forEach(t=>{
-    if(t.STATUS==='5') done++;
+    if(t.status==='5') done++;
     else if(isLate(t)) late++;
-    else if(t.STATUS==='3') prog++;
+    else if(t.status==='3') prog++;
     else wait++;
   });
   const stCtx=document.getElementById('statusChart').getContext('2d');
@@ -219,7 +219,7 @@ function makeCharts(tasks){
 
   // Perf chart
   const pm={};
-  tasks.forEach(t=>{const uid=t.RESPONSIBLE_ID;if(!uid)return;if(!pm[uid])pm[uid]={name:umap[uid]||'#'+uid,total:0};pm[uid].total++;});
+  tasks.forEach(t=>{const uid=t.responsibleId;if(!uid)return;if(!pm[uid])pm[uid]={name:umap[uid]||'#'+uid,total:0};pm[uid].total++;});
   const top=Object.values(pm).sort((a,b)=>b.total-a.total).slice(0,8);
   const pfCtx=document.getElementById('perfChart').getContext('2d');
   if(pfChart) pfChart.destroy();
@@ -232,12 +232,12 @@ function renderLate(tasks){
   if(!late.length){document.getElementById('late-table').innerHTML='<div class="state">Gecikmiş görev yok 🎉</div>';return;}
   let h='<table><thead><tr><th>Görev</th><th>Sorumlu</th><th>Son Tarih</th><th>Gün Geçti</th></tr></thead><tbody>';
   for(const t of late.slice(0,20)){
-    const days=Math.floor((new Date()-new Date(t.DEADLINE))/(1000*60*60*24));
-    const url=PORTAL+'/company/personal/user/'+t.RESPONSIBLE_ID+'/tasks/task/view/'+t.ID+'/';
+    const days=Math.floor((new Date()-new Date(t.deadline))/(1000*60*60*24));
+    const url=PORTAL+'/company/personal/user/'+t.responsibleId+'/tasks/task/view/'+t.ID+'/';
     h+=`<tr class="row" onclick="window.open('${url}','_blank')">
-      <td style="font-weight:500;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${t.TITLE||'—'}</td>
-      <td><div class="nc"><span class="av">${ini(umap[t.RESPONSIBLE_ID]||'?')}</span><span style="color:var(--text2)">${umap[t.RESPONSIBLE_ID]||'#'+t.RESPONSIBLE_ID}</span></div></td>
-      <td style="font-family:var(--mono);font-size:11px;color:var(--red)">${t.DEADLINE.slice(0,10)}</td>
+      <td style="font-weight:500;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${t.title||'—'}</td>
+      <td><div class="nc"><span class="av">${ini(umap[t.responsibleId]||'?')}</span><span style="color:var(--text2)">${umap[t.responsibleId]||'#'+t.responsibleId}</span></div></td>
+      <td style="font-family:var(--mono);font-size:11px;color:var(--red)">${t.deadline.slice(0,10)}</td>
       <td style="font-family:var(--mono);color:var(--red);font-weight:600">${days} gün</td>
     </tr>`;
   }
@@ -254,9 +254,9 @@ function setFilter(f,btn){
 function getFiltered(){
   return allTasks.filter(t=>{
     if(taskFilter==='ALL') return true;
-    if(taskFilter==='WAIT') return t.STATUS!=='5'&&!isLate(t)&&t.STATUS!=='3';
-    if(taskFilter==='PROG') return t.STATUS==='3'&&!isLate(t);
-    if(taskFilter==='DONE') return t.STATUS==='5';
+    if(taskFilter==='WAIT') return t.status!=='5'&&!isLate(t)&&t.status!=='3';
+    if(taskFilter==='PROG') return t.status==='3'&&!isLate(t);
+    if(taskFilter==='DONE') return t.status==='5';
     if(taskFilter==='LATE') return isLate(t);
     return true;
   });
@@ -270,11 +270,11 @@ function renderTaskList(){
   if(!slice.length){document.getElementById('tasks-table').innerHTML='<div class="state">Görev bulunamadı.</div>';return;}
   let h='<table><thead><tr><th>Görev</th><th>Sorumlu</th><th>Durum</th><th>Son Tarih</th></tr></thead><tbody>';
   for(const t of slice){
-    const url=PORTAL+'/company/personal/user/'+t.RESPONSIBLE_ID+'/tasks/task/view/'+t.ID+'/';
-    const dl=t.DEADLINE?t.DEADLINE.slice(0,10):'—';
+    const url=PORTAL+'/company/personal/user/'+t.responsibleId+'/tasks/task/view/'+t.ID+'/';
+    const dl=t.deadline?t.deadline.slice(0,10):'—';
     h+=`<tr class="row" onclick="window.open('${url}','_blank')">
-      <td style="font-weight:500;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${t.TITLE||'—'}</td>
-      <td><div class="nc"><span class="av">${ini(umap[t.RESPONSIBLE_ID]||'?')}</span><span style="color:var(--text2)">${umap[t.RESPONSIBLE_ID]||'#'+t.RESPONSIBLE_ID}</span></div></td>
+      <td style="font-weight:500;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${t.title||'—'}</td>
+      <td><div class="nc"><span class="av">${ini(umap[t.responsibleId]||'?')}</span><span style="color:var(--text2)">${umap[t.responsibleId]||'#'+t.responsibleId}</span></div></td>
       <td>${badge(t)}</td>
       <td style="font-family:var(--mono);font-size:11px;color:${isLate(t)?'var(--red)':'var(--text3)'}">${dl}</td>
     </tr>`;
@@ -296,12 +296,12 @@ function goTask(p){taskPage=p;renderTaskList();}
 function renderPerf(){
   const pm={};
   allTasks.forEach(t=>{
-    const uid=t.RESPONSIBLE_ID; if(!uid) return;
+    const uid=t.responsibleId; if(!uid) return;
     if(!pm[uid]) pm[uid]={name:umap[uid]||'#'+uid,total:0,wait:0,prog:0,done:0,late:0};
     pm[uid].total++;
-    if(t.STATUS==='5') pm[uid].done++;
+    if(t.status==='5') pm[uid].done++;
     else if(isLate(t)) pm[uid].late++;
-    else if(t.STATUS==='3') pm[uid].prog++;
+    else if(t.status==='3') pm[uid].prog++;
     else pm[uid].wait++;
   });
   const rows=Object.values(pm).sort((a,b)=>b.total-a.total);
@@ -336,9 +336,9 @@ async function loadAll(){
 
     let wait=0,prog=0,done=0,late=0;
     tasks.forEach(t=>{
-      if(t.STATUS==='5') done++;
+      if(t.status==='5') done++;
       else if(isLate(t)) late++;
-      else if(t.STATUS==='3') prog++;
+      else if(t.status==='3') prog++;
       else wait++;
     });
     document.getElementById('m-total').textContent=tasks.length.toLocaleString('tr');
