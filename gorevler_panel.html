@@ -215,7 +215,9 @@ async function fetchAll(method, params={}) {
   let start=0, all=[];
   while(true){
     const d = await bxCall(method, params, start);
-    all = all.concat(d.result);
+    // tasks.task.list returns result.tasks, others return result directly
+    const items = Array.isArray(d.result) ? d.result : (d.result.tasks || Object.values(d.result));
+    all = all.concat(items);
     if(!d.next || all.length>=2000) break;
     start = d.next;
   }
@@ -372,7 +374,8 @@ async function loadData(){
   try {
     const [tasks, users] = await Promise.all([
       fetchAll('tasks.task.list', {
-        SELECT: ['ID','TITLE','STATUS','RESPONSIBLE_ID','DEADLINE','GROUP_ID','CREATED_DATE']
+        select: ['ID','TITLE','STATUS','RESPONSIBLE_ID','DEADLINE','GROUP_ID','CREATED_DATE'],
+        order: {'CREATED_DATE': 'DESC'}
       }),
       bxCall('user.get', {ACTIVE:'Y'})
     ]);
