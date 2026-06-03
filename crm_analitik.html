@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menar Grup — CRM Analitik</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;--bg4:#30363d;
+  --border:#30363d;--text:#e6edf3;--text2:#8b949e;--text3:#484f58;
+  --blue:#58a6ff;--blue-dim:rgba(88,166,255,0.1);
+  --green:#3fb950;--green-dim:rgba(63,185,80,0.1);
+  --red:#f85149;--red-dim:rgba(248,81,73,0.1);
+  --amber:#d29922;--amber-dim:rgba(210,153,34,0.1);
+  --purple:#bc8cff;--purple-dim:rgba(188,140,255,0.1);
+  --font:'Inter',sans-serif;--mono:'JetBrains Mono',monospace;
+}
+body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh;font-size:13px;}
+.sidebar{position:fixed;top:0;left:0;width:200px;height:100vh;background:var(--bg2);border-right:1px solid var(--border);display:flex;flex-direction:column;padding:20px 0;z-index:10;}
+.logo{padding:0 16px 16px;border-bottom:1px solid var(--border);margin-bottom:8px;}
+.logo-title{font-size:12px;font-weight:600;color:var(--text);letter-spacing:.5px;}
+.logo-sub{font-size:10px;color:var(--text3);font-family:var(--mono);margin-top:2px;}
+.nav{display:flex;flex-direction:column;gap:2px;padding:0 8px;}
+.nav-item{display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:6px;font-size:12px;color:var(--text2);cursor:pointer;transition:all .15s;border:none;background:none;width:100%;text-align:left;}
+.nav-item:hover{background:var(--bg3);color:var(--text);}
+.nav-item.active{background:var(--blue-dim);color:var(--blue);}
+.nav-item svg{width:14px;height:14px;flex-shrink:0;}
+.main{margin-left:200px;padding:24px;min-height:100vh;}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
+.topbar h1{font-size:16px;font-weight:600;}
+.btn{display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:6px;font-size:12px;font-family:var(--font);cursor:pointer;border:1px solid var(--border);background:var(--bg3);color:var(--text2);transition:all .15s;}
+.btn:hover{background:var(--bg4);color:var(--text);}
+.btn svg{width:12px;height:12px;}
+.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:20px;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;position:relative;overflow:hidden;}
+.card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+.card.c-blue::after{background:var(--blue);}
+.card.c-green::after{background:var(--green);}
+.card.c-amber::after{background:var(--amber);}
+.card.c-red::after{background:var(--red);}
+.card.c-purple::after{background:var(--purple);}
+.card-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;font-family:var(--mono);margin-bottom:6px;}
+.card-value{font-size:24px;font-weight:600;font-family:var(--mono);}
+.card.c-blue .card-value{color:var(--blue);}
+.card.c-green .card-value{color:var(--green);}
+.card.c-amber .card-value{color:var(--amber);}
+.card.c-red .card-value{color:var(--red);}
+.card.c-purple .card-value{color:var(--purple);}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px;}
+.section{background:var(--bg2);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:16px;}
+.sec-head{padding:12px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
+.sec-title{font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.sec-title svg{width:13px;height:13px;color:var(--blue);}
+.badge{font-size:10px;font-family:var(--mono);padding:2px 6px;border-radius:99px;background:var(--blue-dim);color:var(--blue);}
+.chart-wrap{padding:16px;position:relative;}
+canvas{max-height:200px;}
+table{width:100%;border-collapse:collapse;}
+th{font-size:10px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;letter-spacing:.5px;padding:8px 16px;text-align:left;border-bottom:1px solid var(--border);}
+td{padding:10px 16px;border-bottom:1px solid var(--border);font-size:12px;vertical-align:middle;}
+tr:last-child td{border-bottom:none;}
+tr.row:hover td{background:var(--bg3);cursor:pointer;}
+.av{width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;font-family:var(--mono);background:var(--bg4);color:var(--text2);}
+.nc{display:flex;align-items:center;gap:8px;}
+.sbadge{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:500;font-family:var(--mono);padding:2px 7px;border-radius:4px;}
+.sbadge::before{content:'';width:4px;height:4px;border-radius:50%;background:currentColor;}
+.s-new{background:var(--amber-dim);color:var(--amber);}
+.s-work{background:var(--green-dim);color:var(--green);}
+.s-junk{background:var(--red-dim);color:var(--red);}
+.s-win{background:var(--blue-dim);color:var(--blue);}
+.bar-wrap{display:flex;align-items:center;gap:6px;}
+.bar-track{height:4px;border-radius:2px;background:var(--bg4);flex:1;min-width:40px;}
+.bar-fill{height:100%;border-radius:2px;background:var(--blue);}
+.state{text-align:center;padding:40px;color:var(--text3);font-size:12px;}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spinning{animation:spin 1s linear infinite;display:inline-block;}
+</style>
+</head>
+<body>
+<nav class="sidebar">
+  <div class="logo"><div class="logo-title">MENAR GRUP</div><div class="logo-sub">CRM Analitik</div></div>
+  <div class="nav">
+    <button class="nav-item active" onclick="showTab('overview')">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Genel Bakış
+    </button>
+    <button class="nav-item" onclick="showTab('leads')">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Lead Listesi
+    </button>
+    <button class="nav-item" onclick="showTab('deals')">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Anlaşmalar
+    </button>
+    <button class="nav-item" onclick="showTab('perf')">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Performans
+    </button>
+    <button class="nav-item" onclick="window.open('https://menar.bitrix24.com.tr','_blank')">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Bitrix24
+    </button>
+  </div>
+</nav>
+
+<main class="main">
+  <div class="topbar">
+    <h1 id="page-title">Genel Bakış</h1>
+    <button class="btn" onclick="loadAll()"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>Yenile</button>
+  </div>
+
+  <div class="metrics">
+    <div class="card c-blue"><div class="card-label">Toplam Lead</div><div class="card-value" id="m-total">—</div></div>
+    <div class="card c-amber"><div class="card-label">Yeni</div><div class="card-value" id="m-new">—</div></div>
+    <div class="card c-green"><div class="card-label">İşlemde</div><div class="card-value" id="m-work">—</div></div>
+    <div class="card c-purple"><div class="card-label">Dönüştürüldü</div><div class="card-value" id="m-win">—</div></div>
+    <div class="card c-red"><div class="card-label">Reddedilen</div><div class="card-value" id="m-junk">—</div></div>
+  </div>
+
+  <!-- Overview Tab -->
+  <div id="tab-overview">
+    <div class="grid2">
+      <div class="section">
+        <div class="sec-head"><span class="sec-title"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Kaynak Dağılımı</span></div>
+        <div class="chart-wrap"><canvas id="sourceChart"></canvas></div>
+      </div>
+      <div class="section">
+        <div class="sec-head"><span class="sec-title"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>Durum Dağılımı</span></div>
+        <div class="chart-wrap"><canvas id="statusChart"></canvas></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="sec-head"><span class="sec-title"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>Aylık Lead Trendi</span></div>
+      <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- Leads Tab -->
+  <div id="tab-leads" style="display:none;">
+    <div class="section">
+      <div class="sec-head">
+        <span class="sec-title"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Lead Listesi <span class="badge" id="lead-count">0</span></span>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;" id="lead-filters">
+          <button onclick="setLeadFilter('ALL',this)" style="font-size:11px;padding:4px 10px;border-radius:5px;border:1px solid var(--border);background:var(--blue-dim);color:var(--blue);cursor:pointer;">Tümü</button>
+          <button onclick="setLeadFilter('NEW',this)" style="font-size:11px;padding:4px 10px;border-radius:5px;border:1px solid var(--border);background:transparent;color:var(--text2);cursor:pointer;">Yeni</button>
+          <button onclick="setLeadFilter('WORK',this)" style="font-size:11px;padding:4px 10px;border-radius:5px;border:1px solid var(--border);background:transparent;color:var(--text2);cursor:pointer;">İşlemde</button>
+          <button onclick="setLeadFilter('JUNK',this)" style="font-size:11px;padding:4px 10px;border-radius:5px;border:1px solid var(--border);background:transparent;color:var(--text2);cursor:pointer;">Olumsuz</button>
+          <button onclick="setLeadFilter('CONVERTED',this)" style="font-size:11px;padding:4px 10px;border-radius:5px;border:1px solid var(--border);background:transparent;color:var(--text2);cursor:pointer;">Olumlu</button>
+        </div>
+      </div>
+      <div id="leads-table"><div class="state">Yükleniyor...</div></div>
+      <div id="lead-pag" style="display:none;padding:10px 16px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;">
+        <span id="lead-pag-info" style="font-size:11px;color:var(--text3);font-family:var(--mono);"></span>
+        <div id="lead-pag-btns" style="display:flex;gap:3px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Deals Tab -->
+  <div id="tab-deals" style="display:none;">
+    <div class="section">
+      <div class="sec-head"><span class="sec-title"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Anlaşmalar <span class="badge" id="deal-count">0</span></span></div>
+      <div id="deals-table"><div class="state">Yükleniyor...</div></div>
+    </div>
+  </div>
+
+  <!-- Perf Tab -->
+  <div id="tab-perf" style="display:none;">
+    <div class="section">
+      <div class="sec-head"><span class="sec-title"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Çalışan Performansı</span></div>
+      <div id="perf-table"><div class="state">Yükleniyor...</div></div>
+    </div>
+  </div>
+</main>
+
+<script>
+const WH='https://menar.bitrix24.com.tr/rest/1/logbyyxzick7ujw6/';
+const PORTAL='https://menar.bitrix24.com.tr';
+const WORK_S=['IN_PROCESS','PROCESSED','UC_SE8TXL','UC_G68KST','UC_5DM063'];
+const JUNK_S=['JUNK','UC_SCX727'];
+let allLeads=[], allDeals=[], umap={};
+let leadFilter='ALL', leadPage=1;
+const PAGE=20;
+
+function qs(params,start){
+  const p=[];
+  if(start!==undefined) p.push('start='+start);
+  for(const[k,v] of Object.entries(params)){
+    if(Array.isArray(v)) v.forEach(x=>p.push(encodeURIComponent(k+'[]')+'='+encodeURIComponent(x)));
+    else if(v&&typeof v==='object') Object.entries(v).forEach(([sk,sv])=>p.push(encodeURIComponent(k+'['+sk+']')+'='+encodeURIComponent(sv)));
+    else p.push(encodeURIComponent(k)+'='+encodeURIComponent(v));
+  }
+  return p.join('&');
+}
+async function bx(method,params={},start){
+  const r=await fetch(WH+method+'.json?'+qs(params,start));
+  if(!r.ok) throw new Error('HTTP '+r.status);
+  const d=await r.json();
+  if(d.error) throw new Error(d.error_description||d.error);
+  return d;
+}
+async function fetchAll(method,params={}){
+  let start=0,all=[];
+  while(true){
+    const d=await bx(method,params,start);
+    all=all.concat(d.result);
+    if(!d.next||all.length>=3000) break;
+    start=d.next;
+  }
+  return all;
+}
+
+function ini(n){return(n||'?').split(' ').map(w=>w[0]||'').slice(0,2).join('').toUpperCase()||'?';}
+
+function sBadge(s){
+  if(s==='NEW') return '<span class="sbadge s-new">Yeni</span>';
+  if(WORK_S.includes(s)) return '<span class="sbadge s-work">İşlemde</span>';
+  if(s==='CONVERTED') return '<span class="sbadge s-win">Olumlu</span>';
+  if(JUNK_S.includes(s)) return '<span class="sbadge s-junk">Olumsuz</span>';
+  return '<span class="sbadge s-new">'+(s||'—')+'</span>';
+}
+
+function showTab(t){
+  ['overview','leads','deals','perf'].forEach(x=>document.getElementById('tab-'+x).style.display=x===t?'':'none');
+  document.querySelectorAll('.nav-item').forEach((el,i)=>el.classList.toggle('active',[0,1,2,3].includes(i)&&['overview','leads','deals','perf'][i]===t));
+  const titles={overview:'Genel Bakış',leads:'Lead Listesi',deals:'Anlaşmalar',perf:'Çalışan Performansı'};
+  document.getElementById('page-title').textContent=titles[t]||t;
+}
+
+// Charts
+let sourceC,statusC,trendC;
+function makeCharts(leads){
+  // Source
+  const srcMap={};
+  leads.forEach(l=>{const s=l.SOURCE_ID||'Diğer';srcMap[s]=(srcMap[s]||0)+1;});
+  const srcLabels=Object.keys(srcMap).sort((a,b)=>srcMap[b]-srcMap[a]).slice(0,8);
+  const srcVals=srcLabels.map(k=>srcMap[k]);
+
+  const srcCtx=document.getElementById('sourceChart').getContext('2d');
+  if(sourceC) sourceC.destroy();
+  sourceC=new Chart(srcCtx,{type:'bar',data:{labels:srcLabels,datasets:[{data:srcVals,backgroundColor:'rgba(88,166,255,0.7)',borderRadius:4}]},options:{plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b949e',font:{size:10}}},y:{ticks:{color:'#8b949e',font:{size:10}}}},responsive:true,maintainAspectRatio:true}});
+
+  // Status
+  let cNew=0,cWork=0,cWin=0,cJunk=0;
+  leads.forEach(l=>{
+    if(l.STATUS_ID==='NEW') cNew++;
+    else if(WORK_S.includes(l.STATUS_ID)) cWork++;
+    else if(l.STATUS_ID==='CONVERTED') cWin++;
+    else if(JUNK_S.includes(l.STATUS_ID)) cJunk++;
+  });
+  const stCtx=document.getElementById('statusChart').getContext('2d');
+  if(statusC) statusC.destroy();
+  statusC=new Chart(stCtx,{type:'doughnut',data:{labels:['Yeni','İşlemde','Olumlu','Olumsuz'],datasets:[{data:[cNew,cWork,cWin,cJunk],backgroundColor:['#d29922','#3fb950','#58a6ff','#f85149'],borderWidth:0,hoverOffset:4}]},options:{plugins:{legend:{position:'bottom',labels:{color:'#8b949e',font:{size:10},boxWidth:10}}},responsive:true,maintainAspectRatio:true}});
+
+  // Trend
+  const monthly={};
+  leads.forEach(l=>{
+    if(!l.DATE_CREATE) return;
+    const m=l.DATE_CREATE.slice(0,7);
+    monthly[m]=(monthly[m]||0)+1;
+  });
+  const months=Object.keys(monthly).sort().slice(-12);
+  const trCtx=document.getElementById('trendChart').getContext('2d');
+  if(trendC) trendC.destroy();
+  trendC=new Chart(trCtx,{type:'bar',data:{labels:months,datasets:[{data:months.map(m=>monthly[m]),backgroundColor:'rgba(63,185,80,0.6)',borderRadius:4}]},options:{plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b949e',font:{size:10}}},y:{ticks:{color:'#8b949e',font:{size:10}}}},responsive:true,maintainAspectRatio:false}});
+  document.getElementById('trendChart').style.maxHeight='160px';
+}
+
+// Lead list
+function setLeadFilter(f,btn){
+  leadFilter=f; leadPage=1;
+  document.querySelectorAll('#lead-filters button').forEach(b=>{ b.style.background='transparent'; b.style.color='var(--text2)'; b.style.borderColor='var(--border)'; });
+  btn.style.background='var(--blue-dim)'; btn.style.color='var(--blue)'; btn.style.borderColor='transparent';
+  renderLeads();
+}
+function getFilteredLeads(){
+  return allLeads.filter(l=>{
+    if(leadFilter==='ALL') return true;
+    if(leadFilter==='NEW') return l.STATUS_ID==='NEW';
+    if(leadFilter==='WORK') return WORK_S.includes(l.STATUS_ID);
+    if(leadFilter==='JUNK') return JUNK_S.includes(l.STATUS_ID);
+    if(leadFilter==='CONVERTED') return l.STATUS_ID==='CONVERTED';
+    return true;
+  });
+}
+function renderLeads(){
+  const f=getFilteredLeads();
+  const pages=Math.max(1,Math.ceil(f.length/PAGE));
+  if(leadPage>pages) leadPage=1;
+  const slice=f.slice((leadPage-1)*PAGE,leadPage*PAGE);
+  document.getElementById('lead-count').textContent=f.length;
+  if(!slice.length){document.getElementById('leads-table').innerHTML='<div class="state">Lead bulunamadı.</div>';return;}
+  let h='<table><thead><tr><th>Ad Soyad</th><th>Başlık</th><th>Durum</th><th>Kaynak</th><th>Sorumlu</th><th>Tarih</th></tr></thead><tbody>';
+  for(const l of slice){
+    const name=[l.NAME,l.LAST_NAME].filter(Boolean).join(' ')||'İsimsiz';
+    const url=PORTAL+'/crm/lead/details/'+l.ID+'/';
+    h+=`<tr class="row" onclick="window.open('${url}','_blank')">
+      <td><div class="nc"><span class="av">${ini(name)}</span><span style="font-weight:500">${name}</span></div></td>
+      <td style="color:var(--text2);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${l.TITLE||'—'}</td>
+      <td>${sBadge(l.STATUS_ID)}</td>
+      <td style="color:var(--text2)">${l.SOURCE_ID||'—'}</td>
+      <td style="color:var(--text2)">${umap[l.ASSIGNED_BY_ID]||'—'}</td>
+      <td style="font-family:var(--mono);font-size:11px;color:var(--text3)">${l.DATE_CREATE?l.DATE_CREATE.slice(0,10):'—'}</td>
+    </tr>`;
+  }
+  h+='</tbody></table>';
+  document.getElementById('leads-table').innerHTML=h;
+  const pag=document.getElementById('lead-pag');
+  if(pages>1){
+    pag.style.display='flex';
+    document.getElementById('lead-pag-info').textContent=`${(leadPage-1)*PAGE+1}–${Math.min(leadPage*PAGE,f.length)} / ${f.length}`;
+    let btns='';
+    const s=Math.max(1,leadPage-3),e=Math.min(pages,s+6);
+    if(s>1) btns+=`<button onclick="goLead(1)" style="width:26px;height:26px;border-radius:4px;border:1px solid var(--border);background:transparent;color:var(--text2);cursor:pointer;font-size:11px">1</button>`;
+    for(let i=s;i<=e;i++) btns+=`<button onclick="goLead(${i})" style="width:26px;height:26px;border-radius:4px;border:1px solid ${i===leadPage?'transparent':' var(--border)'};background:${i===leadPage?'var(--blue-dim)':'transparent'};color:${i===leadPage?'var(--blue)':'var(--text2)'};cursor:pointer;font-size:11px">${i}</button>`;
+    document.getElementById('lead-pag-btns').innerHTML=btns;
+  } else { pag.style.display='none'; }
+}
+function goLead(p){leadPage=p;renderLeads();}
+
+// Deals
+function renderDeals(){
+  if(!allDeals.length){document.getElementById('deals-table').innerHTML='<div class="state">Anlaşma bulunamadı.</div>';return;}
+  document.getElementById('deal-count').textContent=allDeals.length;
+  let h='<table><thead><tr><th>Başlık</th><th>Durum</th><th>Sorumlu</th><th>Tutar</th><th>Tarih</th></tr></thead><tbody>';
+  for(const d of allDeals.slice(0,50)){
+    const url=PORTAL+'/crm/deal/details/'+d.ID+'/';
+    const amt=d.OPPORTUNITY?Number(d.OPPORTUNITY).toLocaleString('tr')+'  ₺':'—';
+    h+=`<tr class="row" onclick="window.open('${url}','_blank')">
+      <td style="font-weight:500;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${d.TITLE||'—'}</td>
+      <td><span class="sbadge s-work">${d.STAGE_ID||'—'}</span></td>
+      <td style="color:var(--text2)">${umap[d.ASSIGNED_BY_ID]||'—'}</td>
+      <td style="font-family:var(--mono);color:var(--green)">${amt}</td>
+      <td style="font-family:var(--mono);font-size:11px;color:var(--text3)">${d.DATE_CREATE?d.DATE_CREATE.slice(0,10):'—'}</td>
+    </tr>`;
+  }
+  h+='</tbody></table>';
+  document.getElementById('deals-table').innerHTML=h;
+}
+
+// Perf
+function renderPerf(){
+  const pm={};
+  allLeads.forEach(l=>{
+    const uid=l.ASSIGNED_BY_ID; if(!uid) return;
+    if(!pm[uid]) pm[uid]={name:umap[uid]||'#'+uid,total:0,new:0,work:0,win:0,junk:0};
+    pm[uid].total++;
+    if(l.STATUS_ID==='NEW') pm[uid].new++;
+    else if(WORK_S.includes(l.STATUS_ID)) pm[uid].work++;
+    else if(l.STATUS_ID==='CONVERTED') pm[uid].win++;
+    else if(JUNK_S.includes(l.STATUS_ID)) pm[uid].junk++;
+  });
+  const rows=Object.values(pm).sort((a,b)=>b.total-a.total);
+  const max=rows[0]?.total||1;
+  let h='<table><thead><tr><th>Çalışan</th><th>Toplam</th><th>Yeni</th><th>İşlemde</th><th>Olumlu</th><th>Olumsuz</th><th>Dönüşüm</th><th>Dağılım</th></tr></thead><tbody>';
+  for(const u of rows){
+    const pct=u.total?Math.round(u.win/u.total*100):0;
+    const bw=Math.round(u.total/max*100);
+    h+=`<tr><td><div class="nc"><span class="av">${ini(u.name)}</span><span>${u.name}</span></div></td>
+      <td style="font-family:var(--mono);font-weight:600">${u.total}</td>
+      <td style="color:var(--amber);font-family:var(--mono)">${u.new}</td>
+      <td style="color:var(--green);font-family:var(--mono)">${u.work}</td>
+      <td style="color:var(--blue);font-family:var(--mono)">${u.win}</td>
+      <td style="color:var(--red);font-family:var(--mono)">${u.junk}</td>
+      <td style="color:var(--purple);font-family:var(--mono)">${pct}%</td>
+      <td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill" style="width:${bw}%"></div></div></div></td>
+    </tr>`;
+  }
+  h+='</tbody></table>';
+  document.getElementById('perf-table').innerHTML=h;
+}
+
+async function loadAll(){
+  try{
+    const [leads,deals,users]=await Promise.all([
+      fetchAll('crm.lead.list',{SELECT:['ID','TITLE','NAME','LAST_NAME','STATUS_ID','SOURCE_ID','ASSIGNED_BY_ID','DATE_CREATE']}),
+      fetchAll('crm.deal.list',{SELECT:['ID','TITLE','STAGE_ID','ASSIGNED_BY_ID','DATE_CREATE','OPPORTUNITY','CURRENCY_ID']}),
+      bx('user.get',{ACTIVE:'Y'})
+    ]);
+    umap={};
+    users.result.forEach(u=>umap[u.ID]=[u.NAME,u.LAST_NAME].filter(Boolean).join(' '));
+    allLeads=leads; allDeals=deals;
+
+    const wS=WORK_S, jS=JUNK_S;
+    let cN=0,cW=0,cWin=0,cJ=0;
+    leads.forEach(l=>{
+      if(l.STATUS_ID==='NEW') cN++;
+      else if(wS.includes(l.STATUS_ID)) cW++;
+      else if(l.STATUS_ID==='CONVERTED') cWin++;
+      else if(jS.includes(l.STATUS_ID)) cJ++;
+    });
+    document.getElementById('m-total').textContent=leads.length.toLocaleString('tr');
+    document.getElementById('m-new').textContent=cN.toLocaleString('tr');
+    document.getElementById('m-work').textContent=cW.toLocaleString('tr');
+    document.getElementById('m-win').textContent=cWin.toLocaleString('tr');
+    document.getElementById('m-junk').textContent=cJ.toLocaleString('tr');
+
+    makeCharts(leads);
+    renderLeads();
+    renderDeals();
+    renderPerf();
+  }catch(e){
+    document.getElementById('leads-table').innerHTML=`<div class="state" style="color:var(--red)">Hata: ${e.message}</div>`;
+  }
+}
+loadAll();
+</script>
+</body>
+</html>
