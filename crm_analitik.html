@@ -197,7 +197,18 @@ async function bx(method,params={},start){
   if(d.error) throw new Error(d.error_description||d.error);
   return d;
 }
-async function fetchAll(method,params={}){
+async function fetchAllUsers(){
+  let start=0,all=[];
+  while(true){
+    const d=await bx('user.get',{},start);
+    all=all.concat(d.result);
+    if(!d.next) break;
+    start=d.next;
+  }
+  return {result:all};
+}
+
+async function fetchAll(method,params={}) {
   let start=0,all=[];
   while(true){
     const d=await bx(method,params,start);
@@ -381,7 +392,7 @@ async function loadAll(){
     const [leads,deals,users]=await Promise.all([
       fetchAll('crm.lead.list',{SELECT:['ID','TITLE','NAME','LAST_NAME','STATUS_ID','SOURCE_ID','ASSIGNED_BY_ID','DATE_CREATE']}),
       fetchAll('crm.deal.list',{SELECT:['ID','TITLE','STAGE_ID','ASSIGNED_BY_ID','DATE_CREATE','OPPORTUNITY','CURRENCY_ID']}),
-      bx('user.get',{})
+      fetchAllUsers()
     ]);
     umap={};
     users.result.forEach(u=>umap[u.ID]=[u.NAME,u.LAST_NAME].filter(Boolean).join(' '));
