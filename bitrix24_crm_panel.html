@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menar Grup — CRM Paneli</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f1117;
+  --bg2: #161b27;
+  --bg3: #1e2535;
+  --bg4: #252d40;
+  --border: rgba(255,255,255,0.08);
+  --border2: rgba(255,255,255,0.14);
+  --text: #e8eaf0;
+  --text2: #8891a8;
+  --text3: #535f7a;
+  --blue: #4d90f0;
+  --blue-dim: rgba(77,144,240,0.12);
+  --green: #3ecf8e;
+  --green-dim: rgba(62,207,142,0.12);
+  --red: #f06060;
+  --red-dim: rgba(240,96,96,0.12);
+  --amber: #f0b84d;
+  --amber-dim: rgba(240,184,77,0.12);
+  --font: 'IBM Plex Sans', sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Layout */
+.app { display: flex; min-height: 100vh; }
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  padding: 24px 0;
+  position: fixed;
+  top: 0; left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sidebar-logo {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 8px;
+}
+.sidebar-logo .company { font-size: 13px; font-weight: 600; color: var(--text); letter-spacing: 0.5px; }
+.sidebar-logo .sub { font-size: 11px; color: var(--text3); font-family: var(--mono); margin-top: 2px; }
+.nav-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 20px;
+  font-size: 13px;
+  color: var(--text2);
+  cursor: pointer;
+  border-left: 2px solid transparent;
+  transition: all 0.15s;
+}
+.nav-item:hover { color: var(--text); background: var(--bg3); }
+.nav-item.active { color: var(--blue); border-left-color: var(--blue); background: var(--blue-dim); }
+.nav-item svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+.main { margin-left: 220px; padding: 32px; flex: 1; max-width: calc(100vw - 220px); }
+
+/* Top bar */
+.topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+.topbar h1 { font-size: 20px; font-weight: 600; color: var(--text); }
+.topbar-right { display: flex; gap: 10px; align-items: center; }
+.search-wrap { position: relative; }
+.search-wrap svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; color: var(--text3); pointer-events: none; }
+.search { background: var(--bg3); border: 1px solid var(--border); color: var(--text); font-family: var(--font); font-size: 13px; padding: 7px 12px 7px 32px; border-radius: 8px; width: 220px; outline: none; transition: border 0.15s; }
+.search:focus { border-color: var(--blue); }
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 8px; font-size: 13px; font-family: var(--font); font-weight: 500; cursor: pointer; transition: all 0.15s; border: 1px solid var(--border2); background: var(--bg3); color: var(--text2); }
+.btn:hover { background: var(--bg4); color: var(--text); }
+.btn svg { width: 14px; height: 14px; }
+.btn-spin svg { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Metric cards */
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
+.metric {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.metric::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+}
+.metric.m-total::before { background: var(--blue); }
+.metric.m-new::before { background: var(--amber); }
+.metric.m-work::before { background: var(--green); }
+.metric.m-reject::before { background: var(--red); }
+.metric-label { font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; font-family: var(--mono); }
+.metric-value { font-size: 28px; font-weight: 600; font-family: var(--mono); }
+.metric.m-total .metric-value { color: var(--blue); }
+.metric.m-new .metric-value { color: var(--amber); }
+.metric.m-work .metric-value { color: var(--green); }
+.metric.m-reject .metric-value { color: var(--red); }
+
+/* Sections */
+.section {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.section-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+.section-title { font-size: 13px; font-weight: 600; color: var(--text); display: flex; align-items: center; gap: 8px; }
+.section-title svg { width: 15px; height: 15px; color: var(--blue); }
+.count-badge {
+  font-size: 11px;
+  font-family: var(--mono);
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: var(--blue-dim);
+  color: var(--blue);
+  border: 1px solid rgba(77,144,240,0.2);
+}
+
+/* Filter tabs */
+.filters { display: flex; gap: 6px; padding: 12px 20px; border-bottom: 1px solid var(--border); }
+.filter-tab {
+  font-size: 12px; font-family: var(--font); font-weight: 500;
+  padding: 5px 12px; border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent; color: var(--text2);
+  cursor: pointer; transition: all 0.15s;
+}
+.filter-tab:hover { color: var(--text); background: var(--bg3); }
+.filter-tab.active { background: var(--blue-dim); color: var(--blue); border-color: rgba(77,144,240,0.25); }
+
+/* Table */
+.tbl-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+thead th {
+  font-size: 11px; font-family: var(--mono); font-weight: 500;
+  color: var(--text3); text-transform: uppercase; letter-spacing: 0.6px;
+  padding: 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+tbody td { padding: 11px 20px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr.clickable { cursor: pointer; transition: background 0.1s; }
+tbody tr.clickable:hover td { background: var(--bg3); }
+tbody tr.clickable:hover .ext-icon { opacity: 1; }
+.ext-icon { opacity: 0; transition: opacity 0.15s; }
+.ext-icon svg { width: 13px; height: 13px; color: var(--text3); }
+
+/* Avatar */
+.avatar {
+  width: 30px; height: 30px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 600; font-family: var(--mono);
+  background: var(--bg4);
+  color: var(--text2);
+  flex-shrink: 0;
+}
+.name-cell { display: flex; align-items: center; gap: 10px; }
+.name-text { font-weight: 500; font-size: 13px; }
+.title-text { font-size: 12px; color: var(--text2); max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Status badges */
+.badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 11px; font-weight: 500; font-family: var(--mono);
+  padding: 3px 9px; border-radius: 5px;
+  white-space: nowrap;
+}
+.badge::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+.badge-new { background: var(--amber-dim); color: var(--amber); }
+.badge-work { background: var(--green-dim); color: var(--green); }
+.badge-reject { background: var(--red-dim); color: var(--red); }
+.badge-win { background: rgba(77,144,240,0.12); color: var(--blue); }
+
+/* Bar */
+.perf-bar { display: flex; align-items: center; gap: 8px; }
+.perf-bar-track { height: 5px; border-radius: 3px; background: var(--bg4); flex: 1; min-width: 60px; }
+.perf-bar-fill { height: 100%; border-radius: 3px; background: var(--blue); transition: width 0.6s ease; }
+
+/* Pagination */
+.pagination { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; border-top: 1px solid var(--border); }
+.page-info { font-size: 12px; color: var(--text3); font-family: var(--mono); }
+.page-btns { display: flex; gap: 4px; }
+.page-btn {
+  width: 30px; height: 30px; border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent; color: var(--text2);
+  font-size: 12px; font-family: var(--mono);
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: all 0.1s;
+}
+.page-btn:hover { background: var(--bg3); color: var(--text); }
+.page-btn.active { background: var(--blue-dim); color: var(--blue); border-color: rgba(77,144,240,0.3); }
+
+/* Loading / Error */
+.state-box { text-align: center; padding: 48px 20px; }
+.state-box svg { width: 24px; height: 24px; margin-bottom: 12px; opacity: 0.4; }
+.state-box p { font-size: 13px; color: var(--text3); }
+.state-error { color: var(--red); opacity: 1 !important; }
+
+@keyframes pulse { 0%,100%{opacity:.4} 50%{opacity:.9} }
+.loading-anim svg { animation: pulse 1.2s ease-in-out infinite; }
+
+/* Source dot */
+.source-dot { font-size: 12px; color: var(--text2); }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-logo">
+      <div class="company">MENAR GRUP</div>
+      <div class="sub">CRM Paneli</div>
+    </div>
+    <div class="nav-item active" onclick="showView('leads')">
+      <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      Leadler
+    </div>
+    <div class="nav-item" onclick="showView('perf')">
+      <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Performans
+    </div>
+    <div class="nav-item" onclick="window.open('https://menar.bitrix24.com.tr','_blank')">
+      <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      Bitrix24'e Git
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="main">
+    <div class="topbar">
+      <h1 id="page-title">Leadler</h1>
+      <div class="topbar-right">
+        <div class="search-wrap">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search" type="text" id="searchInput" placeholder="Lead ara..." oninput="filterLeads()">
+        </div>
+        <button class="btn" id="refreshBtn" onclick="loadData()">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          Yenile
+        </button>
+      </div>
+    </div>
+
+    <!-- Metrics -->
+    <div class="metrics">
+      <div class="metric m-total"><div class="metric-label">Toplam Lead</div><div class="metric-value" id="m-total">—</div></div>
+      <div class="metric m-new"><div class="metric-label">Yeni</div><div class="metric-value" id="m-new">—</div></div>
+      <div class="metric m-work"><div class="metric-label">İşlemde</div><div class="metric-value" id="m-work">—</div></div>
+      <div class="metric m-reject"><div class="metric-label">Reddedilen</div><div class="metric-value" id="m-reject">—</div></div>
+    </div>
+
+    <!-- Leads view -->
+    <div id="view-leads">
+      <div class="section">
+        <div class="section-head">
+          <span class="section-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Leadler
+            <span class="count-badge" id="lead-count">0</span>
+          </span>
+        </div>
+        <div class="filters">
+          <button class="filter-tab active" onclick="setFilter('ALL',this)">Tümü</button>
+          <button class="filter-tab" onclick="setFilter('NEW',this)">Yeni</button>
+          <button class="filter-tab" onclick="setFilter('IN_PROCESS',this)">Bilgi Veriliyor</button>
+          <button class="filter-tab" onclick="setFilter('UC_SE8TXL',this)">İşlemde</button>
+          <button class="filter-tab" onclick="setFilter('UC_G68KST',this)">Teklif</button>
+          <button class="filter-tab" onclick="setFilter('UC_SCX727',this)">Ulaşılamadı</button>
+          <button class="filter-tab" onclick="setFilter('JUNK',this)">Olumsuz</button>
+          <button class="filter-tab" onclick="setFilter('CONVERTED',this)">Olumlu</button>
+        </div>
+        <div class="tbl-wrap" id="leads-table">
+          <div class="state-box loading-anim">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            <p>Veriler yükleniyor...</p>
+          </div>
+        </div>
+        <div class="pagination" id="pagination" style="display:none;">
+          <span class="page-info" id="page-info"></span>
+          <div class="page-btns" id="page-btns"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Performance view -->
+    <div id="view-perf" style="display:none;">
+      <div class="section">
+        <div class="section-head">
+          <span class="section-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Çalışan Performansı
+          </span>
+        </div>
+        <div class="tbl-wrap" id="perf-table">
+          <div class="state-box loading-anim">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            <p>Veriler yükleniyor...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script>
+const WEBHOOK = 'https://menar.bitrix24.com.tr/rest/1/logbyyxzick7ujw6/';
+const PORTAL  = 'https://menar.bitrix24.com.tr';
+let allLeads = [];
+let currentFilter = 'ALL';
+let currentPage   = 1;
+const PAGE_SIZE   = 20;
+
+function showView(v) {
+  document.getElementById('view-leads').style.display = v==='leads' ? '' : 'none';
+  document.getElementById('view-perf').style.display  = v==='perf'  ? '' : 'none';
+  document.getElementById('page-title').textContent = v==='leads' ? 'Leadler' : 'Çalışan Performansı';
+  document.getElementById('searchInput').style.display = v==='leads' ? '' : 'none';
+  document.querySelectorAll('.nav-item').forEach((el,i)=>{
+    el.classList.toggle('active', (v==='leads'&&i===0)||(v==='perf'&&i===1));
+  });
+}
+
+function buildQS(params, start) {
+  const parts = [];
+  if(start !== undefined) parts.push('start='+start);
+  for(const [k,v] of Object.entries(params)){
+    if(Array.isArray(v)){
+      v.forEach(x => parts.push(encodeURIComponent(k+'[]')+'='+encodeURIComponent(x)));
+    } else if(v !== null && typeof v === 'object'){
+      for(const [sk,sv] of Object.entries(v))
+        parts.push(encodeURIComponent(k+'['+sk+']')+'='+encodeURIComponent(sv));
+    } else {
+      parts.push(encodeURIComponent(k)+'='+encodeURIComponent(v));
+    }
+  }
+  return parts.join('&');
+}
+
+async function bxCall(method, params={}, start) {
+  const url = WEBHOOK+method+'.json?'+buildQS(params, start);
+  const r = await fetch(url);
+  if(!r.ok) throw new Error('HTTP '+r.status);
+  const d = await r.json();
+  if(d.error) throw new Error(d.error_description||d.error);
+  return d;
+}
+
+async function fetchAll(method, params={}) {
+  let start=0, all=[];
+  while(true){
+    const d = await bxCall(method, params, start);
+    all = all.concat(d.result);
+    if(!d.next || all.length>=2000) break;
+    start = d.next;
+  }
+  return all;
+}
+
+async function bxGet(method, params={}) {
+  const d = await bxCall(method, params);
+  return d.result;
+}
+
+function statusBadge(s){
+  if(s==='NEW')        return '<span class="badge badge-new">Yeni</span>';
+  if(s==='IN_PROCESS') return '<span class="badge badge-work">Bilgi Veriliyor</span>';
+  if(s==='PROCESSED')  return '<span class="badge badge-work">Hatırlatma Yapıldı</span>';
+  if(s==='UC_SE8TXL')  return '<span class="badge badge-work">İşlemde</span>';
+  if(s==='UC_G68KST')  return '<span class="badge badge-work">Teklif</span>';
+  if(s==='UC_5DM063')  return '<span class="badge badge-work">Bilgi Bekliyor</span>';
+  if(s==='UC_SCX727')  return '<span class="badge badge-reject">Ulaşılamadı</span>';
+  if(s==='JUNK')       return '<span class="badge badge-reject">Olumsuz</span>';
+  if(s==='CONVERTED')  return '<span class="badge badge-win">Olumlu</span>';
+  return '<span class="badge badge-new">'+(s||'—')+'</span>';
+}
+
+function initials(n){ return (n||'?').split(' ').map(w=>w[0]||'').slice(0,2).join('').toUpperCase()||'?'; }
+
+function setFilter(f,btn){
+  currentFilter=f; currentPage=1;
+  document.querySelectorAll('.filter-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderLeads();
+}
+
+function filterLeads(){ currentPage=1; renderLeads(); }
+
+function getFiltered(){
+  const q=(document.getElementById('searchInput').value||'').toLowerCase();
+  const workS=['IN_PROCESS','PROCESSED','UC_SE8TXL','UC_G68KST','UC_5DM063'];
+  const rejectS=['JUNK','UC_SCX727'];
+  return allLeads.filter(l=>{
+    let mf = false;
+    if(currentFilter==='ALL') mf=true;
+    else if(currentFilter==='WORK_GROUP') mf=workS.includes(l.STATUS_ID);
+    else if(currentFilter==='REJECT_GROUP') mf=rejectS.includes(l.STATUS_ID);
+    else mf=(l.STATUS_ID===currentFilter);
+    const name=((l.NAME||'')+' '+(l.LAST_NAME||'')).toLowerCase();
+    const mq = !q || name.includes(q)||(l.TITLE||'').toLowerCase().includes(q)||(l.PHONE?.[0]?.VALUE||'').includes(q);
+    return mf&&mq;
+  });
+}
+
+function renderLeads(){
+  const filtered = getFiltered();
+  const total = filtered.length;
+  const pages = Math.max(1,Math.ceil(total/PAGE_SIZE));
+  if(currentPage>pages) currentPage=1;
+  const slice = filtered.slice((currentPage-1)*PAGE_SIZE, currentPage*PAGE_SIZE);
+  document.getElementById('lead-count').textContent = total;
+
+  if(!slice.length){
+    document.getElementById('leads-table').innerHTML='<div class="state-box"><p>Lead bulunamadı.</p></div>';
+    document.getElementById('pagination').style.display='none';
+    return;
+  }
+
+  let html='<table><thead><tr><th>Ad Soyad</th><th>Başlık</th><th>Durum</th><th>Kaynak</th><th>Sorumlu</th><th>Tarih</th><th></th></tr></thead><tbody>';
+  for(const l of slice){
+    const name=[l.NAME,l.LAST_NAME].filter(Boolean).join(' ')||'İsimsiz';
+    const date=l.DATE_CREATE?l.DATE_CREATE.slice(0,10):'—';
+    const url=PORTAL+'/crm/lead/details/'+l.ID+'/';
+    html+=`<tr class="clickable" onclick="window.open('${url}','_blank')">
+      <td><div class="name-cell"><span class="avatar">${initials(name)}</span><span class="name-text">${name}</span></div></td>
+      <td><span class="title-text">${l.TITLE||'—'}</span></td>
+      <td>${statusBadge(l.STATUS_ID)}</td>
+      <td><span class="source-dot">${l.SOURCE_ID||'—'}</span></td>
+      <td><span class="source-dot">${l._assignedName||'—'}</span></td>
+      <td style="font-family:var(--mono);font-size:12px;color:var(--text3);">${date}</td>
+      <td class="ext-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></td>
+    </tr>`;
+  }
+  html+='</tbody></table>';
+  document.getElementById('leads-table').innerHTML=html;
+
+  const pag=document.getElementById('pagination');
+  if(pages>1){
+    pag.style.display='flex';
+    document.getElementById('page-info').textContent=`${(currentPage-1)*PAGE_SIZE+1}–${Math.min(currentPage*PAGE_SIZE,total)} / ${total}`;
+    let btns='';
+    const start=Math.max(1,currentPage-3), end=Math.min(pages,start+6);
+    if(start>1) btns+=`<button class="page-btn" onclick="goPage(1)">1</button>`;
+    for(let i=start;i<=end;i++) btns+=`<button class="page-btn ${i===currentPage?'active':''}" onclick="goPage(${i})">${i}</button>`;
+    if(end<pages) btns+=`<button class="page-btn" onclick="goPage(${pages})">${pages}</button>`;
+    document.getElementById('page-btns').innerHTML=btns;
+  } else {
+    pag.style.display='none';
+  }
+}
+
+function goPage(p){ currentPage=p; renderLeads(); }
+
+async function renderPerf(leads){
+  try{
+    const users = await bxGet('user.get',{ACTIVE:'Y'});
+    const umap={};
+    for(const u of users) umap[u.ID]=[u.NAME,u.LAST_NAME].filter(Boolean).join(' ')||'#'+u.ID;
+
+    const _workS=['IN_PROCESS','PROCESSED','UC_SE8TXL','UC_G68KST','UC_5DM063'];
+    const _rejectS=['JUNK','UC_SCX727'];
+    const pm={};
+    for(const l of leads){
+      const uid=l.ASSIGNED_BY_ID; if(!uid) continue;
+      if(!pm[uid]) pm[uid]={uid:uid,name:umap[uid]||'Kullanıcı #'+uid,total:0,new:0,work:0,win:0,junk:0};
+      pm[uid].total++;
+      if(l.STATUS_ID==='NEW') pm[uid].new++;
+      else if(_workS.includes(l.STATUS_ID)) pm[uid].work++;
+      else if(l.STATUS_ID==='CONVERTED') pm[uid].win++;
+      else if(_rejectS.includes(l.STATUS_ID)) pm[uid].junk++;
+    }
+    const rows=Object.values(pm).sort((a,b)=>b.total-a.total);
+    const max=rows[0]?.total||1;
+
+    let html='<table><thead><tr><th>Çalışan</th><th>Toplam</th><th>Yeni</th><th>İşlemde</th><th>Dönüşüm</th><th>Reddedilen</th><th>Dağılım</th></tr></thead><tbody>';
+    for(const u of rows){
+      const pct=u.total?Math.round(u.win/u.total*100):0;
+      const bw=Math.round(u.total/max*100);
+      html+=`<tr class="clickable" onclick="filterByUser('${u.uid}','${u.name.replace(/'/g,'')}')">
+        <td><div class="name-cell"><span class="avatar">${initials(u.name)}</span><span class="name-text">${u.name}</span></div></td>
+        <td style="font-family:var(--mono);font-weight:600;">${u.total}</td>
+        <td style="color:var(--amber);font-family:var(--mono);">${u.new}</td>
+        <td style="color:var(--green);font-family:var(--mono);">${u.work}</td>
+        <td style="color:var(--blue);font-family:var(--mono);">${pct}%</td>
+        <td style="color:var(--red);font-family:var(--mono);">${u.junk}</td>
+        <td><div class="perf-bar"><div class="perf-bar-track"><div class="perf-bar-fill" style="width:${bw}%"></div></div><i style="font-size:12px;color:var(--text3);margin-left:4px;">→</i></div></td>
+      </tr>`;
+    }
+    html+='</tbody></table>';
+    document.getElementById('perf-table').innerHTML=html;
+  } catch(e){
+    document.getElementById('perf-table').innerHTML=`<div class="state-box"><p class="state-error">Hata: ${e.message}</p></div>`;
+  }
+}
+
+function filterByUser(uid, name) {
+  showView('leads');
+  document.getElementById('page-title').textContent = name + ' — Leadler';
+  currentFilter = 'ALL';
+  currentPage = 1;
+  document.querySelectorAll('.filter-tab').forEach(b=>b.classList.remove('active'));
+  document.querySelector('.filter-tab').classList.add('active');
+  const filtered = allLeads.filter(l => l.ASSIGNED_BY_ID == uid);
+  const prev = allLeads;
+  allLeads = filtered;
+  renderLeads();
+  allLeads = prev;
+  // keep filtered view, add back button
+  const backBtn = '<button class="btn" style="margin-bottom:12px;" onclick="resetUserFilter()">← Tüm Leadler</button>';
+  document.getElementById('leads-table').insertAdjacentHTML('beforebegin', backBtn);
+}
+
+function resetUserFilter() {
+  document.getElementById('page-title').textContent = 'Leadler';
+  document.querySelectorAll('.filter-tab').forEach(b=>b.classList.remove('active'));
+  document.querySelector('.filter-tab').classList.add('active');
+  currentFilter='ALL'; currentPage=1;
+  renderLeads();
+  const backBtns = document.querySelectorAll('.btn');
+  backBtns.forEach(b => { if(b.textContent.includes('← Tüm')) b.remove(); });
+}
+
+async function loadData(){
+  const btn=document.getElementById('refreshBtn');
+  btn.classList.add('btn-spin');
+  document.getElementById('leads-table').innerHTML='<div class="state-box loading-anim"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg><p>Yükleniyor...</p></div>';
+  document.getElementById('perf-table').innerHTML='<div class="state-box loading-anim"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg><p>Yükleniyor...</p></div>';
+
+  try{
+    const leads = await fetchAll('crm.lead.list',{
+      SELECT:['ID','TITLE','NAME','LAST_NAME','STATUS_ID','SOURCE_ID','ASSIGNED_BY_ID','DATE_CREATE','PHONE'], ORDER:{DATE_CREATE:'DESC'}
+    });
+
+    // Fetch user names for assigned
+    let umap={};
+    try{
+      const users=await bxGet('user.get',{ACTIVE:'Y'});
+      for(const u of users) umap[u.ID]=[u.NAME,u.LAST_NAME].filter(Boolean).join(' ');
+    }catch(e){}
+    for(const l of leads) l._assignedName=umap[l.ASSIGNED_BY_ID]||'';
+
+    allLeads=leads;
+    const workStatuses=['IN_PROCESS','PROCESSED','UC_SE8TXL','UC_G68KST','UC_5DM063'];
+    const rejectStatuses=['JUNK','UC_SCX727'];
+    let cNew=0,cWork=0,cReject=0;
+    for(const l of leads){
+      if(l.STATUS_ID==='NEW') cNew++;
+      else if(workStatuses.includes(l.STATUS_ID)) cWork++;
+      else if(rejectStatuses.includes(l.STATUS_ID)) cReject++;
+    }
+    document.getElementById('m-total').textContent=leads.length.toLocaleString('tr');
+    document.getElementById('m-new').textContent=cNew.toLocaleString('tr');
+    document.getElementById('m-work').textContent=cWork.toLocaleString('tr');
+    document.getElementById('m-reject').textContent=cReject.toLocaleString('tr');
+
+    renderLeads();
+    await renderPerf(leads);
+  } catch(e){
+    document.getElementById('leads-table').innerHTML=`<div class="state-box"><p class="state-error">Hata: ${e.message}</p></div>`;
+  } finally {
+    btn.classList.remove('btn-spin');
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>
