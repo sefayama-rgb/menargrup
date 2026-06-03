@@ -213,7 +213,7 @@ async function fetchAll(method,params={}) {
   while(true){
     const d=await bx(method,params,start);
     all=all.concat(d.result);
-    if(!d.next||) break;
+    if(!d.next) break;
     start=d.next;
   }
   return all;
