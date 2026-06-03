@@ -228,15 +228,23 @@ function showTab(t){
 // Charts
 let sourceC,statusC,trendC;
 function makeCharts(leads){
-  // Source
-  const srcMap={};
-  leads.forEach(l=>{const s=l.SOURCE_ID||'Diğer';srcMap[s]=(srcMap[s]||0)+1;});
+  // Source with conversion
+  const srcMap={},srcWin={};
+  leads.forEach(l=>{
+    const s=l.SOURCE_ID||'Diğer';
+    srcMap[s]=(srcMap[s]||0)+1;
+    if(l.STATUS_ID==='CONVERTED') srcWin[s]=(srcWin[s]||0)+1;
+  });
   const srcLabels=Object.keys(srcMap).sort((a,b)=>srcMap[b]-srcMap[a]).slice(0,8);
   const srcVals=srcLabels.map(k=>srcMap[k]);
+  const srcWinVals=srcLabels.map(k=>srcWin[k]||0);
 
   const srcCtx=document.getElementById('sourceChart').getContext('2d');
   if(sourceC) sourceC.destroy();
-  sourceC=new Chart(srcCtx,{type:'bar',data:{labels:srcLabels,datasets:[{data:srcVals,backgroundColor:'rgba(88,166,255,0.7)',borderRadius:4}]},options:{plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8b949e',font:{size:10}}},y:{ticks:{color:'#8b949e',font:{size:10}}}},responsive:true,maintainAspectRatio:true}});
+  sourceC=new Chart(srcCtx,{type:'bar',data:{labels:srcLabels,datasets:[
+    {label:'Toplam',data:srcVals,backgroundColor:'rgba(88,166,255,0.6)',borderRadius:4},
+    {label:'Dönüştürüldü',data:srcWinVals,backgroundColor:'rgba(63,185,80,0.8)',borderRadius:4}
+  ]},options:{plugins:{legend:{labels:{color:'#8b949e',font:{size:10},boxWidth:10}}},scales:{x:{ticks:{color:'#8b949e',font:{size:10}}},y:{ticks:{color:'#8b949e',font:{size:10}}}},responsive:true,maintainAspectRatio:true}});
 
   // Status
   let cNew=0,cWork=0,cWin=0,cJunk=0;
@@ -373,7 +381,7 @@ async function loadAll(){
     const [leads,deals,users]=await Promise.all([
       fetchAll('crm.lead.list',{SELECT:['ID','TITLE','NAME','LAST_NAME','STATUS_ID','SOURCE_ID','ASSIGNED_BY_ID','DATE_CREATE']}),
       fetchAll('crm.deal.list',{SELECT:['ID','TITLE','STAGE_ID','ASSIGNED_BY_ID','DATE_CREATE','OPPORTUNITY','CURRENCY_ID']}),
-      bx('user.get',{ACTIVE:'Y'})
+      bx('user.get',{})
     ]);
     umap={};
     users.result.forEach(u=>umap[u.ID]=[u.NAME,u.LAST_NAME].filter(Boolean).join(' '));
@@ -382,10 +390,11 @@ async function loadAll(){
     const wS=WORK_S, jS=JUNK_S;
     let cN=0,cW=0,cWin=0,cJ=0;
     leads.forEach(l=>{
-      if(l.STATUS_ID==='NEW') cN++;
-      else if(wS.includes(l.STATUS_ID)) cW++;
-      else if(l.STATUS_ID==='CONVERTED') cWin++;
-      else if(jS.includes(l.STATUS_ID)) cJ++;
+      const s=l.STATUS_ID;
+      if(s==='NEW') cN++;
+      else if(wS.includes(s)) cW++;
+      else if(s==='CONVERTED') cWin++;
+      else if(jS.includes(s)) cJ++;
     });
     document.getElementById('m-total').textContent=leads.length.toLocaleString('tr');
     document.getElementById('m-new').textContent=cN.toLocaleString('tr');
