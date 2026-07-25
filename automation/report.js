@@ -13,7 +13,7 @@ async function getJson(url) {
 }
 
 const isoDate = d => d.toISOString().slice(0, 10);
-const normalize = value => String(value || '').toLocaleLowerCase('tr-TR');
+const normalize = value => String(value || '').toLocaleLowerCase('tr-TR').trim();
 
 async function getMeta() {
   if (!META_TOKEN) return { campaigns: [], status: 'META_ACCESS_TOKEN eksik' };
@@ -86,10 +86,11 @@ async function getBitrixTotalByStatus(statusId) {
 
 function classifyStage(name, semantics) {
   const n = normalize(name);
+  if (n === 'diğer' || n === 'diger') return 'archive';
   if (semantics === 'S' || n.includes('olumlu müşteri') || n.includes('başarılı')) return 'won';
   if (
     semantics === 'F' ||
-    ['olumsuz', 'ulaşılamadı', 'ulaşılmadı', 'tarih uymadı', 'fiyat yüksek', 'otel uymadı', 'kararsız', 'rakip firma', 'bütçe yetersiz', 'diğer'].some(x => n.includes(x))
+    ['olumsuz', 'ulaşılamadı', 'ulaşılmadı', 'tarih uymadı', 'fiyat yüksek', 'otel uymadı', 'kararsız', 'rakip firma', 'bütçe yetersiz'].some(x => n.includes(x))
   ) return 'rejected';
   if (n.includes('yeni potansiyel') || n === 'yeni') return 'new';
   if (n.includes('sıcak müşteri')) return 'hot';
@@ -102,7 +103,7 @@ function classifyStage(name, semantics) {
 
 async function getBitrix() {
   if (!BITRIX_WEBHOOK) {
-    return { total: 0, new: 0, inProgress: 0, hot: 0, offer: 0, won: 0, rejected: 0, stages: [], status: 'BITRIX_WEBHOOK eksik' };
+    return { total: 0, dailyTotal: 0, new: 0, inProgress: 0, hot: 0, offer: 0, won: 0, rejected: 0, archive: 0, stages: [], status: 'BITRIX_WEBHOOK eksik' };
   }
 
   const statuses = await getAllBitrix('crm.status.list', {
@@ -136,6 +137,10 @@ async function getBitrix() {
     FILTER: { '>=DATE_CREATE': `${isoDate(since)}T00:00:00` }
   });
 
+  const activePipeline = (grouped.new || 0) + (grouped.inProgress || 0) + (grouped.info || 0) + (grouped.instagram || 0) + (grouped.hot || 0) + (grouped.offer || 0) + (grouped.waiting || 0);
+  const closedMeaningful = (grouped.won || 0) + (grouped.rejected || 0);
+  const conversionRate = closedMeaningful ? ((grouped.won || 0) / closedMeaningful) * 100 : 0;
+
   return {
     total: stageRows.reduce((sum, row) => sum + row.count, 0),
     dailyTotal: recent.length,
@@ -146,8 +151,12 @@ async function getBitrix() {
     offer: grouped.offer || 0,
     waiting: grouped.waiting || 0,
     inProgress: (grouped.inProgress || 0) + (grouped.info || 0) + (grouped.instagram || 0) + (grouped.hot || 0) + (grouped.offer || 0) + (grouped.waiting || 0),
+    activePipeline,
+    priority: (grouped.hot || 0) + (grouped.offer || 0),
     won: grouped.won || 0,
     rejected: grouped.rejected || 0,
+    archive: grouped.archive || 0,
+    conversionRate,
     stages: stageRows.sort((a, b) => a.sort - b.sort),
     status: 'aktif'
   };
@@ -165,7 +174,9 @@ function advice(campaigns, crm, metaStatus, crmStatus) {
   const parts = [];
   if (measurable[0]) parts.push(`${measurable[0].campaign} en verimli kampanya.`);
   if (measurable.length > 1) parts.push(`${measurable.at(-1).campaign} yeniden değerlendirilmeli.`);
-  parts.push(`Son 24 saatte ${crm.dailyTotal || 0} yeni lead oluştu. Şu anda ${crm.hot || 0} sıcak müşteri, ${crm.offer || 0} teklif bekleyen ve ${crm.won || 0} olumlu müşteri var.`);
+  parts.push(`Son 24 saatte ${crm.dailyTotal || 0} yeni lead oluştu. Öncelikli takipte ${crm.priority || 0} müşteri var: ${crm.hot || 0} sıcak müşteri ve ${crm.offer || 0} teklif bekleyen.`);
+  parts.push(`Anlamlı kapanışlarda olumlu dönüşüm oranı %${Number(crm.conversionRate || 0).toFixed(1)}.`);
+  if (crm.archive) parts.push(`${crm.archive} eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor.`);
   if (metaStatus !== 'aktif' || crmStatus !== 'aktif') parts.push(`Kurulum durumu: Meta ${metaStatus}; Bitrix24 ${crmStatus}.`);
   return parts.join(' ');
 }
@@ -174,7 +185,7 @@ async function main() {
   let meta, crm;
   try { meta = await getMeta(); } catch (e) { meta = { campaigns: [], status: `hata: ${e.message}` }; }
   try { crm = await getBitrix(); } catch (e) {
-    crm = { total: 0, dailyTotal: 0, new: 0, info: 0, instagram: 0, hot: 0, offer: 0, waiting: 0, inProgress: 0, won: 0, rejected: 0, stages: [], status: `hata: ${e.message}` };
+    crm = { total: 0, dailyTotal: 0, new: 0, info: 0, instagram: 0, hot: 0, offer: 0, waiting: 0, inProgress: 0, activePipeline: 0, priority: 0, won: 0, rejected: 0, archive: 0, conversionRate: 0, stages: [], status: `hata: ${e.message}` };
   }
   const campaigns = meta.campaigns;
   const totalSpend = campaigns.reduce((s, x) => s + x.spend, 0);
