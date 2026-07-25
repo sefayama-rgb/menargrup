@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-25T20:44:12.077Z",
-  "period": "Son 24 saat",
+  "generatedAt": "2026-07-25T21:40:57.075Z",
+  "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
     "meta": "aktif",
@@ -8,73 +8,73 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1789.3400000000001,
-    "totalMessages": 0,
-    "costPerMessage": null,
+    "totalSpend": 1806.72,
+    "totalMessages": 56,
+    "costPerMessage": 32.26285714285714,
     "campaigns": [
       {
         "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
         "spend": 256.62,
-        "messages": 0,
-        "costPerMessage": null,
+        "messages": 2,
+        "costPerMessage": 128.31,
         "dateStart": "2026-07-24",
         "dateStop": "2026-07-24",
         "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
         "spend": 88.22,
-        "messages": 0,
-        "costPerMessage": null,
+        "messages": 1,
+        "costPerMessage": 88.22,
         "dateStart": "2026-07-24",
         "dateStop": "2026-07-24",
         "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
         "spend": 289.5,
-        "messages": 0,
-        "costPerMessage": null,
+        "messages": 7,
+        "costPerMessage": 41.357142857142854,
         "dateStart": "2026-07-24",
         "dateStop": "2026-07-24",
         "decision": {
-          "label": "Veri yetersiz",
+          "label": "Takip et",
           "level": "watch"
         }
       },
       {
         "campaign": "UMMU GURABA Etkileşim Kampanyası",
         "spend": 158.91,
-        "messages": 0,
-        "costPerMessage": null,
+        "messages": 11,
+        "costPerMessage": 14.446363636363635,
         "dateStart": "2026-07-24",
         "dateStop": "2026-07-24",
         "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
+          "label": "Bütçeyi artır",
+          "level": "good"
         }
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
         "spend": 153.72,
-        "messages": 0,
-        "costPerMessage": null,
+        "messages": 3,
+        "costPerMessage": 51.24,
         "dateStart": "2026-07-24",
         "dateStop": "2026-07-24",
         "decision": {
-          "label": "Veri yetersiz",
+          "label": "Takip et",
           "level": "watch"
         }
       },
       {
         "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
-        "spend": 251.21,
+        "spend": 256.31,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-07-25",
@@ -86,61 +86,205 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 69.15,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 69.89,
+        "messages": 2,
+        "costPerMessage": 34.945,
         "dateStart": "2026-07-25",
         "dateStop": "2026-07-25",
         "decision": {
-          "label": "Veri yetersiz",
+          "label": "Takip et",
           "level": "watch"
         }
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 240.54,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 242.25,
+        "messages": 9,
+        "costPerMessage": 26.916666666666668,
         "dateStart": "2026-07-25",
         "dateStop": "2026-07-25",
         "decision": {
-          "label": "Veri yetersiz",
+          "label": "Takip et",
           "level": "watch"
         }
       },
       {
         "campaign": "UMMU GURABA Etkileşim Kampanyası",
-        "spend": 157.73,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 163.22,
+        "messages": 16,
+        "costPerMessage": 10.20125,
         "dateStart": "2026-07-25",
         "dateStop": "2026-07-25",
         "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
+          "label": "Bütçeyi artır",
+          "level": "good"
         }
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 123.74,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 128.08,
+        "messages": 5,
+        "costPerMessage": 25.616000000000003,
         "dateStart": "2026-07-25",
         "dateStop": "2026-07-25",
         "decision": {
-          "label": "Veri yetersiz",
+          "label": "Takip et",
           "level": "watch"
         }
       }
     ]
   },
   "crm": {
-    "total": 67,
-    "new": 44,
-    "inProgress": 18,
-    "won": 0,
-    "rejected": 0,
+    "total": 8105,
+    "dailyTotal": 68,
+    "new": 501,
+    "info": 261,
+    "instagram": 52,
+    "hot": 57,
+    "offer": 4,
+    "waiting": 25,
+    "inProgress": 399,
+    "won": 20,
+    "rejected": 7185,
+    "stages": [
+      {
+        "id": "NEW",
+        "name": "Yeni Potansiyel Müşteri Geldi",
+        "sort": 10,
+        "semantics": "",
+        "group": "new",
+        "count": 501
+      },
+      {
+        "id": "IN_PROCESS",
+        "name": "Bilgi Veriliyor",
+        "sort": 20,
+        "semantics": "",
+        "group": "info",
+        "count": 261
+      },
+      {
+        "id": "5",
+        "name": "İNSTAGRAM",
+        "sort": 30,
+        "semantics": "",
+        "group": "instagram",
+        "count": 52
+      },
+      {
+        "id": "PROCESSED",
+        "name": "SICAK MÜŞTERİ",
+        "sort": 40,
+        "semantics": "",
+        "group": "hot",
+        "count": 57
+      },
+      {
+        "id": "UC_G68KST",
+        "name": "Teklif Bekleyenler",
+        "sort": 50,
+        "semantics": "",
+        "group": "offer",
+        "count": 4
+      },
+      {
+        "id": "UC_P5MO63",
+        "name": "yeni sezon için bilgi bekleyenler",
+        "sort": 60,
+        "semantics": "",
+        "group": "waiting",
+        "count": 25
+      },
+      {
+        "id": "UC_SE8TXL",
+        "name": "İşlemde- Kayıt",
+        "sort": 70,
+        "semantics": "",
+        "group": "inProgress",
+        "count": 0
+      },
+      {
+        "id": "UC_SCX727",
+        "name": "Ulaşılamadı",
+        "sort": 80,
+        "semantics": "",
+        "group": "rejected",
+        "count": 32
+      },
+      {
+        "id": "CONVERTED",
+        "name": "Olumlu Müşteri",
+        "sort": 90,
+        "semantics": "S",
+        "group": "won",
+        "count": 20
+      },
+      {
+        "id": "JUNK",
+        "name": "Olumsuz Tarih Uymadı",
+        "sort": 100,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 132
+      },
+      {
+        "id": "1",
+        "name": "Fiyat yüksek geldi",
+        "sort": 110,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 7
+      },
+      {
+        "id": "UC_LKAD1J",
+        "name": "Otel Uymadı",
+        "sort": 120,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 0
+      },
+      {
+        "id": "UC_ON8LJ4",
+        "name": "Karasız Kaldı",
+        "sort": 130,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 5
+      },
+      {
+        "id": "UC_VBOFEP",
+        "name": "Rakip Firma Tercihi",
+        "sort": 140,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 22
+      },
+      {
+        "id": "UC_0KQ7Z9",
+        "name": "Bütçe Yetersiz",
+        "sort": 150,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 7
+      },
+      {
+        "id": "UC_C82146",
+        "name": "Ulaşılamadı",
+        "sort": 160,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 0
+      },
+      {
+        "id": "4",
+        "name": "Diğer",
+        "sort": 170,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 6980
+      }
+    ],
     "status": "aktif"
   },
-  "advice": "Son 24 saatte 67 lead, 18 işlemde ve 0 olumlu sonuç var."
+  "advice": "UMMU GURABA Etkileşim Kampanyası en verimli kampanya. arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya yeniden değerlendirilmeli. Son 24 saatte 68 yeni lead oluştu. Şu anda 57 sıcak müşteri, 4 teklif bekleyen ve 20 olumlu müşteri var."
 }
