@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T21:49:47.128Z",
+  "generatedAt": "2026-07-25T21:58:01.527Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1806.9700000000003,
+    "totalSpend": 1807.0000000000002,
     "totalMessages": 56,
-    "costPerMessage": 32.267321428571435,
+    "costPerMessage": 32.267857142857146,
     "campaigns": [
       {
         "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
@@ -110,9 +110,9 @@
       },
       {
         "campaign": "UMMU GURABA Etkileşim Kampanyası",
-        "spend": 163.43,
+        "spend": 163.45,
         "messages": 16,
-        "costPerMessage": 10.214375,
+        "costPerMessage": 10.215625,
         "dateStart": "2026-07-25",
         "dateStop": "2026-07-25",
         "decision": {
@@ -122,9 +122,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 128.08,
+        "spend": 128.09,
         "messages": 5,
-        "costPerMessage": 25.616000000000003,
+        "costPerMessage": 25.618000000000002,
         "dateStart": "2026-07-25",
         "dateStop": "2026-07-25",
         "decision": {
@@ -144,8 +144,12 @@
     "offer": 4,
     "waiting": 25,
     "inProgress": 399,
+    "activePipeline": 900,
+    "priority": 61,
     "won": 20,
-    "rejected": 7185,
+    "rejected": 205,
+    "archive": 6980,
+    "conversionRate": 8.88888888888889,
     "stages": [
       {
         "id": "NEW",
@@ -280,11 +284,11 @@
         "name": "Diğer",
         "sort": 170,
         "semantics": "F",
-        "group": "rejected",
+        "group": "archive",
         "count": 6980
       }
     ],
     "status": "aktif"
   },
-  "advice": "UMMU GURABA Etkileşim Kampanyası en verimli kampanya. arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya yeniden değerlendirilmeli. Son 24 saatte 68 yeni lead oluştu. Şu anda 57 sıcak müşteri, 4 teklif bekleyen ve 20 olumlu müşteri var."
+  "advice": "UMMU GURABA Etkileşim Kampanyası en verimli kampanya. arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya yeniden değerlendirilmeli. Son 24 saatte 68 yeni lead oluştu. Öncelikli takipte 61 müşteri var: 57 sıcak müşteri ve 4 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %8.9. 6980 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
