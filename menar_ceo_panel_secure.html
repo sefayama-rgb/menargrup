@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MENAR AI CEO Paneli</title>
+<style>
+:root{--bg:#0f1117;--panel:#171c28;--line:#2a3245;--text:#eef1f7;--muted:#929cb1;--blue:#5798f5;--green:#42cf91;--amber:#f0b84d;--red:#ef6464}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px Arial,sans-serif}.wrap{max-width:1280px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:22px}.top h1{margin:0;font-size:24px}.top p{margin:5px 0 0;color:var(--muted)}button{background:#222a3a;border:1px solid var(--line);color:var(--text);padding:10px 14px;border-radius:8px;cursor:pointer}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}.card,.section{background:var(--panel);border:1px solid var(--line);border-radius:12px}.card{padding:18px}.label{color:var(--muted);font-size:11px;text-transform:uppercase;margin-bottom:9px}.value{font-size:26px;font-weight:700}.section{margin-bottom:18px;overflow:hidden}.head{display:flex;justify-content:space-between;padding:15px 18px;border-bottom:1px solid var(--line)}.head span{color:var(--muted);font-size:12px}.advice{padding:20px;line-height:1.7}.table{overflow:auto}table{width:100%;border-collapse:collapse}th,td{padding:12px 16px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{color:var(--muted);font-size:11px}.pill{padding:5px 8px;border-radius:6px;font-size:11px}.good{color:var(--green);background:#42cf9120}.watch{color:var(--amber);background:#f0b84d20}.bad{color:var(--red);background:#ef646420}.status{color:var(--green)}.error{color:var(--red)}.empty{padding:24px;color:var(--muted);text-align:center}@media(max-width:800px){.cards{grid-template-columns:repeat(2,1fr)}.top{align-items:flex-start;flex-direction:column}}@media(max-width:480px){.cards{grid-template-columns:1fr}.wrap{padding:14px}}
+</style>
+</head>
+<body><main class="wrap">
+<div class="top"><div><h1>MENAR AI CEO Paneli</h1><p>Meta reklamları ve Bitrix24 günlük yönetim özeti</p></div><button onclick="loadReport()">Raporu Yenile</button></div>
+<div class="cards">
+<div class="card"><div class="label">Reklam Harcaması</div><div class="value" id="spend">—</div></div>
+<div class="card"><div class="label">Reklam Mesajı</div><div class="value" id="messages">—</div></div>
+<div class="card"><div class="label">Mesaj Maliyeti</div><div class="value" id="cost">—</div></div>
+<div class="card"><div class="label">Yeni Lead</div><div class="value" id="leads">—</div></div>
+</div>
+<section class="section"><div class="head"><b>Yönetim Kararı</b><span id="period">yükleniyor</span></div><div class="advice" id="advice">Rapor hazırlanıyor…</div></section>
+<section class="section"><div class="head"><b>CRM Özeti</b><span>Bitrix24</span></div><div class="cards" style="padding:16px;margin:0"><div class="card"><div class="label">Yeni</div><div class="value" id="newLead">—</div></div><div class="card"><div class="label">İşlemde</div><div class="value" id="workLead">—</div></div><div class="card"><div class="label">Olumlu</div><div class="value" id="wonLead">—</div></div><div class="card"><div class="label">Olumsuz</div><div class="value" id="lostLead">—</div></div></div></section>
+<section class="section"><div class="head"><b>Kampanya Analizi</b><span id="generated">—</span></div><div class="table"><table><thead><tr><th>Kampanya</th><th>Harcama</th><th>Mesaj</th><th>Mesaj Maliyeti</th><th>Karar</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+<p id="connection" class="status">● Güvenli rapor bağlantısı kuruluyor…</p>
+</main>
+<script>
+const money=n=>n==null?'—':new Intl.NumberFormat('tr-TR',{style:'currency',currency:'TRY'}).format(n);const num=n=>new Intl.NumberFormat('tr-TR').format(n||0);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+async function loadReport(){const c=document.getElementById('connection');c.className='status';c.textContent='● Güncel rapor yükleniyor…';try{const r=await fetch('data/latest.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('Rapor dosyası okunamadı');const d=await r.json(),m=d.meta||{},crm=d.crm||{};spend.textContent=money(m.totalSpend);messages.textContent=num(m.totalMessages);cost.textContent=money(m.costPerMessage);leads.textContent=num(crm.total);newLead.textContent=num(crm.new);workLead.textContent=num(crm.inProgress);wonLead.textContent=num(crm.won);lostLead.textContent=num(crm.rejected);period.textContent=d.period||'—';advice.textContent=d.advice||'Henüz öneri oluşturulmadı.';generated.textContent=d.generatedAt?new Date(d.generatedAt).toLocaleString('tr-TR'):'—';const list=m.campaigns||[];rows.innerHTML=list.length?list.map(x=>`<tr><td><b>${esc(x.campaign)}</b></td><td>${money(x.spend)}</td><td>${num(x.messages)}</td><td>${money(x.costPerMessage)}</td><td><span class="pill ${esc(x.decision?.level||'watch')}">${esc(x.decision?.label||'Veri yetersiz')}</span></td></tr>`).join(''):'<tr><td colspan="5" class="empty">Canlı bağlantı anahtarları eklendiğinde kampanyalar otomatik görünecek.</td></tr>';c.textContent='● Güvenli otomatik rapor bağlantısı aktif';}catch(e){c.className='error';c.textContent='● '+e.message;advice.textContent='Rapor henüz üretilemedi. GitHub Secrets bağlantısı tamamlanmalıdır.'}}
+loadReport();setInterval(loadReport,300000);
+</script></body></html>
