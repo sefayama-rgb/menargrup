@@ -2,6 +2,11 @@ name: MENAR Otomatik Yonetim Raporu
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily-ceo-report.yml'
+      - 'automation/report.js'
   schedule:
     - cron: '*/15 * * * *'
 
