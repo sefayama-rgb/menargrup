@@ -24,6 +24,9 @@ jobs:
     steps:
       - name: Depoyu al
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Node.js kur
         uses: actions/setup-node@v4
@@ -46,5 +49,6 @@ jobs:
             echo "Degisiklik yok."
           else
             git commit -m "Otomatik yonetim raporunu guncelle"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
