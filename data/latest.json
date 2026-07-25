@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-07-25T00:00:00.000Z",
+  "period": "Kurulum bekleniyor",
+  "meta": {
+    "adAccountId": "1521138858696042",
+    "totalSpend": 0,
+    "totalMessages": 0,
+    "costPerMessage": null,
+    "campaigns": []
+  },
+  "crm": {
+    "total": 0,
+    "new": 0,
+    "inProgress": 0,
+    "won": 0,
+    "rejected": 0
+  },
+  "advice": "Meta ve Bitrix24 güvenli anahtarları eklendikten sonra günlük otomatik rapor burada görüntülenecektir."
+}
