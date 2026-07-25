@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-07-25T00:00:00.000Z",
-  "period": "Kurulum bekleniyor",
+  "generatedAt": "2026-07-25T15:55:09.699Z",
+  "period": "Son 24 saat",
+  "setupComplete": false,
+  "connections": {
+    "meta": "META_ACCESS_TOKEN eksik",
+    "bitrix24": "aktif"
+  },
   "meta": {
     "adAccountId": "1521138858696042",
     "totalSpend": 0,
@@ -9,11 +14,12 @@
     "campaigns": []
   },
   "crm": {
-    "total": 0,
-    "new": 0,
-    "inProgress": 0,
+    "total": 59,
+    "new": 36,
+    "inProgress": 18,
     "won": 0,
-    "rejected": 0
+    "rejected": 0,
+    "status": "aktif"
   },
-  "advice": "Meta ve Bitrix24 güvenli anahtarları eklendikten sonra günlük otomatik rapor burada görüntülenecektir."
+  "advice": "Son 24 saatte 59 lead, 18 işlemde ve 0 olumlu sonuç var. Kurulum durumu: Meta META_ACCESS_TOKEN eksik; Bitrix24 aktif."
 }
