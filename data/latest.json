@@ -1,25 +1,146 @@
 {
-  "generatedAt": "2026-07-25T19:45:48.140Z",
+  "generatedAt": "2026-07-25T20:38:30.714Z",
   "period": "Son 24 saat",
-  "setupComplete": false,
+  "setupComplete": true,
   "connections": {
-    "meta": "hata: Error validating access token: The session is invalid because the user logged out.",
+    "meta": "aktif",
     "bitrix24": "aktif"
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 0,
+    "totalSpend": 1785.4299999999998,
     "totalMessages": 0,
     "costPerMessage": null,
-    "campaigns": []
+    "campaigns": [
+      {
+        "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
+        "spend": 256.61,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-24",
+        "dateStop": "2026-07-24",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
+        "spend": 88.22,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-24",
+        "dateStop": "2026-07-24",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "yaz umresi potansiyel müşteri",
+        "spend": 289.5,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-24",
+        "dateStop": "2026-07-24",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "UMMU GURABA Etkileşim Kampanyası",
+        "spend": 158.91,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-24",
+        "dateStop": "2026-07-24",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "AĞUSTOS Etkileşim Kampanyası",
+        "spend": 153.72,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-24",
+        "dateStop": "2026-07-24",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
+        "spend": 249.6,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-25",
+        "dateStop": "2026-07-25",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
+        "spend": 68.45,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-25",
+        "dateStop": "2026-07-25",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "yaz umresi potansiyel müşteri",
+        "spend": 240.38,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-25",
+        "dateStop": "2026-07-25",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "UMMU GURABA Etkileşim Kampanyası",
+        "spend": 157.08,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-25",
+        "dateStop": "2026-07-25",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "AĞUSTOS Etkileşim Kampanyası",
+        "spend": 122.96,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-25",
+        "dateStop": "2026-07-25",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      }
+    ]
   },
   "crm": {
-    "total": 64,
-    "new": 41,
+    "total": 67,
+    "new": 44,
     "inProgress": 18,
     "won": 0,
     "rejected": 0,
     "status": "aktif"
   },
-  "advice": "Son 24 saatte 64 lead, 18 işlemde ve 0 olumlu sonuç var. Kurulum durumu: Meta hata: Error validating access token: The session is invalid because the user logged out.; Bitrix24 aktif."
+  "advice": "Son 24 saatte 67 lead, 18 işlemde ve 0 olumlu sonuç var."
 }
