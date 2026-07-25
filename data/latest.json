@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T21:42:13.468Z",
+  "generatedAt": "2026-07-25T21:49:47.128Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1806.72,
+    "totalSpend": 1806.9700000000003,
     "totalMessages": 56,
-    "costPerMessage": 32.26285714285714,
+    "costPerMessage": 32.267321428571435,
     "campaigns": [
       {
         "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
@@ -74,7 +74,7 @@
       },
       {
         "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
-        "spend": 256.31,
+        "spend": 256.35,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-07-25",
@@ -110,9 +110,9 @@
       },
       {
         "campaign": "UMMU GURABA Etkileşim Kampanyası",
-        "spend": 163.22,
+        "spend": 163.43,
         "messages": 16,
-        "costPerMessage": 10.20125,
+        "costPerMessage": 10.214375,
         "dateStart": "2026-07-25",
         "dateStop": "2026-07-25",
         "decision": {
