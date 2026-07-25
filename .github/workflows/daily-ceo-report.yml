@@ -41,14 +41,33 @@ jobs:
         run: node automation/report.js
 
       - name: Raporu depoya kaydet
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "menar-report-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/latest.json
+
           if git diff --cached --quiet; then
             echo "Degisiklik yok."
-          else
-            git commit -m "Otomatik yonetim raporunu guncelle"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            exit 0
           fi
+
+          git commit -m "Otomatik yonetim raporunu guncelle"
+
+          for attempt in 1 2 3 4 5; do
+            echo "Push denemesi: $attempt/5"
+            git fetch origin main
+            git rebase origin/main
+
+            if git push origin HEAD:main; then
+              echo "Rapor basariyla depoya kaydedildi."
+              exit 0
+            fi
+
+            echo "Depo bu sirada degisti; tekrar deneniyor."
+            sleep $((attempt * 2))
+          done
+
+          echo "Rapor 5 denemeden sonra depoya kaydedilemedi."
+          exit 1
