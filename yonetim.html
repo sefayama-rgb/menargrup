@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MENAR Yönetim Paneli</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0} :root{--bg:#0f1117;--bg2:#161b27;--bg3:#1e2535;--border:rgba(255,255,255,.09);--text:#e8eaf0;--muted:#8891a8;--blue:#4d90f0;--green:#3ecf8e;--font:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace} body{font-family:var(--font);background:var(--bg);color:var(--text);height:100vh;overflow:hidden}.app{display:flex;height:100vh}.side{width:230px;background:var(--bg2);border-right:1px solid var(--border);padding:24px 0;display:flex;flex-direction:column}.brand{padding:0 20px 20px;border-bottom:1px solid var(--border);margin-bottom:10px}.brand b{font-size:14px;letter-spacing:.6px}.brand small{display:block;color:#535f7a;font-family:var(--mono);margin-top:3px}.nav{border:0;background:transparent;color:var(--muted);padding:10px 20px;text-align:left;font:500 13px var(--font);cursor:pointer;border-left:2px solid transparent}.nav:hover,.nav.active{background:var(--bg3);color:var(--blue);border-left-color:var(--blue)}.spacer{flex:1}.status{margin:14px 18px;padding:12px;background:rgba(62,207,142,.08);border:1px solid rgba(62,207,142,.18);border-radius:9px;font-size:11px;color:var(--green);line-height:1.5}.content{flex:1;display:flex;flex-direction:column;min-width:0}.top{height:68px;background:var(--bg2);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 22px}.top h1{font-size:18px}.top .meta{font:11px var(--mono);color:var(--muted)}.actions{display:flex;gap:8px}.link{color:var(--text);background:var(--bg3);border:1px solid var(--border);border-radius:7px;padding:7px 11px;text-decoration:none;font-size:12px}.frame{width:100%;height:calc(100vh - 68px);border:0;background:var(--bg)}@media(max-width:760px){body{overflow:auto}.app{display:block;height:auto}.side{width:100%;height:auto;position:relative;padding:14px 0}.brand{padding-bottom:12px}.nav{display:inline-block;padding:8px 12px}.spacer,.status{display:none}.content{height:calc(100vh - 140px)}.top{height:58px}.frame{height:calc(100vh - 198px)}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side">
+ <div class="brand"><b>MENAR GRUP</b><small>AI Yönetim Paneli v2.0</small></div>
+ <button class="nav active" data-page="bitrix24_crm_panel.html" data-title="Leadler ve CRM">👥 Leadler ve CRM</button>
+ <button class="nav" data-page="reklam_merkezi.html" data-title="Reklam Merkezi">📊 Reklam Merkezi</button>
+ <button class="nav" data-page="bitrix24_crm_panel.html" data-title="Çalışan Performansı">📈 Çalışan Performansı</button>
+ <button class="nav" onclick="window.open('https://menar.bitrix24.com.tr','_blank')">↗ Bitrix24'e Git</button>
+ <div class="spacer"></div>
+ <div class="status">● Bitrix24 canlı bağlantısı aktif<br>Meta CSV raporlama hazır</div>
+</aside>
+<section class="content">
+ <header class="top"><div><h1 id="title">Leadler ve CRM</h1><div class="meta">MENAR günlük yönetim ekranı</div></div><div class="actions"><a class="link" href="reklam_merkezi.html" target="_blank">Reklamı ayrı aç</a><a class="link" href="bitrix24_crm_panel.html" target="_blank">CRM'i ayrı aç</a></div></header>
+ <iframe class="frame" id="frame" src="bitrix24_crm_panel.html" title="MENAR Panel"></iframe>
+</section>
+</div>
+<script>
+const frame=document.getElementById('frame'),title=document.getElementById('title');
+document.querySelectorAll('.nav[data-page]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.nav').forEach(x=>x.classList.remove('active'));btn.classList.add('active');frame.src=btn.dataset.page;title.textContent=btn.dataset.title;}));
+</script>
+</body></html>
