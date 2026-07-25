@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MENAR Reklam Merkezi</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0} :root{--bg:#0f1117;--bg2:#161b27;--bg3:#1e2535;--border:rgba(255,255,255,.08);--text:#e8eaf0;--muted:#8891a8;--blue:#4d90f0;--green:#3ecf8e;--amber:#f0b84d;--red:#f06060;--mono:'IBM Plex Mono',monospace;--font:'IBM Plex Sans',sans-serif} body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh}.app{display:flex;min-height:100vh}.side{width:220px;background:var(--bg2);border-right:1px solid var(--border);padding:24px 0;position:fixed;inset:0 auto 0 0}.logo{padding:0 20px 20px;border-bottom:1px solid var(--border);margin-bottom:10px}.logo b{font-size:13px;letter-spacing:.5px}.logo small{display:block;color:#535f7a;font-family:var(--mono);margin-top:2px}.nav{display:block;padding:9px 20px;color:var(--muted);text-decoration:none;border-left:2px solid transparent;font-size:13px}.nav:hover,.nav.active{background:#1e2535;color:var(--blue);border-left-color:var(--blue)}.main{margin-left:220px;padding:30px;flex:1}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;gap:16px}.top h1{font-size:22px}.top p{color:var(--muted);font-size:12px;margin-top:4px}.btn{background:var(--bg3);color:var(--text);border:1px solid rgba(255,255,255,.14);padding:9px 14px;border-radius:8px;cursor:pointer;font:500 13px var(--font)}.btn:hover{filter:brightness(1.15)}input[type=file]{display:none}.cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-bottom:20px}.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:16px}.card .k{font:11px var(--mono);color:#535f7a;text-transform:uppercase;letter-spacing:.7px;margin-bottom:7px}.card .v{font:600 25px var(--mono)}.blue{color:var(--blue)}.green{color:var(--green)}.amber{color:var(--amber)}.red{color:var(--red)}.section{background:var(--bg2);border:1px solid var(--border);border-radius:10px;margin-bottom:18px;overflow:hidden}.head{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}.head h2{font-size:14px}.head span{font:11px var(--mono);color:var(--muted)}table{width:100%;border-collapse:collapse}th{font:11px var(--mono);color:#535f7a;text-transform:uppercase;text-align:left;padding:11px 16px;border-bottom:1px solid var(--border)}td{padding:12px 16px;border-bottom:1px solid var(--border);font-size:13px}tr:last-child td{border-bottom:none}.num{font-family:var(--mono)}.pill{display:inline-block;padding:4px 9px;border-radius:6px;font:500 11px var(--mono)}.ok{background:rgba(62,207,142,.12);color:var(--green)}.watch{background:rgba(240,184,77,.12);color:var(--amber)}.stop{background:rgba(240,96,96,.12);color:var(--red)}.note{padding:16px 18px;line-height:1.7;color:#cbd0dd}.note b{color:var(--text)}.drop{padding:24px;text-align:center;border:1px dashed rgba(255,255,255,.16);margin:16px;border-radius:10px;background:rgba(255,255,255,.02)}.drop p{color:var(--muted);font-size:12px;margin:8px 0 14px}.meta{font-size:11px;color:#535f7a;font-family:var(--mono)}@media(max-width:1050px){.cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){.side{position:static;width:100%;min-height:auto}.app{display:block}.main{margin:0;padding:18px}.cards{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}table{min-width:760px}.section{overflow:auto}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side">
+  <div class="logo"><b>MENAR GRUP</b><small>Yönetim Paneli</small></div>
+  <a class="nav" href="bitrix24_crm_panel.html">Leadler</a>
+  <a class="nav" href="bitrix24_crm_panel.html">Çalışan Performansı</a>
+  <a class="nav active" href="reklam_merkezi.html">Reklam Merkezi</a>
+  <a class="nav" href="https://menar.bitrix24.com.tr" target="_blank">Bitrix24'e Git</a>
+</aside>
+<main class="main">
+  <div class="top">
+    <div><h1>Reklam Merkezi</h1><p id="period">25 Haziran 2026 – 24 Temmuz 2026</p></div>
+    <label class="btn">CSV Yükle<input id="csv" type="file" accept=".csv,text/csv"></label>
+  </div>
+  <div class="cards">
+    <div class="card"><div class="k">Toplam Harcama</div><div class="v blue" id="spend">22.800,49 TL</div></div>
+    <div class="card"><div class="k">Yeni Mesaj</div><div class="v green" id="messages">322</div></div>
+    <div class="card"><div class="k">Mesaj Maliyeti</div><div class="v amber" id="cpm">70,81 TL</div></div>
+    <div class="card"><div class="k">En İyi Reklam</div><div class="v green" id="best" style="font-size:17px">UMMU GURABA</div></div>
+    <div class="card"><div class="k">Kritik Reklam</div><div class="v red" id="worst" style="font-size:17px">Arapça Eğitimi</div></div>
+  </div>
+  <section class="section">
+    <div class="head"><h2>Kampanya Performansı</h2><span id="rowCount">5 kampanya</span></div>
+    <div style="overflow:auto"><table><thead><tr><th>Kampanya</th><th>Harcama</th><th>Yeni Mesaj</th><th>Mesaj Maliyeti</th><th>Karar</th></tr></thead><tbody id="rows"></tbody></table></div>
+  </section>
+  <section class="section">
+    <div class="head"><h2>Günlük Yönetim Yorumu</h2><span>otomatik değerlendirme</span></div>
+    <div class="note" id="advice"></div>
+  </section>
+  <section class="section">
+    <div class="head"><h2>Yeni Rapor Yükleme</h2><span>Meta Ads CSV</span></div>
+    <div class="drop"><b>Meta Reklam Yöneticisi CSV dosyasını buraya yükle</b><p>Dosya tarayıcında işlenir; bilgiler başka yere gönderilmez.</p><label class="btn">Dosya Seç<input id="csv2" type="file" accept=".csv,text/csv"></label></div>
+  </section>
+  <div class="meta">Reklam hesabı: 1521138858696042 · MENAR Reklam Merkezi v1</div>
+</main>
+</div>
+<script>
+const initial=[
+{name:'UMMU GURABA',spend:493.28,msg:36},
+{name:'Ağustos Etkileşim',spend:524.10,msg:15},
+{name:'Yaz Umresi',spend:8910.92,msg:189},
+{name:'8 Gece Medine Video',spend:2963.94,msg:51},
+{name:'Arapça Eğitimi',spend:7485.45,msg:31}
+];
+let data=initial;
+const money=n=>new Intl.NumberFormat('tr-TR',{minimumFractionDigits:2,maximumFractionDigits:2}).format(n)+' TL';
+const num=n=>new Intl.NumberFormat('tr-TR').format(n);
+function decision(c){const v=c.msg?c.spend/c.msg:Infinity;if(v<=25)return['Bütçe artır','ok'];if(v<=55)return['Takip et','watch'];return['Durdur / değiştir','stop']}
+function render(){
+ const valid=data.filter(x=>x.spend>0||x.msg>0);const spend=valid.reduce((a,b)=>a+b.spend,0);const msgs=valid.reduce((a,b)=>a+b.msg,0);
+ const sorted=[...valid].sort((a,b)=>(a.msg?a.spend/a.msg:999999)-(b.msg?b.spend/b.msg:999999));const best=sorted[0],worst=sorted[sorted.length-1];
+ document.getElementById('spend').textContent=money(spend);document.getElementById('messages').textContent=num(msgs);document.getElementById('cpm').textContent=msgs?money(spend/msgs):'—';document.getElementById('best').textContent=best?.name||'—';document.getElementById('worst').textContent=worst?.name||'—';document.getElementById('rowCount').textContent=valid.length+' kampanya';
+ document.getElementById('rows').innerHTML=sorted.map(c=>{const d=decision(c),cost=c.msg?c.spend/c.msg:0;return `<tr><td><b>${escapeHtml(c.name)}</b></td><td class="num">${money(c.spend)}</td><td class="num">${num(c.msg)}</td><td class="num">${c.msg?money(cost):'—'}</td><td><span class="pill ${d[1]}">${d[0]}</span></td></tr>`}).join('');
+ let text='';if(best)text+=`<b>${escapeHtml(best.name)}</b> en düşük mesaj maliyetine sahip. `;if(worst)text+=`<b>${escapeHtml(worst.name)}</b> kampanyasında mesaj maliyeti yüksek; reklamı durdurup hedef, görsel veya kampanya amacını değiştirmen önerilir. `;text+='Kesin karar vermeden önce Bitrix24 içindeki sıcak müşteri ve kayıt kalitesini de kontrol et.';document.getElementById('advice').innerHTML=text;
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function parseNumber(v){if(v==null)return 0;let s=String(v).trim().replace(/\s/g,'');if(s.includes(',')&&s.includes('.')){if(s.lastIndexOf(',')>s.lastIndexOf('.'))s=s.replace(/\./g,'').replace(',','.');else s=s.replace(/,/g,'')}else if(s.includes(','))s=s.replace(',','.');return Number(s)||0}
+function splitCSV(line,sep){const out=[];let cur='',q=false;for(let i=0;i<line.length;i++){const ch=line[i];if(ch==='"'){if(q&&line[i+1]==='"'){cur+='"';i++}else q=!q}else if(ch===sep&&!q){out.push(cur);cur=''}else cur+=ch}out.push(cur);return out}
+function findIndex(headers,terms){return headers.findIndex(h=>terms.some(t=>h.includes(t)))}
+function loadCSV(file){const r=new FileReader();r.onload=()=>{try{const text=r.result.replace(/^\uFEFF/,'');const lines=text.split(/\r?\n/).filter(x=>x.trim());const sep=(lines[0].match(/;/g)||[]).length>(lines[0].match(/,/g)||[]).length?';':',';const headers=splitCSV(lines[0],sep).map(x=>x.trim().toLocaleLowerCase('tr-TR'));const nameI=findIndex(headers,['kampanya adı','campaign name','kampanya']);const spendI=findIndex(headers,['harcanan tutar','amount spent','harcama']);const msgI=findIndex(headers,['yeni mesajlaşma bağlantısı','new messaging','yeni mesaj','mesajlaşma konuşması başlatma','messaging conversations started']);if(nameI<0||spendI<0)throw new Error('Kampanya adı veya harcama sütunu bulunamadı.');const arr=[];for(const line of lines.slice(1)){const c=splitCSV(line,sep);if(!c[nameI])continue;arr.push({name:c[nameI],spend:parseNumber(c[spendI]),msg:msgI>=0?parseNumber(c[msgI]):0})}if(!arr.length)throw new Error('Kampanya satırı bulunamadı.');data=arr;document.getElementById('period').textContent=file.name;render()}catch(e){alert('CSV okunamadı: '+e.message)}};r.readAsText(file,'UTF-8')}
+document.getElementById('csv').addEventListener('change',e=>e.target.files[0]&&loadCSV(e.target.files[0]));document.getElementById('csv2').addEventListener('change',e=>e.target.files[0]&&loadCSV(e.target.files[0]));render();
+</script>
+</body>
+</html>
