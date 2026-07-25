@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T16:12:42.926Z",
+  "generatedAt": "2026-07-25T17:18:20.269Z",
   "period": "Son 24 saat",
   "setupComplete": false,
   "connections": {
@@ -14,12 +14,12 @@
     "campaigns": []
   },
   "crm": {
-    "total": 59,
-    "new": 36,
+    "total": 60,
+    "new": 37,
     "inProgress": 18,
     "won": 0,
     "rejected": 0,
     "status": "aktif"
   },
-  "advice": "Son 24 saatte 59 lead, 18 işlemde ve 0 olumlu sonuç var. Kurulum durumu: Meta META_ACCESS_TOKEN eksik; Bitrix24 aktif."
+  "advice": "Son 24 saatte 60 lead, 18 işlemde ve 0 olumlu sonuç var. Kurulum durumu: Meta META_ACCESS_TOKEN eksik; Bitrix24 aktif."
 }
