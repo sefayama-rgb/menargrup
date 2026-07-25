@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T20:38:30.714Z",
+  "generatedAt": "2026-07-25T20:44:12.077Z",
   "period": "Son 24 saat",
   "setupComplete": true,
   "connections": {
@@ -8,13 +8,13 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1785.4299999999998,
+    "totalSpend": 1789.3400000000001,
     "totalMessages": 0,
     "costPerMessage": null,
     "campaigns": [
       {
         "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
-        "spend": 256.61,
+        "spend": 256.62,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-07-24",
@@ -74,7 +74,7 @@
       },
       {
         "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
-        "spend": 249.6,
+        "spend": 251.21,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-07-25",
@@ -86,7 +86,7 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 68.45,
+        "spend": 69.15,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-07-25",
@@ -98,7 +98,7 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 240.38,
+        "spend": 240.54,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-07-25",
@@ -110,7 +110,7 @@
       },
       {
         "campaign": "UMMU GURABA Etkileşim Kampanyası",
-        "spend": 157.08,
+        "spend": 157.73,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-07-25",
@@ -122,7 +122,7 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 122.96,
+        "spend": 123.74,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-07-25",
