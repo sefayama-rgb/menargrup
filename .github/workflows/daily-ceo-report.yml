@@ -1,0 +1,41 @@
+name: MENAR Daily CEO Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 5 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+
+      - name: Node.js kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Günlük raporu üret
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_AD_ACCOUNT_ID: ${{ secrets.META_AD_ACCOUNT_ID }}
+          BITRIX_WEBHOOK: ${{ secrets.BITRIX_WEBHOOK }}
+        run: node automation/report.js
+
+      - name: Raporu depoya kaydet
+        run: |
+          git config user.name "menar-report-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/latest.json
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok."
+          else
+            git commit -m "Günlük CEO raporunu güncelle"
+            git push
+          fi
