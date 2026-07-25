@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T18:27:01.974Z",
+  "generatedAt": "2026-07-25T18:36:32.843Z",
   "period": "Son 24 saat",
   "setupComplete": false,
   "connections": {
@@ -14,12 +14,12 @@
     "campaigns": []
   },
   "crm": {
-    "total": 61,
-    "new": 38,
+    "total": 62,
+    "new": 39,
     "inProgress": 18,
     "won": 0,
     "rejected": 0,
     "status": "aktif"
   },
-  "advice": "Son 24 saatte 61 lead, 18 işlemde ve 0 olumlu sonuç var. Kurulum durumu: Meta hata: (#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https://developers.facebook.com/docs/marketing-api/get-started/authorization/#permissions-and-features for details.; Bitrix24 aktif."
+  "advice": "Son 24 saatte 62 lead, 18 işlemde ve 0 olumlu sonuç var. Kurulum durumu: Meta hata: (#200) Ad account owner has NOT grant ads_management or ads_read permission, refer to https://developers.facebook.com/docs/marketing-api/get-started/authorization/#permissions-and-features for details.; Bitrix24 aktif."
 }
