@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T09:57:07.530Z",
+  "generatedAt": "2026-07-26T10:53:58.111Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1314.1999999999998,
-    "totalMessages": 52,
-    "costPerMessage": 25.27307692307692,
+    "totalSpend": 1380.3999999999999,
+    "totalMessages": 53,
+    "costPerMessage": 26.045283018867924,
     "campaigns": [
       {
         "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
-        "spend": 134.44,
+        "spend": 147.32,
         "messages": 2,
-        "costPerMessage": 67.22,
+        "costPerMessage": 73.66,
         "dateStart": "2026-07-26",
         "dateStop": "2026-07-26",
         "decision": {
@@ -86,9 +86,9 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 59.11,
+        "spend": 67.16,
         "messages": 2,
-        "costPerMessage": 29.555,
+        "costPerMessage": 33.58,
         "dateStart": "2026-07-26",
         "dateStop": "2026-07-26",
         "decision": {
@@ -98,9 +98,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 122.71,
-        "messages": 4,
-        "costPerMessage": 30.6775,
+        "spend": 146.76,
+        "messages": 5,
+        "costPerMessage": 29.351999999999997,
         "dateStart": "2026-07-26",
         "dateStop": "2026-07-26",
         "decision": {
@@ -110,9 +110,9 @@
       },
       {
         "campaign": "UMMU GURABA Etkileşim Kampanyası",
-        "spend": 69.8,
+        "spend": 78.66,
         "messages": 7,
-        "costPerMessage": 9.971428571428572,
+        "costPerMessage": 11.237142857142857,
         "dateStart": "2026-07-26",
         "dateStop": "2026-07-26",
         "decision": {
@@ -122,9 +122,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 65.74,
+        "spend": 78.1,
         "messages": 5,
-        "costPerMessage": 13.148,
+        "costPerMessage": 15.62,
         "dateStart": "2026-07-26",
         "dateStop": "2026-07-26",
         "decision": {
@@ -135,16 +135,16 @@
     ]
   },
   "crm": {
-    "total": 8127,
-    "dailyTotal": 58,
-    "new": 523,
+    "total": 8128,
+    "dailyTotal": 59,
+    "new": 524,
     "info": 261,
     "instagram": 52,
     "hot": 57,
     "offer": 4,
     "waiting": 25,
     "inProgress": 399,
-    "activePipeline": 922,
+    "activePipeline": 923,
     "priority": 61,
     "won": 20,
     "rejected": 205,
@@ -157,7 +157,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 523
+        "count": 524
       },
       {
         "id": "IN_PROCESS",
@@ -290,5 +290,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "UMMU GURABA Etkileşim Kampanyası en verimli kampanya. arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya yeniden değerlendirilmeli. Son 24 saatte 58 yeni lead oluştu. Öncelikli takipte 61 müşteri var: 57 sıcak müşteri ve 4 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %8.9. 6980 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "UMMU GURABA Etkileşim Kampanyası en verimli kampanya. arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya yeniden değerlendirilmeli. Son 24 saatte 59 yeni lead oluştu. Öncelikli takipte 61 müşteri var: 57 sıcak müşteri ve 4 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %8.9. 6980 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
