@@ -1,29 +1,150 @@
 {
-  "generatedAt": "2026-07-26T09:35:50.975Z",
+  "generatedAt": "2026-07-26T09:57:07.530Z",
   "period": "Son 24 saat reklam / güncel CRM",
-  "setupComplete": false,
+  "setupComplete": true,
   "connections": {
-    "meta": "hata: Malformed access token EAAdkxGcUvNQBSHaP4YLdZBXKCTBUZCiCoRXejgMRDwMA6rZBXFmZBvADIiqqELFKijWzdwavLstZBzKhy5cyCtklI9x6L7jMy6ZCIVLvr1bnkkDNewvZB0hkjvXi4VVIDTafT1cKAA6GX9HOvoNJNBeE2wfD8A41pWcE511huiVpWCr51nrCTuFQxxsgn5gBufNeG6Yn8K6gaJqKviX\nHata ayıklama",
+    "meta": "aktif",
     "bitrix24": "aktif"
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 0,
-    "totalMessages": 0,
-    "costPerMessage": null,
-    "campaigns": []
+    "totalSpend": 1314.1999999999998,
+    "totalMessages": 52,
+    "costPerMessage": 25.27307692307692,
+    "campaigns": [
+      {
+        "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
+        "spend": 256.48,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-07-25",
+        "dateStop": "2026-07-25",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
+        "spend": 70.17,
+        "messages": 2,
+        "costPerMessage": 35.085,
+        "dateStart": "2026-07-25",
+        "dateStop": "2026-07-25",
+        "decision": {
+          "label": "Takip et",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "yaz umresi potansiyel müşteri",
+        "spend": 242.63,
+        "messages": 9,
+        "costPerMessage": 26.95888888888889,
+        "dateStart": "2026-07-25",
+        "dateStop": "2026-07-25",
+        "decision": {
+          "label": "Takip et",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "UMMU GURABA Etkileşim Kampanyası",
+        "spend": 164.67,
+        "messages": 16,
+        "costPerMessage": 10.291875,
+        "dateStart": "2026-07-25",
+        "dateStop": "2026-07-25",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "AĞUSTOS Etkileşim Kampanyası",
+        "spend": 128.45,
+        "messages": 5,
+        "costPerMessage": 25.689999999999998,
+        "dateStart": "2026-07-25",
+        "dateStop": "2026-07-25",
+        "decision": {
+          "label": "Takip et",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya",
+        "spend": 134.44,
+        "messages": 2,
+        "costPerMessage": 67.22,
+        "dateStart": "2026-07-26",
+        "dateStop": "2026-07-26",
+        "decision": {
+          "label": "Durdur / değiştir",
+          "level": "bad"
+        }
+      },
+      {
+        "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
+        "spend": 59.11,
+        "messages": 2,
+        "costPerMessage": 29.555,
+        "dateStart": "2026-07-26",
+        "dateStop": "2026-07-26",
+        "decision": {
+          "label": "Takip et",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "yaz umresi potansiyel müşteri",
+        "spend": 122.71,
+        "messages": 4,
+        "costPerMessage": 30.6775,
+        "dateStart": "2026-07-26",
+        "dateStop": "2026-07-26",
+        "decision": {
+          "label": "Takip et",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "UMMU GURABA Etkileşim Kampanyası",
+        "spend": 69.8,
+        "messages": 7,
+        "costPerMessage": 9.971428571428572,
+        "dateStart": "2026-07-26",
+        "dateStop": "2026-07-26",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "AĞUSTOS Etkileşim Kampanyası",
+        "spend": 65.74,
+        "messages": 5,
+        "costPerMessage": 13.148,
+        "dateStart": "2026-07-26",
+        "dateStop": "2026-07-26",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      }
+    ]
   },
   "crm": {
-    "total": 8125,
-    "dailyTotal": 56,
-    "new": 521,
+    "total": 8127,
+    "dailyTotal": 58,
+    "new": 523,
     "info": 261,
     "instagram": 52,
     "hot": 57,
     "offer": 4,
     "waiting": 25,
     "inProgress": 399,
-    "activePipeline": 920,
+    "activePipeline": 922,
     "priority": 61,
     "won": 20,
     "rejected": 205,
@@ -36,7 +157,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 521
+        "count": 523
       },
       {
         "id": "IN_PROCESS",
@@ -169,5 +290,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "Son 24 saatte 56 yeni lead oluştu. Öncelikli takipte 61 müşteri var: 57 sıcak müşteri ve 4 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %8.9. 6980 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Malformed access token EAAdkxGcUvNQBSHaP4YLdZBXKCTBUZCiCoRXejgMRDwMA6rZBXFmZBvADIiqqELFKijWzdwavLstZBzKhy5cyCtklI9x6L7jMy6ZCIVLvr1bnkkDNewvZB0hkjvXi4VVIDTafT1cKAA6GX9HOvoNJNBeE2wfD8A41pWcE511huiVpWCr51nrCTuFQxxsgn5gBufNeG6Yn8K6gaJqKviX\nHata ayıklama; Bitrix24 aktif."
+  "advice": "UMMU GURABA Etkileşim Kampanyası en verimli kampanya. arapçauygun Özelleştirilmiş mesajlaşma kampanyası 08.05.2026 Kampanya yeniden değerlendirilmeli. Son 24 saatte 58 yeni lead oluştu. Öncelikli takipte 61 müşteri var: 57 sıcak müşteri ve 4 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %8.9. 6980 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
