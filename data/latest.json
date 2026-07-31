@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-31T14:59:09.520Z",
+  "generatedAt": "2026-07-31T16:50:51.639Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": false,
   "connections": {
-    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Friday, 31-Jul-26 07:59:06 PDT.",
+    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Friday, 31-Jul-26 09:50:46 PDT.",
     "bitrix24": "aktif"
   },
   "meta": {
@@ -14,16 +14,16 @@
     "campaigns": []
   },
   "crm": {
-    "total": 8270,
-    "dailyTotal": 56,
-    "new": 602,
+    "total": 8273,
+    "dailyTotal": 59,
+    "new": 605,
     "info": 262,
     "instagram": 52,
     "hot": 84,
     "offer": 6,
     "waiting": 25,
     "inProgress": 429,
-    "activePipeline": 1031,
+    "activePipeline": 1034,
     "priority": 90,
     "won": 19,
     "rejected": 219,
@@ -36,7 +36,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 602
+        "count": 605
       },
       {
         "id": "IN_PROCESS",
@@ -169,5 +169,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "Son 24 saatte 56 yeni lead oluştu. Öncelikli takipte 90 müşteri var: 84 sıcak müşteri ve 6 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %8.0. 7001 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Friday, 31-Jul-26 07:59:06 PDT.; Bitrix24 aktif."
+  "advice": "Son 24 saatte 59 yeni lead oluştu. Öncelikli takipte 90 müşteri var: 84 sıcak müşteri ve 6 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %8.0. 7001 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Friday, 31-Jul-26 09:50:46 PDT.; Bitrix24 aktif."
 }
