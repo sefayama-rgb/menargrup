@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-06T09:22:11.892Z",
+  "generatedAt": "2026-08-06T11:40:54.201Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": false,
   "connections": {
-    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Thursday, 06-Aug-26 02:22:01 PDT.",
-    "bitrix24": "hata: fetch failed"
+    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Thursday, 06-Aug-26 04:40:50 PDT.",
+    "bitrix24": "aktif"
   },
   "meta": {
     "adAccountId": "1521138858696042",
@@ -14,23 +14,160 @@
     "campaigns": []
   },
   "crm": {
-    "total": 0,
-    "dailyTotal": 0,
-    "new": 0,
-    "info": 0,
-    "instagram": 0,
-    "hot": 0,
-    "offer": 0,
-    "waiting": 0,
-    "inProgress": 0,
-    "activePipeline": 0,
-    "priority": 0,
-    "won": 0,
-    "rejected": 0,
-    "archive": 0,
-    "conversionRate": 0,
-    "stages": [],
-    "status": "hata: fetch failed"
+    "total": 8476,
+    "dailyTotal": 45,
+    "new": 732,
+    "info": 264,
+    "instagram": 57,
+    "hot": 85,
+    "offer": 45,
+    "waiting": 26,
+    "inProgress": 478,
+    "activePipeline": 1210,
+    "priority": 130,
+    "won": 18,
+    "rejected": 220,
+    "archive": 7028,
+    "conversionRate": 7.563025210084033,
+    "stages": [
+      {
+        "id": "NEW",
+        "name": "Yeni Potansiyel Müşteri Geldi",
+        "sort": 10,
+        "semantics": "",
+        "group": "new",
+        "count": 732
+      },
+      {
+        "id": "IN_PROCESS",
+        "name": "Bilgi Veriliyor",
+        "sort": 20,
+        "semantics": "",
+        "group": "info",
+        "count": 264
+      },
+      {
+        "id": "5",
+        "name": "İNSTAGRAM",
+        "sort": 30,
+        "semantics": "",
+        "group": "instagram",
+        "count": 57
+      },
+      {
+        "id": "PROCESSED",
+        "name": "SICAK MÜŞTERİ",
+        "sort": 40,
+        "semantics": "",
+        "group": "hot",
+        "count": 85
+      },
+      {
+        "id": "UC_G68KST",
+        "name": "Teklif Bekleyenler",
+        "sort": 50,
+        "semantics": "",
+        "group": "offer",
+        "count": 45
+      },
+      {
+        "id": "UC_P5MO63",
+        "name": "yeni sezon için bilgi bekleyenler",
+        "sort": 60,
+        "semantics": "",
+        "group": "waiting",
+        "count": 26
+      },
+      {
+        "id": "UC_SE8TXL",
+        "name": "İşlemde- Kayıt",
+        "sort": 70,
+        "semantics": "",
+        "group": "inProgress",
+        "count": 1
+      },
+      {
+        "id": "UC_SCX727",
+        "name": "Ulaşılamadı",
+        "sort": 80,
+        "semantics": "",
+        "group": "rejected",
+        "count": 33
+      },
+      {
+        "id": "CONVERTED",
+        "name": "Olumlu Müşteri",
+        "sort": 90,
+        "semantics": "S",
+        "group": "won",
+        "count": 18
+      },
+      {
+        "id": "JUNK",
+        "name": "Olumsuz Tarih Uymadı",
+        "sort": 100,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 135
+      },
+      {
+        "id": "1",
+        "name": "Fiyat yüksek geldi",
+        "sort": 110,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 8
+      },
+      {
+        "id": "UC_LKAD1J",
+        "name": "Otel Uymadı",
+        "sort": 120,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 0
+      },
+      {
+        "id": "UC_ON8LJ4",
+        "name": "Karasız Kaldı",
+        "sort": 130,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 5
+      },
+      {
+        "id": "UC_VBOFEP",
+        "name": "Rakip Firma Tercihi",
+        "sort": 140,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 32
+      },
+      {
+        "id": "UC_0KQ7Z9",
+        "name": "Bütçe Yetersiz",
+        "sort": 150,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 7
+      },
+      {
+        "id": "UC_C82146",
+        "name": "Ulaşılamadı",
+        "sort": 160,
+        "semantics": "F",
+        "group": "rejected",
+        "count": 0
+      },
+      {
+        "id": "4",
+        "name": "Diğer",
+        "sort": 170,
+        "semantics": "F",
+        "group": "archive",
+        "count": 7028
+      }
+    ],
+    "status": "aktif"
   },
-  "advice": "Son 24 saatte 0 yeni lead oluştu. Öncelikli takipte 0 müşteri var: 0 sıcak müşteri ve 0 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %0.0. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Thursday, 06-Aug-26 02:22:01 PDT.; Bitrix24 hata: fetch failed."
+  "advice": "Son 24 saatte 45 yeni lead oluştu. Öncelikli takipte 130 müşteri var: 85 sıcak müşteri ve 45 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.6. 7028 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Thursday, 06-Aug-26 04:40:50 PDT.; Bitrix24 aktif."
 }
