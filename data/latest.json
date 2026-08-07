@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-07T12:27:58.434Z",
+  "generatedAt": "2026-08-07T13:52:38.883Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": false,
   "connections": {
-    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Friday, 07-Aug-26 05:27:53 PDT.",
+    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Friday, 07-Aug-26 06:52:34 PDT.",
     "bitrix24": "aktif"
   },
   "meta": {
@@ -14,16 +14,16 @@
     "campaigns": []
   },
   "crm": {
-    "total": 8503,
-    "dailyTotal": 43,
-    "new": 743,
-    "info": 264,
+    "total": 8510,
+    "dailyTotal": 50,
+    "new": 749,
+    "info": 265,
     "instagram": 57,
     "hot": 88,
     "offer": 49,
     "waiting": 26,
-    "inProgress": 485,
-    "activePipeline": 1228,
+    "inProgress": 486,
+    "activePipeline": 1235,
     "priority": 137,
     "won": 18,
     "rejected": 218,
@@ -36,7 +36,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 743
+        "count": 749
       },
       {
         "id": "IN_PROCESS",
@@ -44,7 +44,7 @@
         "sort": 20,
         "semantics": "",
         "group": "info",
-        "count": 264
+        "count": 265
       },
       {
         "id": "5",
@@ -169,5 +169,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "Son 24 saatte 43 yeni lead oluştu. Öncelikli takipte 137 müşteri var: 88 sıcak müşteri ve 49 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.6. 7039 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Friday, 07-Aug-26 05:27:53 PDT.; Bitrix24 aktif."
+  "advice": "Son 24 saatte 50 yeni lead oluştu. Öncelikli takipte 137 müşteri var: 88 sıcak müşteri ve 49 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.6. 7039 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Friday, 07-Aug-26 06:52:34 PDT.; Bitrix24 aktif."
 }
