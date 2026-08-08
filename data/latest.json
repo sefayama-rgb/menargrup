@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-08T10:13:44.870Z",
+  "generatedAt": "2026-08-08T10:53:19.461Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": false,
   "connections": {
-    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Saturday, 08-Aug-26 03:13:41 PDT.",
+    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Saturday, 08-Aug-26 03:53:14 PDT.",
     "bitrix24": "aktif"
   },
   "meta": {
@@ -14,17 +14,17 @@
     "campaigns": []
   },
   "crm": {
-    "total": 8532,
-    "dailyTotal": 42,
+    "total": 8533,
+    "dailyTotal": 43,
     "new": 765,
     "info": 265,
     "instagram": 57,
-    "hot": 92,
+    "hot": 93,
     "offer": 50,
     "waiting": 26,
-    "inProgress": 491,
-    "activePipeline": 1256,
-    "priority": 142,
+    "inProgress": 492,
+    "activePipeline": 1257,
+    "priority": 143,
     "won": 18,
     "rejected": 218,
     "archive": 7040,
@@ -60,7 +60,7 @@
         "sort": 40,
         "semantics": "",
         "group": "hot",
-        "count": 92
+        "count": 93
       },
       {
         "id": "UC_G68KST",
@@ -169,5 +169,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "Son 24 saatte 42 yeni lead oluştu. Öncelikli takipte 142 müşteri var: 92 sıcak müşteri ve 50 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.6. 7040 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Saturday, 08-Aug-26 03:13:41 PDT.; Bitrix24 aktif."
+  "advice": "Son 24 saatte 43 yeni lead oluştu. Öncelikli takipte 143 müşteri var: 93 sıcak müşteri ve 50 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.6. 7040 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Saturday, 08-Aug-26 03:53:14 PDT.; Bitrix24 aktif."
 }
