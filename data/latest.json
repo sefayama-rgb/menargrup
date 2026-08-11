@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-11T07:56:30.136Z",
+  "generatedAt": "2026-08-11T09:03:31.615Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": false,
   "connections": {
-    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Tuesday, 11-Aug-26 00:56:25 PDT.",
+    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Tuesday, 11-Aug-26 02:03:26 PDT.",
     "bitrix24": "aktif"
   },
   "meta": {
@@ -14,21 +14,21 @@
     "campaigns": []
   },
   "crm": {
-    "total": 8545,
-    "dailyTotal": 8,
-    "new": 775,
-    "info": 229,
+    "total": 8546,
+    "dailyTotal": 9,
+    "new": 776,
+    "info": 224,
     "instagram": 58,
     "hot": 89,
     "offer": 62,
     "waiting": 26,
-    "inProgress": 465,
-    "activePipeline": 1240,
+    "inProgress": 460,
+    "activePipeline": 1236,
     "priority": 151,
     "won": 18,
-    "rejected": 222,
-    "archive": 7065,
-    "conversionRate": 7.5,
+    "rejected": 223,
+    "archive": 7069,
+    "conversionRate": 7.468879668049793,
     "stages": [
       {
         "id": "NEW",
@@ -36,7 +36,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 775
+        "count": 776
       },
       {
         "id": "IN_PROCESS",
@@ -44,7 +44,7 @@
         "sort": 20,
         "semantics": "",
         "group": "info",
-        "count": 229
+        "count": 224
       },
       {
         "id": "5",
@@ -140,7 +140,7 @@
         "sort": 140,
         "semantics": "F",
         "group": "rejected",
-        "count": 34
+        "count": 35
       },
       {
         "id": "UC_0KQ7Z9",
@@ -164,10 +164,10 @@
         "sort": 170,
         "semantics": "F",
         "group": "archive",
-        "count": 7065
+        "count": 7069
       }
     ],
     "status": "aktif"
   },
-  "advice": "Son 24 saatte 8 yeni lead oluştu. Öncelikli takipte 151 müşteri var: 89 sıcak müşteri ve 62 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.5. 7065 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Tuesday, 11-Aug-26 00:56:25 PDT.; Bitrix24 aktif."
+  "advice": "Son 24 saatte 9 yeni lead oluştu. Öncelikli takipte 151 müşteri var: 89 sıcak müşteri ve 62 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.5. 7069 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Tuesday, 11-Aug-26 02:03:26 PDT.; Bitrix24 aktif."
 }
