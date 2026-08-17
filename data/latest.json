@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-17T12:01:00.136Z",
+  "generatedAt": "2026-08-17T13:06:15.929Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": false,
   "connections": {
-    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Monday, 17-Aug-26 05:00:59 PDT.",
+    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Monday, 17-Aug-26 06:06:15 PDT.",
     "bitrix24": "hata: Feature is not available on the current plan."
   },
   "meta": {
@@ -32,5 +32,5 @@
     "stages": [],
     "status": "hata: Feature is not available on the current plan."
   },
-  "advice": "Son 24 saatte 0 yeni lead oluştu. Öncelikli takipte 0 müşteri var: 0 sıcak müşteri ve 0 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %0.0. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Monday, 17-Aug-26 05:00:59 PDT.; Bitrix24 hata: Feature is not available on the current plan.."
+  "advice": "Son 24 saatte 0 yeni lead oluştu. Öncelikli takipte 0 müşteri var: 0 sıcak müşteri ve 0 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %0.0. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Monday, 17-Aug-26 06:06:15 PDT.; Bitrix24 hata: Feature is not available on the current plan.."
 }
