@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-18T02:43:01.412Z",
+  "generatedAt": "2026-08-18T03:29:28.255Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": false,
   "connections": {
-    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Monday, 17-Aug-26 19:42:56 PDT.",
+    "meta": "hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Monday, 17-Aug-26 20:29:24 PDT.",
     "bitrix24": "aktif"
   },
   "meta": {
@@ -169,5 +169,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "Son 24 saatte 28 yeni lead oluştu. Öncelikli takipte 173 müşteri var: 83 sıcak müşteri ve 90 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %8.0. 7131 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Monday, 17-Aug-26 19:42:56 PDT.; Bitrix24 aktif."
+  "advice": "Son 24 saatte 28 yeni lead oluştu. Öncelikli takipte 173 müşteri var: 83 sıcak müşteri ve 90 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %8.0. 7131 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor. Kurulum durumu: Meta hata: Error validating access token: Session has expired on Monday, 27-Jul-26 13:00:00 PDT. The current time is Monday, 17-Aug-26 20:29:24 PDT.; Bitrix24 aktif."
 }
