@@ -84,3 +84,5 @@ jobs:
 
           echo "Raporlar 5 denemeden sonra depoya kaydedilemedi."
           exit 1
+
+# BITRIX secret refresh trigger
