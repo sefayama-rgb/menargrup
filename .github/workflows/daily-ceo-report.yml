@@ -8,6 +8,7 @@ on:
       - '.github/workflows/daily-ceo-report.yml'
       - 'automation/report.js'
       - 'automation/weekly_report.js'
+      - 'automation/weekly_html.js'
   schedule:
     - cron: '*/15 * * * *'
 
@@ -48,6 +49,9 @@ jobs:
           BITRIX_WEBHOOK: ${{ secrets.BITRIX_WEBHOOK }}
         run: node automation/weekly_report.js
 
+      - name: Excel web veri tablolarini uret
+        run: node automation/weekly_html.js
+
       - name: Raporlari depoya kaydet
         shell: bash
         run: |
@@ -59,7 +63,9 @@ jobs:
             data/weekly_kpi.json \
             data/weekly_kpi.csv \
             data/tasks_latest.json \
-            data/tasks_latest.csv
+            data/tasks_latest.csv \
+            data/weekly_kpi_table.html \
+            data/tasks_latest_table.html
 
           if git diff --cached --quiet; then
             echo "Degisiklik yok."
@@ -84,5 +90,3 @@ jobs:
 
           echo "Raporlar 5 denemeden sonra depoya kaydedilemedi."
           exit 1
-
-# BITRIX secret refresh trigger
