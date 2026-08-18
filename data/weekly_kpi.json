@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-08-18T19:16:38.402Z",
+  "weeks": [
+    {
+      "weekStart": "2026-08-17",
+      "weekEnd": "2026-08-23",
+      "asOfDate": "2026-08-18",
+      "generatedAt": "2026-08-18T19:16:38.402Z",
+      "metaSpend": 1181.27,
+      "metaMessages": 42,
+      "metaCostPerMessage": 28.12547619047619,
+      "crmNewLeads": 55,
+      "crmWonClosed": 0,
+      "crmRejectedClosed": 20,
+      "crmCloseConversionRate": 0,
+      "crmTotal": 8674,
+      "crmActivePipeline": 1279,
+      "crmPriority": 185,
+      "crmHot": 85,
+      "crmOffer": 100,
+      "taskTotal": 0,
+      "taskOpen": 0,
+      "taskWaiting": 0,
+      "taskInProgress": 0,
+      "taskOverdue": 0,
+      "taskCreatedThisWeek": 0,
+      "taskCompletedThisWeek": 0,
+      "metaStatus": "aktif",
+      "bitrixStatus": "aktif",
+      "tasksStatus": "hata: The request requires higher privileges than provided by the webhook token"
+    }
+  ]
+}

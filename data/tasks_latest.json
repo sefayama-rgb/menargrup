@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-18T19:16:38.402Z",
+  "status": "hata: The request requires higher privileges than provided by the webhook token",
+  "summary": {
+    "total": 0,
+    "open": 0,
+    "waiting": 0,
+    "inProgress": 0,
+    "completed": 0,
+    "overdue": 0,
+    "createdThisWeek": 0,
+    "completedThisWeek": 0
+  },
+  "tasks": []
+}
