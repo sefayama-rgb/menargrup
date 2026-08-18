@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/daily-ceo-report.yml'
       - 'automation/report.js'
+      - 'automation/weekly_report.js'
   schedule:
     - cron: '*/15 * * * *'
 
@@ -33,27 +34,39 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Bitrix ve Meta raporunu uret
+      - name: Bitrix ve Meta anlik raporunu uret
         env:
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           META_AD_ACCOUNT_ID: ${{ secrets.META_AD_ACCOUNT_ID }}
           BITRIX_WEBHOOK: ${{ secrets.BITRIX_WEBHOOK }}
         run: node automation/report.js
 
-      - name: Raporu depoya kaydet
+      - name: Haftalik KPI ve gorev raporlarini uret
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_AD_ACCOUNT_ID: ${{ secrets.META_AD_ACCOUNT_ID }}
+          BITRIX_WEBHOOK: ${{ secrets.BITRIX_WEBHOOK }}
+        run: node automation/weekly_report.js
+
+      - name: Raporlari depoya kaydet
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "menar-report-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/latest.json
+          git add \
+            data/latest.json \
+            data/weekly_kpi.json \
+            data/weekly_kpi.csv \
+            data/tasks_latest.json \
+            data/tasks_latest.csv
 
           if git diff --cached --quiet; then
             echo "Degisiklik yok."
             exit 0
           fi
 
-          git commit -m "Otomatik yonetim raporunu guncelle"
+          git commit -m "Otomatik yonetim raporlarini guncelle"
 
           for attempt in 1 2 3 4 5; do
             echo "Push denemesi: $attempt/5"
@@ -61,7 +74,7 @@ jobs:
             git rebase origin/main
 
             if git push origin HEAD:main; then
-              echo "Rapor basariyla depoya kaydedildi."
+              echo "Raporlar basariyla depoya kaydedildi."
               exit 0
             fi
 
@@ -69,5 +82,5 @@ jobs:
             sleep $((attempt * 2))
           done
 
-          echo "Rapor 5 denemeden sonra depoya kaydedilemedi."
+          echo "Raporlar 5 denemeden sonra depoya kaydedilemedi."
           exit 1
