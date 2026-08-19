@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-08-19T07:26:09.095Z",
+  "generatedAt": "2026-08-19T08:04:14.688Z",
   "weeks": [
     {
       "weekStart": "2026-08-17",
       "weekEnd": "2026-08-23",
       "asOfDate": "2026-08-19",
-      "generatedAt": "2026-08-19T07:26:09.095Z",
-      "metaSpend": 1389.8300000000002,
-      "metaMessages": 44,
-      "metaCostPerMessage": 31.587045454545457,
-      "crmNewLeads": 59,
+      "generatedAt": "2026-08-19T08:04:14.688Z",
+      "metaSpend": 0,
+      "metaMessages": 0,
+      "metaCostPerMessage": null,
+      "crmNewLeads": 60,
       "crmWonClosed": 0,
       "crmRejectedClosed": 20,
       "crmCloseConversionRate": 0,
-      "crmTotal": 8678,
-      "crmActivePipeline": 1283,
+      "crmTotal": 8679,
+      "crmActivePipeline": 1284,
       "crmPriority": 185,
       "crmHot": 85,
       "crmOffer": 100,
@@ -25,7 +25,7 @@
       "taskOverdue": 7,
       "taskCreatedThisWeek": 1,
       "taskCompletedThisWeek": 39,
-      "metaStatus": "aktif",
+      "metaStatus": "hata: Application request limit reached",
       "bitrixStatus": "aktif",
       "tasksStatus": "aktif"
     }
