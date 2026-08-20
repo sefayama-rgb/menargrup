@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T09:06:08.729Z",
+  "generatedAt": "2026-08-20T09:50:28.895Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 721.6999999999999,
-    "totalMessages": 18,
-    "costPerMessage": 40.09444444444444,
+    "totalSpend": 743.11,
+    "totalMessages": 19,
+    "costPerMessage": 39.11105263157895,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 139.69,
+        "spend": 139.72,
         "messages": 3,
-        "costPerMessage": 46.56333333333333,
+        "costPerMessage": 46.57333333333333,
         "dateStart": "2026-08-19",
         "dateStop": "2026-08-19",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 38.9,
+        "spend": 45.4,
         "messages": 1,
-        "costPerMessage": 38.9,
+        "costPerMessage": 45.4,
         "dateStart": "2026-08-20",
         "dateStop": "2026-08-20",
         "decision": {
@@ -62,21 +62,21 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 109.85,
+        "spend": 118.03,
         "messages": 2,
-        "costPerMessage": 54.925,
+        "costPerMessage": 59.015,
         "dateStart": "2026-08-20",
         "dateStop": "2026-08-20",
         "decision": {
-          "label": "Takip et",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 43.37,
-        "messages": 2,
-        "costPerMessage": 21.685,
+        "spend": 50.07,
+        "messages": 3,
+        "costPerMessage": 16.69,
         "dateStart": "2026-08-20",
         "dateStop": "2026-08-20",
         "decision": {
