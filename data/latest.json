@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T08:50:51.801Z",
+  "generatedAt": "2026-08-21T09:37:40.427Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 635.69,
+    "totalSpend": 662.1899999999999,
     "totalMessages": 20,
-    "costPerMessage": 31.7845,
+    "costPerMessage": 33.1095,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 23.9,
+        "spend": 30.53,
         "messages": 3,
-        "costPerMessage": 7.966666666666666,
+        "costPerMessage": 10.176666666666668,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 76.83,
+        "spend": 88.74,
         "messages": 2,
-        "costPerMessage": 38.415,
+        "costPerMessage": 44.37,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
@@ -74,33 +74,33 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 45.94,
+        "spend": 53.9,
         "messages": 2,
-        "costPerMessage": 22.97,
+        "costPerMessage": 26.95,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       }
     ]
   },
   "crm": {
-    "total": 8715,
-    "dailyTotal": 22,
-    "new": 793,
-    "info": 228,
+    "total": 8718,
+    "dailyTotal": 25,
+    "new": 790,
+    "info": 229,
     "instagram": 60,
-    "hot": 79,
-    "offer": 103,
+    "hot": 81,
+    "offer": 104,
     "waiting": 28,
-    "inProgress": 499,
-    "activePipeline": 1292,
-    "priority": 182,
+    "inProgress": 503,
+    "activePipeline": 1293,
+    "priority": 185,
     "won": 20,
     "rejected": 232,
-    "archive": 7171,
+    "archive": 7173,
     "conversionRate": 7.936507936507936,
     "stages": [
       {
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 793
+        "count": 790
       },
       {
         "id": "IN_PROCESS",
@@ -117,7 +117,7 @@
         "sort": 20,
         "semantics": "",
         "group": "info",
-        "count": 228
+        "count": 229
       },
       {
         "id": "5",
@@ -133,7 +133,7 @@
         "sort": 40,
         "semantics": "",
         "group": "hot",
-        "count": 79
+        "count": 81
       },
       {
         "id": "UC_G68KST",
@@ -141,7 +141,7 @@
         "sort": 50,
         "semantics": "",
         "group": "offer",
-        "count": 103
+        "count": 104
       },
       {
         "id": "UC_P5MO63",
@@ -237,10 +237,10 @@
         "sort": 170,
         "semantics": "F",
         "group": "archive",
-        "count": 7171
+        "count": 7173
       }
     ],
     "status": "aktif"
   },
-  "advice": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 22 yeni lead oluştu. Öncelikli takipte 182 müşteri var: 79 sıcak müşteri ve 103 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.9. 7171 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 25 yeni lead oluştu. Öncelikli takipte 185 müşteri var: 81 sıcak müşteri ve 104 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.9. 7173 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
