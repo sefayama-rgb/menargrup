@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T07:08:11.342Z",
+  "generatedAt": "2026-08-21T07:57:32.082Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 597.32,
-    "totalMessages": 17,
-    "costPerMessage": 35.1364705882353,
+    "totalSpend": 618.64,
+    "totalMessages": 19,
+    "costPerMessage": 32.56,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 133.89,
+        "spend": 133.97,
         "messages": 5,
-        "costPerMessage": 26.778,
+        "costPerMessage": 26.794,
         "dateStart": "2026-08-20",
         "dateStop": "2026-08-20",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 12.48,
-        "messages": 1,
-        "costPerMessage": 12.48,
+        "spend": 20.49,
+        "messages": 3,
+        "costPerMessage": 6.829999999999999,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 61.09,
+        "spend": 68.86,
         "messages": 1,
-        "costPerMessage": 61.09,
+        "costPerMessage": 68.86,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 34.84,
+        "spend": 40.3,
         "messages": 2,
-        "costPerMessage": 17.42,
+        "costPerMessage": 20.15,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
@@ -87,21 +87,21 @@
     ]
   },
   "crm": {
-    "total": 8713,
-    "dailyTotal": 20,
-    "new": 800,
-    "info": 225,
+    "total": 8714,
+    "dailyTotal": 21,
+    "new": 795,
+    "info": 227,
     "instagram": 60,
-    "hot": 77,
-    "offer": 101,
+    "hot": 78,
+    "offer": 103,
     "waiting": 28,
-    "inProgress": 492,
+    "inProgress": 497,
     "activePipeline": 1292,
-    "priority": 178,
+    "priority": 181,
     "won": 20,
-    "rejected": 231,
+    "rejected": 232,
     "archive": 7170,
-    "conversionRate": 7.968127490039841,
+    "conversionRate": 7.936507936507936,
     "stages": [
       {
         "id": "NEW",
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 800
+        "count": 795
       },
       {
         "id": "IN_PROCESS",
@@ -117,7 +117,7 @@
         "sort": 20,
         "semantics": "",
         "group": "info",
-        "count": 225
+        "count": 227
       },
       {
         "id": "5",
@@ -133,7 +133,7 @@
         "sort": 40,
         "semantics": "",
         "group": "hot",
-        "count": 77
+        "count": 78
       },
       {
         "id": "UC_G68KST",
@@ -141,7 +141,7 @@
         "sort": 50,
         "semantics": "",
         "group": "offer",
-        "count": 101
+        "count": 103
       },
       {
         "id": "UC_P5MO63",
@@ -165,7 +165,7 @@
         "sort": 80,
         "semantics": "",
         "group": "rejected",
-        "count": 32
+        "count": 33
       },
       {
         "id": "CONVERTED",
@@ -242,5 +242,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 20 yeni lead oluştu. Öncelikli takipte 178 müşteri var: 77 sıcak müşteri ve 101 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %8.0. 7170 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 21 yeni lead oluştu. Öncelikli takipte 181 müşteri var: 78 sıcak müşteri ve 103 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.9. 7170 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
