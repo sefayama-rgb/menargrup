@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T07:57:32.082Z",
+  "generatedAt": "2026-08-21T08:50:51.801Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 618.64,
-    "totalMessages": 19,
-    "costPerMessage": 32.56,
+    "totalSpend": 635.69,
+    "totalMessages": 20,
+    "costPerMessage": 31.7845,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 133.97,
+        "spend": 134,
         "messages": 5,
-        "costPerMessage": 26.794,
+        "costPerMessage": 26.8,
         "dateStart": "2026-08-20",
         "dateStop": "2026-08-20",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 20.49,
+        "spend": 23.9,
         "messages": 3,
-        "costPerMessage": 6.829999999999999,
+        "costPerMessage": 7.966666666666666,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
@@ -62,21 +62,21 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 68.86,
-        "messages": 1,
-        "costPerMessage": 68.86,
+        "spend": 76.83,
+        "messages": 2,
+        "costPerMessage": 38.415,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
-          "label": "Durdur / değiştir",
-          "level": "bad"
+          "label": "Takip et",
+          "level": "watch"
         }
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 40.3,
+        "spend": 45.94,
         "messages": 2,
-        "costPerMessage": 20.15,
+        "costPerMessage": 22.97,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
@@ -87,20 +87,20 @@
     ]
   },
   "crm": {
-    "total": 8714,
-    "dailyTotal": 21,
-    "new": 795,
-    "info": 227,
+    "total": 8715,
+    "dailyTotal": 22,
+    "new": 793,
+    "info": 228,
     "instagram": 60,
-    "hot": 78,
+    "hot": 79,
     "offer": 103,
     "waiting": 28,
-    "inProgress": 497,
+    "inProgress": 499,
     "activePipeline": 1292,
-    "priority": 181,
+    "priority": 182,
     "won": 20,
     "rejected": 232,
-    "archive": 7170,
+    "archive": 7171,
     "conversionRate": 7.936507936507936,
     "stages": [
       {
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 795
+        "count": 793
       },
       {
         "id": "IN_PROCESS",
@@ -117,7 +117,7 @@
         "sort": 20,
         "semantics": "",
         "group": "info",
-        "count": 227
+        "count": 228
       },
       {
         "id": "5",
@@ -133,7 +133,7 @@
         "sort": 40,
         "semantics": "",
         "group": "hot",
-        "count": 78
+        "count": 79
       },
       {
         "id": "UC_G68KST",
@@ -237,10 +237,10 @@
         "sort": 170,
         "semantics": "F",
         "group": "archive",
-        "count": 7170
+        "count": 7171
       }
     ],
     "status": "aktif"
   },
-  "advice": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 21 yeni lead oluştu. Öncelikli takipte 181 müşteri var: 78 sıcak müşteri ve 103 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.9. 7170 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 22 yeni lead oluştu. Öncelikli takipte 182 müşteri var: 79 sıcak müşteri ve 103 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.9. 7171 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
