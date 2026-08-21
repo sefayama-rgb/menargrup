@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T04:54:49.292Z",
+  "generatedAt": "2026-08-21T05:33:20.089Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 557.4200000000001,
+    "totalSpend": 564.9,
     "totalMessages": 16,
-    "costPerMessage": 34.838750000000005,
+    "costPerMessage": 35.30625,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 133.86,
+        "spend": 133.88,
         "messages": 5,
-        "costPerMessage": 26.772000000000002,
+        "costPerMessage": 26.776,
         "dateStart": "2026-08-20",
         "dateStop": "2026-08-20",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 7.91,
+        "spend": 9.39,
         "messages": 1,
-        "costPerMessage": 7.91,
+        "costPerMessage": 9.39,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 37.32,
+        "spend": 40.21,
         "messages": 1,
-        "costPerMessage": 37.32,
+        "costPerMessage": 40.21,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
@@ -74,14 +74,14 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 23.45,
+        "spend": 26.54,
         "messages": 1,
-        "costPerMessage": 23.45,
+        "costPerMessage": 26.54,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       }
     ]
