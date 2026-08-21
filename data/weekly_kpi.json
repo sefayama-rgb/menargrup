@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-21T19:14:47.520Z",
+  "generatedAt": "2026-08-21T19:41:41.806Z",
   "weeks": [
     {
       "weekStart": "2026-08-17",
       "weekEnd": "2026-08-23",
       "asOfDate": "2026-08-21",
-      "generatedAt": "2026-08-21T19:14:47.520Z",
-      "metaSpend": 2710.8099999999995,
+      "generatedAt": "2026-08-21T19:41:41.806Z",
+      "metaSpend": 2719.6899999999996,
       "metaMessages": 84,
-      "metaCostPerMessage": 32.27154761904761,
+      "metaCostPerMessage": 32.3772619047619,
       "crmNewLeads": 109,
       "crmWonClosed": 0,
       "crmRejectedClosed": 63,
@@ -18,16 +18,16 @@
       "crmPriority": 179,
       "crmHot": 71,
       "crmOffer": 108,
-      "taskTotal": 0,
-      "taskOpen": 0,
-      "taskWaiting": 0,
-      "taskInProgress": 0,
-      "taskOverdue": 0,
-      "taskCreatedThisWeek": 0,
-      "taskCompletedThisWeek": 0,
+      "taskTotal": 349,
+      "taskOpen": 244,
+      "taskWaiting": 163,
+      "taskInProgress": 74,
+      "taskOverdue": 7,
+      "taskCreatedThisWeek": 1,
+      "taskCompletedThisWeek": 39,
       "metaStatus": "aktif",
       "bitrixStatus": "aktif",
-      "tasksStatus": "hata: fetch failed"
+      "tasksStatus": "aktif"
     }
   ]
 }
