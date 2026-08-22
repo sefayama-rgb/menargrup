@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T05:55:50.349Z",
+  "generatedAt": "2026-08-22T06:43:59.651Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 542.23,
+    "totalSpend": 550.76,
     "totalMessages": 16,
-    "costPerMessage": 33.889375,
+    "costPerMessage": 34.4225,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 166.13,
+        "spend": 166.15,
         "messages": 8,
-        "costPerMessage": 20.76625,
+        "costPerMessage": 20.76875,
         "dateStart": "2026-08-21",
         "dateStop": "2026-08-21",
         "decision": {
@@ -50,7 +50,7 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 11.16,
+        "spend": 12.13,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-08-22",
@@ -62,7 +62,7 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 27.18,
+        "spend": 31.11,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-08-22",
@@ -74,7 +74,7 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 21.12,
+        "spend": 24.73,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-08-22",
@@ -89,13 +89,13 @@
   "crm": {
     "total": 8729,
     "dailyTotal": 21,
-    "new": 787,
-    "info": 235,
+    "new": 786,
+    "info": 236,
     "instagram": 60,
     "hot": 71,
     "offer": 108,
     "waiting": 28,
-    "inProgress": 503,
+    "inProgress": 504,
     "activePipeline": 1290,
     "priority": 179,
     "won": 20,
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 787
+        "count": 786
       },
       {
         "id": "IN_PROCESS",
@@ -117,7 +117,7 @@
         "sort": 20,
         "semantics": "",
         "group": "info",
-        "count": 235
+        "count": 236
       },
       {
         "id": "5",
