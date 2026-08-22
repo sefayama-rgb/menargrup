@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-22T10:01:27.427Z",
+  "generatedAt": "2026-08-22T10:41:15.444Z",
   "status": "aktif",
   "summary": {
     "total": 349,
-    "open": 244,
-    "waiting": 163,
+    "open": 242,
+    "waiting": 161,
     "inProgress": 74,
-    "completed": 105,
+    "completed": 107,
     "overdue": 7,
     "createdThisWeek": 1,
-    "completedThisWeek": 39
+    "completedThisWeek": 41
   },
   "tasks": [
     {
@@ -1711,11 +1711,11 @@
       "title": "Potansiyel Müşteriye Hatırlatma Yap",
       "responsibleId": "14080",
       "responsibleName": "eda yücel",
-      "status": "Bekliyor",
-      "statusCode": "2",
+      "status": "Tamamlandı",
+      "statusCode": "5",
       "deadline": null,
       "createdDate": "2026-05-21T11:00:01+03:00",
-      "closedDate": null,
+      "closedDate": "2026-08-22T13:13:31+03:00",
       "overdue": false,
       "groupId": "0",
       "url": "https://menar.bitrix24.com.tr/company/personal/user/14080/tasks/task/view/742/"
@@ -2229,11 +2229,11 @@
       "title": "Potansiyel Müşteriye Hatırlatma Yap",
       "responsibleId": "1",
       "responsibleName": "sefa yama",
-      "status": "Bekliyor",
-      "statusCode": "2",
+      "status": "Tamamlandı",
+      "statusCode": "5",
       "deadline": null,
       "createdDate": "2026-05-12T11:05:49+03:00",
-      "closedDate": null,
+      "closedDate": "2026-08-22T13:12:34+03:00",
       "overdue": false,
       "groupId": "0",
       "url": "https://menar.bitrix24.com.tr/company/personal/user/1/tasks/task/view/668/"
