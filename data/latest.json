@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T09:04:19.866Z",
+  "generatedAt": "2026-08-23T09:43:54.211Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 645.8100000000001,
-    "totalMessages": 10,
-    "costPerMessage": 64.581,
+    "totalSpend": 679.08,
+    "totalMessages": 11,
+    "costPerMessage": 61.73454545454546,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 130.82,
+        "spend": 130.83,
         "messages": 1,
-        "costPerMessage": 130.82,
+        "costPerMessage": 130.83,
         "dateStart": "2026-08-22",
         "dateStop": "2026-08-22",
         "decision": {
@@ -50,21 +50,21 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 54.85,
+        "spend": 63.09,
         "messages": 1,
-        "costPerMessage": 54.85,
+        "costPerMessage": 63.09,
         "dateStart": "2026-08-23",
         "dateStop": "2026-08-23",
         "decision": {
-          "label": "Takip et",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 122.59,
+        "spend": 134.28,
         "messages": 2,
-        "costPerMessage": 61.295,
+        "costPerMessage": 67.14,
         "dateStart": "2026-08-23",
         "dateStop": "2026-08-23",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 44.75,
-        "messages": 2,
-        "costPerMessage": 22.375,
+        "spend": 58.08,
+        "messages": 3,
+        "costPerMessage": 19.36,
         "dateStart": "2026-08-23",
         "dateStop": "2026-08-23",
         "decision": {
