@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T23:46:59.266Z",
+  "generatedAt": "2026-08-23T01:23:54.392Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,46 +8,10 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 906.61,
-    "totalMessages": 21,
-    "costPerMessage": 43.17190476190476,
+    "totalSpend": 475.01,
+    "totalMessages": 5,
+    "costPerMessage": 95.002,
     "campaigns": [
-      {
-        "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 92.3,
-        "messages": 3,
-        "costPerMessage": 30.766666666666666,
-        "dateStart": "2026-08-21",
-        "dateStop": "2026-08-21",
-        "decision": {
-          "label": "Takip et",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 224.93,
-        "messages": 5,
-        "costPerMessage": 44.986000000000004,
-        "dateStart": "2026-08-21",
-        "dateStop": "2026-08-21",
-        "decision": {
-          "label": "Takip et",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 166.27,
-        "messages": 8,
-        "costPerMessage": 20.78375,
-        "dateStart": "2026-08-21",
-        "dateStop": "2026-08-21",
-        "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
-        }
-      },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
         "spend": 82.64,
@@ -83,12 +47,48 @@
           "label": "Durdur / değiştir",
           "level": "bad"
         }
+      },
+      {
+        "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
+        "spend": 16.93,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-08-23",
+        "dateStop": "2026-08-23",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "yaz umresi potansiyel müşteri",
+        "spend": 20.4,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-08-23",
+        "dateStop": "2026-08-23",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "AĞUSTOS Etkileşim Kampanyası",
+        "spend": 14.57,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-08-23",
+        "dateStop": "2026-08-23",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
       }
     ]
   },
   "crm": {
     "total": 8739,
-    "dailyTotal": 31,
+    "dailyTotal": 10,
     "new": 753,
     "info": 224,
     "instagram": 60,
@@ -242,5 +242,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. AĞUSTOS Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 31 yeni lead oluştu. Öncelikli takipte 194 müşteri var: 79 sıcak müşteri ve 115 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7223 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya en verimli kampanya. AĞUSTOS Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 10 yeni lead oluştu. Öncelikli takipte 194 müşteri var: 79 sıcak müşteri ve 115 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7223 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
