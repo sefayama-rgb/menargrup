@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T05:12:35.573Z",
+  "generatedAt": "2026-08-23T05:47:26.532Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 494.66999999999996,
+    "totalSpend": 504.27,
     "totalMessages": 6,
-    "costPerMessage": 82.445,
+    "costPerMessage": 84.045,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 210.11,
+        "spend": 210.15,
         "messages": 2,
-        "costPerMessage": 105.055,
+        "costPerMessage": 105.075,
         "dateStart": "2026-08-22",
         "dateStop": "2026-08-22",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 130.55,
+        "spend": 130.59,
         "messages": 1,
-        "costPerMessage": 130.55,
+        "costPerMessage": 130.59,
         "dateStart": "2026-08-22",
         "dateStop": "2026-08-22",
         "decision": {
@@ -50,7 +50,7 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 23.32,
+        "spend": 24.42,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-08-23",
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 29.77,
+        "spend": 37.59,
         "messages": 1,
-        "costPerMessage": 29.77,
+        "costPerMessage": 37.59,
         "dateStart": "2026-08-23",
         "dateStop": "2026-08-23",
         "decision": {
@@ -74,7 +74,7 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 18.28,
+        "spend": 18.88,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-08-23",
