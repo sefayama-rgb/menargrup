@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T20:59:15.079Z",
+  "generatedAt": "2026-08-23T21:29:31.828Z",
   "weeks": [
     {
       "weekStart": "2026-08-17",
@@ -25,6 +25,34 @@
       "taskOverdue": 7,
       "taskCreatedThisWeek": 1,
       "taskCompletedThisWeek": 41,
+      "metaStatus": "aktif",
+      "bitrixStatus": "aktif",
+      "tasksStatus": "aktif"
+    },
+    {
+      "weekStart": "2026-08-24",
+      "weekEnd": "2026-08-30",
+      "asOfDate": "2026-08-24",
+      "generatedAt": "2026-08-23T21:29:31.827Z",
+      "metaSpend": 7.81,
+      "metaMessages": 0,
+      "metaCostPerMessage": null,
+      "crmNewLeads": 0,
+      "crmWonClosed": 0,
+      "crmRejectedClosed": 0,
+      "crmCloseConversionRate": 0,
+      "crmTotal": 8761,
+      "crmActivePipeline": 1282,
+      "crmPriority": 194,
+      "crmHot": 79,
+      "crmOffer": 115,
+      "taskTotal": 349,
+      "taskOpen": 242,
+      "taskWaiting": 161,
+      "taskInProgress": 74,
+      "taskOverdue": 7,
+      "taskCreatedThisWeek": 0,
+      "taskCompletedThisWeek": 0,
       "metaStatus": "aktif",
       "bitrixStatus": "aktif",
       "tasksStatus": "aktif"
