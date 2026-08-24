@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T21:30:38.192Z",
+  "generatedAt": "2026-08-24T22:01:44.182Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1310.92,
+    "totalSpend": 1311.02,
     "totalMessages": 30,
-    "costPerMessage": 43.69733333333333,
+    "costPerMessage": 43.70066666666666,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 359.25,
+        "spend": 359.33,
         "messages": 5,
-        "costPerMessage": 71.85,
+        "costPerMessage": 71.866,
         "dateStart": "2026-08-24",
         "dateStop": "2026-08-24",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 179,
+        "spend": 179.02,
         "messages": 7,
-        "costPerMessage": 25.571428571428573,
+        "costPerMessage": 25.574285714285715,
         "dateStart": "2026-08-24",
         "dateStop": "2026-08-24",
         "decision": {
@@ -87,16 +87,16 @@
     ]
   },
   "crm": {
-    "total": 8780,
-    "dailyTotal": 41,
-    "new": 750,
+    "total": 8781,
+    "dailyTotal": 42,
+    "new": 751,
     "info": 236,
     "instagram": 66,
     "hot": 78,
     "offer": 122,
     "waiting": 29,
     "inProgress": 532,
-    "activePipeline": 1282,
+    "activePipeline": 1283,
     "priority": 200,
     "won": 20,
     "rejected": 237,
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 750
+        "count": 751
       },
       {
         "id": "IN_PROCESS",
@@ -242,5 +242,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 41 yeni lead oluştu. Öncelikli takipte 200 müşteri var: 78 sıcak müşteri ve 122 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7241 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 42 yeni lead oluştu. Öncelikli takipte 200 müşteri var: 78 sıcak müşteri ve 122 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7241 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
