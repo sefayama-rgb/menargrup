@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T10:54:41.409Z",
+  "generatedAt": "2026-08-24T11:29:55.845Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 862.6600000000001,
-    "totalMessages": 22,
-    "costPerMessage": 39.21181818181819,
+    "totalSpend": 878.36,
+    "totalMessages": 23,
+    "costPerMessage": 38.189565217391305,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -50,7 +50,7 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 35.7,
+        "spend": 39.73,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-08-24",
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 108.26,
+        "spend": 113.52,
         "messages": 1,
-        "costPerMessage": 108.26,
+        "costPerMessage": 113.52,
         "dateStart": "2026-08-24",
         "dateStop": "2026-08-24",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 50.64,
-        "messages": 3,
-        "costPerMessage": 16.88,
+        "spend": 57.05,
+        "messages": 4,
+        "costPerMessage": 14.2625,
         "dateStart": "2026-08-24",
         "dateStop": "2026-08-24",
         "decision": {
@@ -87,20 +87,20 @@
     ]
   },
   "crm": {
-    "total": 8767,
-    "dailyTotal": 28,
-    "new": 765,
+    "total": 8768,
+    "dailyTotal": 29,
+    "new": 763,
     "info": 231,
     "instagram": 60,
-    "hot": 80,
+    "hot": 81,
     "offer": 117,
     "waiting": 28,
-    "inProgress": 517,
-    "activePipeline": 1282,
-    "priority": 197,
+    "inProgress": 518,
+    "activePipeline": 1281,
+    "priority": 198,
     "won": 20,
     "rejected": 236,
-    "archive": 7229,
+    "archive": 7231,
     "conversionRate": 7.8125,
     "stages": [
       {
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 765
+        "count": 763
       },
       {
         "id": "IN_PROCESS",
@@ -133,7 +133,7 @@
         "sort": 40,
         "semantics": "",
         "group": "hot",
-        "count": 80
+        "count": 81
       },
       {
         "id": "UC_G68KST",
@@ -237,10 +237,10 @@
         "sort": 170,
         "semantics": "F",
         "group": "archive",
-        "count": 7229
+        "count": 7231
       }
     ],
     "status": "aktif"
   },
-  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 28 yeni lead oluştu. Öncelikli takipte 197 müşteri var: 80 sıcak müşteri ve 117 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7229 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 29 yeni lead oluştu. Öncelikli takipte 198 müşteri var: 81 sıcak müşteri ve 117 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7231 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
