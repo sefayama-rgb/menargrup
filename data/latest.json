@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T22:01:44.182Z",
+  "generatedAt": "2026-08-24T22:44:47.500Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1311.02,
+    "totalSpend": 1311.38,
     "totalMessages": 30,
-    "costPerMessage": 43.70066666666666,
+    "costPerMessage": 43.71266666666667,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 359.33,
+        "spend": 359.69,
         "messages": 5,
-        "costPerMessage": 71.866,
+        "costPerMessage": 71.938,
         "dateStart": "2026-08-24",
         "dateStop": "2026-08-24",
         "decision": {
@@ -87,16 +87,16 @@
     ]
   },
   "crm": {
-    "total": 8781,
-    "dailyTotal": 42,
-    "new": 751,
+    "total": 8783,
+    "dailyTotal": 44,
+    "new": 753,
     "info": 236,
     "instagram": 66,
     "hot": 78,
     "offer": 122,
     "waiting": 29,
     "inProgress": 532,
-    "activePipeline": 1283,
+    "activePipeline": 1285,
     "priority": 200,
     "won": 20,
     "rejected": 237,
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 751
+        "count": 753
       },
       {
         "id": "IN_PROCESS",
@@ -242,5 +242,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 42 yeni lead oluştu. Öncelikli takipte 200 müşteri var: 78 sıcak müşteri ve 122 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7241 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 44 yeni lead oluştu. Öncelikli takipte 200 müşteri var: 78 sıcak müşteri ve 122 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7241 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
