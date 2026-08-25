@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T20:46:30.720Z",
+  "generatedAt": "2026-08-25T21:29:19.991Z",
   "weeks": [
     {
       "weekStart": "2026-08-17",
@@ -32,17 +32,17 @@
     {
       "weekStart": "2026-08-24",
       "weekEnd": "2026-08-30",
-      "asOfDate": "2026-08-25",
-      "generatedAt": "2026-08-25T20:46:30.719Z",
-      "metaSpend": 1305.51,
-      "metaMessages": 36,
-      "metaCostPerMessage": 36.26416666666667,
-      "crmNewLeads": 41,
+      "asOfDate": "2026-08-26",
+      "generatedAt": "2026-08-25T21:29:19.990Z",
+      "metaSpend": 1330.2299999999996,
+      "metaMessages": 37,
+      "metaCostPerMessage": 35.95216216216215,
+      "crmNewLeads": 43,
       "crmWonClosed": 0,
       "crmRejectedClosed": 28,
       "crmCloseConversionRate": 0,
-      "crmTotal": 8802,
-      "crmActivePipeline": 1296,
+      "crmTotal": 8804,
+      "crmActivePipeline": 1298,
       "crmPriority": 205,
       "crmHot": 78,
       "crmOffer": 127,
