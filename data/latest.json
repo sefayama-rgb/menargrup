@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T07:58:36.538Z",
+  "generatedAt": "2026-08-25T08:52:44.481Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,13 +8,13 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 864.25,
-    "totalMessages": 21,
-    "costPerMessage": 41.154761904761905,
+    "totalSpend": 920.57,
+    "totalMessages": 24,
+    "costPerMessage": 38.357083333333335,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 103.8,
+        "spend": 103.95,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-08-24",
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 361.36,
+        "spend": 361.43,
         "messages": 5,
-        "costPerMessage": 72.272,
+        "costPerMessage": 72.286,
         "dateStart": "2026-08-24",
         "dateStop": "2026-08-24",
         "decision": {
@@ -50,7 +50,7 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 37.74,
+        "spend": 42.39,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-08-25",
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 122.71,
-        "messages": 4,
-        "costPerMessage": 30.6775,
+        "spend": 166.58,
+        "messages": 6,
+        "costPerMessage": 27.763333333333335,
         "dateStart": "2026-08-25",
         "dateStop": "2026-08-25",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 59.16,
-        "messages": 5,
-        "costPerMessage": 11.831999999999999,
+        "spend": 66.74,
+        "messages": 6,
+        "costPerMessage": 11.123333333333333,
         "dateStart": "2026-08-25",
         "dateStop": "2026-08-25",
         "decision": {
@@ -87,17 +87,17 @@
     ]
   },
   "crm": {
-    "total": 8787,
-    "dailyTotal": 26,
-    "new": 754,
-    "info": 239,
+    "total": 8790,
+    "dailyTotal": 29,
+    "new": 753,
+    "info": 240,
     "instagram": 66,
-    "hot": 78,
-    "offer": 122,
+    "hot": 79,
+    "offer": 124,
     "waiting": 29,
-    "inProgress": 535,
-    "activePipeline": 1289,
-    "priority": 200,
+    "inProgress": 539,
+    "activePipeline": 1292,
+    "priority": 203,
     "won": 20,
     "rejected": 237,
     "archive": 7241,
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 754
+        "count": 753
       },
       {
         "id": "IN_PROCESS",
@@ -117,7 +117,7 @@
         "sort": 20,
         "semantics": "",
         "group": "info",
-        "count": 239
+        "count": 240
       },
       {
         "id": "5",
@@ -133,7 +133,7 @@
         "sort": 40,
         "semantics": "",
         "group": "hot",
-        "count": 78
+        "count": 79
       },
       {
         "id": "UC_G68KST",
@@ -141,7 +141,7 @@
         "sort": 50,
         "semantics": "",
         "group": "offer",
-        "count": 122
+        "count": 124
       },
       {
         "id": "UC_P5MO63",
@@ -242,5 +242,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 26 yeni lead oluştu. Öncelikli takipte 200 müşteri var: 78 sıcak müşteri ve 122 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7241 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 29 yeni lead oluştu. Öncelikli takipte 203 müşteri var: 79 sıcak müşteri ve 124 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7241 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
