@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T23:58:58.438Z",
+  "generatedAt": "2026-08-25T01:45:39.472Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,49 +8,13 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1311.38,
-    "totalMessages": 30,
-    "costPerMessage": 43.71266666666667,
+    "totalSpend": 747.9200000000001,
+    "totalMessages": 19,
+    "costPerMessage": 39.364210526315794,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 129.72,
-        "messages": 2,
-        "costPerMessage": 64.86,
-        "dateStart": "2026-08-23",
-        "dateStop": "2026-08-23",
-        "decision": {
-          "label": "Durdur / değiştir",
-          "level": "bad"
-        }
-      },
-      {
-        "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 367.44,
-        "messages": 11,
-        "costPerMessage": 33.403636363636366,
-        "dateStart": "2026-08-23",
-        "dateStop": "2026-08-23",
-        "decision": {
-          "label": "Takip et",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 171.81,
-        "messages": 5,
-        "costPerMessage": 34.362,
-        "dateStart": "2026-08-23",
-        "dateStop": "2026-08-23",
-        "decision": {
-          "label": "Takip et",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 103.7,
+        "spend": 103.75,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-08-24",
@@ -74,21 +38,57 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 179.02,
+        "spend": 179.06,
         "messages": 7,
-        "costPerMessage": 25.574285714285715,
+        "costPerMessage": 25.580000000000002,
         "dateStart": "2026-08-24",
         "dateStop": "2026-08-24",
         "decision": {
           "label": "Takip et",
           "level": "watch"
         }
+      },
+      {
+        "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
+        "spend": 16.76,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-08-25",
+        "dateStop": "2026-08-25",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "yaz umresi potansiyel müşteri",
+        "spend": 63.59,
+        "messages": 3,
+        "costPerMessage": 21.19666666666667,
+        "dateStart": "2026-08-25",
+        "dateStop": "2026-08-25",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "AĞUSTOS Etkileşim Kampanyası",
+        "spend": 25.07,
+        "messages": 4,
+        "costPerMessage": 6.2675,
+        "dateStart": "2026-08-25",
+        "dateStop": "2026-08-25",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
       }
     ]
   },
   "crm": {
     "total": 8783,
-    "dailyTotal": 44,
+    "dailyTotal": 22,
     "new": 753,
     "info": 236,
     "instagram": 66,
@@ -242,5 +242,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 44 yeni lead oluştu. Öncelikli takipte 200 müşteri var: 78 sıcak müşteri ve 122 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7241 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 22 yeni lead oluştu. Öncelikli takipte 200 müşteri var: 78 sıcak müşteri ve 122 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.8. 7241 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
