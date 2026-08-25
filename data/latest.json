@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T04:40:12.274Z",
+  "generatedAt": "2026-08-25T05:17:38.147Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 779.38,
+    "totalSpend": 786.0500000000001,
     "totalMessages": 20,
-    "costPerMessage": 38.969,
+    "costPerMessage": 39.3025,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 359.98,
+        "spend": 360.33,
         "messages": 5,
-        "costPerMessage": 71.99600000000001,
+        "costPerMessage": 72.066,
         "dateStart": "2026-08-24",
         "dateStop": "2026-08-24",
         "decision": {
@@ -50,7 +50,7 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 20.01,
+        "spend": 21.85,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-08-25",
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 75.92,
+        "spend": 78.29,
         "messages": 3,
-        "costPerMessage": 25.30666666666667,
+        "costPerMessage": 26.096666666666668,
         "dateStart": "2026-08-25",
         "dateStop": "2026-08-25",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 40.36,
+        "spend": 42.47,
         "messages": 5,
-        "costPerMessage": 8.072,
+        "costPerMessage": 8.494,
         "dateStart": "2026-08-25",
         "dateStop": "2026-08-25",
         "decision": {
