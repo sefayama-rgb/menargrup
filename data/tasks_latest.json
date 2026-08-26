@@ -1,17 +1,31 @@
 {
-  "generatedAt": "2026-08-26T20:11:22.497Z",
+  "generatedAt": "2026-08-26T23:35:50.098Z",
   "status": "aktif",
   "summary": {
-    "total": 349,
-    "open": 242,
-    "waiting": 161,
+    "total": 350,
+    "open": 243,
+    "waiting": 162,
     "inProgress": 74,
     "completed": 107,
     "overdue": 7,
-    "createdThisWeek": 0,
+    "createdThisWeek": 1,
     "completedThisWeek": 0
   },
   "tasks": [
+    {
+      "id": "986",
+      "title": "TEST – MENAR Otomatik Görev Takibi",
+      "responsibleId": "1",
+      "responsibleName": "sefa yama",
+      "status": "Bekliyor",
+      "statusCode": "2",
+      "deadline": "2026-08-27T18:30:00+03:00",
+      "createdDate": "2026-08-27T00:17:08+03:00",
+      "closedDate": null,
+      "overdue": false,
+      "groupId": "0",
+      "url": "https://menar.bitrix24.com.tr/company/personal/user/1/tasks/task/view/986/"
+    },
     {
       "id": "984",
       "title": "HAC VİZESİ",
