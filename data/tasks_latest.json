@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-27T05:04:32.047Z",
+  "generatedAt": "2026-08-27T16:31:19.888Z",
   "status": "aktif",
   "summary": {
     "total": 350,
     "open": 243,
-    "waiting": 162,
+    "waiting": 161,
     "inProgress": 74,
     "completed": 107,
-    "overdue": 7,
+    "overdue": 8,
     "createdThisWeek": 1,
     "completedThisWeek": 0
   },
@@ -17,12 +17,12 @@
       "title": "TEST – MENAR Otomatik Görev Takibi",
       "responsibleId": "1",
       "responsibleName": "sefa yama",
-      "status": "Bekliyor",
+      "status": "Gecikmiş",
       "statusCode": "2",
       "deadline": "2026-08-27T18:30:00+03:00",
       "createdDate": "2026-08-27T00:17:08+03:00",
       "closedDate": null,
-      "overdue": false,
+      "overdue": true,
       "groupId": "0",
       "url": "https://menar.bitrix24.com.tr/company/personal/user/1/tasks/task/view/986/"
     },
