@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T10:49:48.451Z",
+  "generatedAt": "2026-09-02T15:01:01.510Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 940.3299999999999,
-    "totalMessages": 26,
-    "costPerMessage": 36.16653846153846,
+    "totalSpend": 1060.5600000000002,
+    "totalMessages": 31,
+    "costPerMessage": 34.21161290322581,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 145.66,
+        "spend": 145.7,
         "messages": 5,
-        "costPerMessage": 29.131999999999998,
+        "costPerMessage": 29.139999999999997,
         "dateStart": "2026-09-01",
         "dateStop": "2026-09-01",
         "decision": {
@@ -50,21 +50,21 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 52.55,
+        "spend": 82.46,
         "messages": 3,
-        "costPerMessage": 17.516666666666666,
+        "costPerMessage": 27.486666666666665,
         "dateStart": "2026-09-02",
         "dateStop": "2026-09-02",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 170.29,
-        "messages": 1,
-        "costPerMessage": 170.29,
+        "spend": 231.73,
+        "messages": 2,
+        "costPerMessage": 115.865,
         "dateStart": "2026-09-02",
         "dateStop": "2026-09-02",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 38.85,
-        "messages": 2,
-        "costPerMessage": 19.425,
+        "spend": 67.69,
+        "messages": 6,
+        "costPerMessage": 11.281666666666666,
         "dateStart": "2026-09-02",
         "dateStop": "2026-09-02",
         "decision": {
@@ -87,20 +87,20 @@
     ]
   },
   "crm": {
-    "total": 8953,
-    "dailyTotal": 35,
-    "new": 751,
-    "info": 251,
+    "total": 8960,
+    "dailyTotal": 42,
+    "new": 748,
+    "info": 253,
     "instagram": 69,
     "hot": 82,
-    "offer": 172,
+    "offer": 176,
     "waiting": 31,
-    "inProgress": 606,
-    "activePipeline": 1357,
-    "priority": 254,
+    "inProgress": 612,
+    "activePipeline": 1360,
+    "priority": 258,
     "won": 20,
     "rejected": 251,
-    "archive": 7325,
+    "archive": 7329,
     "conversionRate": 7.380073800738007,
     "stages": [
       {
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 751
+        "count": 748
       },
       {
         "id": "IN_PROCESS",
@@ -117,7 +117,7 @@
         "sort": 20,
         "semantics": "",
         "group": "info",
-        "count": 251
+        "count": 253
       },
       {
         "id": "5",
@@ -141,7 +141,7 @@
         "sort": 50,
         "semantics": "",
         "group": "offer",
-        "count": 172
+        "count": 176
       },
       {
         "id": "UC_P5MO63",
@@ -237,10 +237,10 @@
         "sort": 170,
         "semantics": "F",
         "group": "archive",
-        "count": 7325
+        "count": 7329
       }
     ],
     "status": "aktif"
   },
-  "advice": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 35 yeni lead oluştu. Öncelikli takipte 254 müşteri var: 82 sıcak müşteri ve 172 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.4. 7325 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 42 yeni lead oluştu. Öncelikli takipte 258 müşteri var: 82 sıcak müşteri ve 176 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.4. 7329 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
