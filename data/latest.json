@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T11:24:33.347Z",
+  "generatedAt": "2026-09-03T15:07:43.517Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 720.8600000000001,
-    "totalMessages": 26,
-    "costPerMessage": 27.72538461538462,
+    "totalSpend": 840.45,
+    "totalMessages": 30,
+    "costPerMessage": 28.015,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 43.01,
-        "messages": 2,
-        "costPerMessage": 21.505,
+        "spend": 62.72,
+        "messages": 3,
+        "costPerMessage": 20.906666666666666,
         "dateStart": "2026-09-03",
         "dateStop": "2026-09-03",
         "decision": {
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 116.7,
-        "messages": 2,
-        "costPerMessage": 58.35,
+        "spend": 195.27,
+        "messages": 3,
+        "costPerMessage": 65.09,
         "dateStart": "2026-09-03",
         "dateStop": "2026-09-03",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 47.06,
-        "messages": 4,
-        "costPerMessage": 11.765,
+        "spend": 68.37,
+        "messages": 6,
+        "costPerMessage": 11.395000000000001,
         "dateStart": "2026-09-03",
         "dateStop": "2026-09-03",
         "decision": {
@@ -87,20 +87,20 @@
     ]
   },
   "crm": {
-    "total": 8975,
-    "dailyTotal": 30,
-    "new": 742,
-    "info": 260,
+    "total": 8978,
+    "dailyTotal": 33,
+    "new": 724,
+    "info": 245,
     "instagram": 69,
-    "hot": 82,
-    "offer": 181,
+    "hot": 83,
+    "offer": 183,
     "waiting": 31,
-    "inProgress": 624,
-    "activePipeline": 1366,
-    "priority": 263,
+    "inProgress": 613,
+    "activePipeline": 1337,
+    "priority": 266,
     "won": 19,
     "rejected": 253,
-    "archive": 7337,
+    "archive": 7369,
     "conversionRate": 6.985294117647059,
     "stages": [
       {
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 742
+        "count": 724
       },
       {
         "id": "IN_PROCESS",
@@ -117,7 +117,7 @@
         "sort": 20,
         "semantics": "",
         "group": "info",
-        "count": 260
+        "count": 245
       },
       {
         "id": "5",
@@ -133,7 +133,7 @@
         "sort": 40,
         "semantics": "",
         "group": "hot",
-        "count": 82
+        "count": 83
       },
       {
         "id": "UC_G68KST",
@@ -141,7 +141,7 @@
         "sort": 50,
         "semantics": "",
         "group": "offer",
-        "count": 181
+        "count": 183
       },
       {
         "id": "UC_P5MO63",
@@ -157,7 +157,7 @@
         "sort": 70,
         "semantics": "",
         "group": "inProgress",
-        "count": 1
+        "count": 2
       },
       {
         "id": "UC_SCX727",
@@ -237,10 +237,10 @@
         "sort": 170,
         "semantics": "F",
         "group": "archive",
-        "count": 7337
+        "count": 7369
       }
     ],
     "status": "aktif"
   },
-  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 30 yeni lead oluştu. Öncelikli takipte 263 müşteri var: 82 sıcak müşteri ve 181 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.0. 7337 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. yaz umresi potansiyel müşteri yeniden değerlendirilmeli. Son 24 saatte 33 yeni lead oluştu. Öncelikli takipte 266 müşteri var: 83 sıcak müşteri ve 183 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %7.0. 7369 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
