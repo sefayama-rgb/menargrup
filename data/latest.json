@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T00:23:41.154Z",
+  "generatedAt": "2026-09-13T05:11:57.554Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 481.19,
+    "totalSpend": 504.51,
     "totalMessages": 13,
-    "costPerMessage": 37.01461538461538,
+    "costPerMessage": 38.808461538461536,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 242.57,
+        "spend": 242.58,
         "messages": 4,
-        "costPerMessage": 60.6425,
+        "costPerMessage": 60.645,
         "dateStart": "2026-09-12",
         "dateStop": "2026-09-12",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 128.84,
+        "spend": 128.91,
         "messages": 5,
-        "costPerMessage": 25.768,
+        "costPerMessage": 25.782,
         "dateStart": "2026-09-12",
         "dateStop": "2026-09-12",
         "decision": {
@@ -50,7 +50,7 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 8.77,
+        "spend": 14.46,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-09-13",
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 37.83,
+        "spend": 47.02,
         "messages": 1,
-        "costPerMessage": 37.83,
+        "costPerMessage": 47.02,
         "dateStart": "2026-09-13",
         "dateStop": "2026-09-13",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 11.97,
+        "spend": 20.33,
         "messages": 2,
-        "costPerMessage": 5.985,
+        "costPerMessage": 10.165,
         "dateStart": "2026-09-13",
         "dateStop": "2026-09-13",
         "decision": {
