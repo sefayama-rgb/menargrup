@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-14T10:40:34.174Z",
+  "generatedAt": "2026-09-14T16:35:37.996Z",
   "status": "aktif",
   "summary": {
     "total": 350,
-    "open": 243,
-    "waiting": 161,
+    "open": 242,
+    "waiting": 160,
     "inProgress": 74,
-    "completed": 107,
+    "completed": 108,
     "overdue": 8,
     "createdThisWeek": 0,
-    "completedThisWeek": 0
+    "completedThisWeek": 1
   },
   "tasks": [
     {
@@ -325,11 +325,11 @@
       "title": "Potansiyel Müşteriye Hatırlatma Yap",
       "responsibleId": "1",
       "responsibleName": "sefa yama",
-      "status": "Bekliyor",
-      "statusCode": "2",
+      "status": "Tamamlandı",
+      "statusCode": "5",
       "deadline": null,
       "createdDate": "2026-06-12T11:00:13+03:00",
-      "closedDate": null,
+      "closedDate": "2026-09-14T17:47:17+03:00",
       "overdue": false,
       "groupId": "0",
       "url": "https://menar.bitrix24.com.tr/company/personal/user/1/tasks/task/view/942/"
