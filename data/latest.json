@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T00:13:30.480Z",
+  "generatedAt": "2026-09-14T05:04:19.996Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 611.6800000000001,
-    "totalMessages": 18,
-    "costPerMessage": 33.98222222222223,
+    "totalSpend": 652.0500000000001,
+    "totalMessages": 19,
+    "costPerMessage": 34.318421052631585,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 107.63,
+        "spend": 107.66,
         "messages": 1,
-        "costPerMessage": 107.63,
+        "costPerMessage": 107.66,
         "dateStart": "2026-09-13",
         "dateStop": "2026-09-13",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 317.52,
+        "spend": 317.67,
         "messages": 11,
-        "costPerMessage": 28.865454545454543,
+        "costPerMessage": 28.87909090909091,
         "dateStart": "2026-09-13",
         "dateStop": "2026-09-13",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 139.47,
+        "spend": 139.51,
         "messages": 5,
-        "costPerMessage": 27.894,
+        "costPerMessage": 27.901999999999997,
         "dateStart": "2026-09-13",
         "dateStop": "2026-09-13",
         "decision": {
@@ -50,7 +50,7 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 9.46,
+        "spend": 15.77,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-09-14",
@@ -62,41 +62,41 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 22.78,
+        "spend": 40.86,
         "messages": 1,
-        "costPerMessage": 22.78,
+        "costPerMessage": 40.86,
         "dateStart": "2026-09-14",
         "dateStop": "2026-09-14",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 14.82,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 30.58,
+        "messages": 1,
+        "costPerMessage": 30.58,
         "dateStart": "2026-09-14",
         "dateStop": "2026-09-14",
         "decision": {
-          "label": "Veri yetersiz",
+          "label": "Takip et",
           "level": "watch"
         }
       }
     ]
   },
   "crm": {
-    "total": 9173,
-    "dailyTotal": 15,
-    "new": 790,
+    "total": 9176,
+    "dailyTotal": 18,
+    "new": 793,
     "info": 256,
     "instagram": 70,
     "hot": 82,
     "offer": 224,
     "waiting": 33,
     "inProgress": 673,
-    "activePipeline": 1463,
+    "activePipeline": 1466,
     "priority": 306,
     "won": 19,
     "rejected": 261,
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 790
+        "count": 793
       },
       {
         "id": "IN_PROCESS",
@@ -242,5 +242,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "yaz umresi potansiyel müşteri en verimli kampanya. 8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya yeniden değerlendirilmeli. Son 24 saatte 15 yeni lead oluştu. Öncelikli takipte 306 müşteri var: 82 sıcak müşteri ve 224 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.8. 7430 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. 8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya yeniden değerlendirilmeli. Son 24 saatte 18 yeni lead oluştu. Öncelikli takipte 306 müşteri var: 82 sıcak müşteri ve 224 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.8. 7430 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
