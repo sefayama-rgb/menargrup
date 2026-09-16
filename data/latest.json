@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T12:05:34.973Z",
+  "generatedAt": "2026-09-16T16:56:30.874Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 972.2500000000001,
-    "totalMessages": 26,
-    "costPerMessage": 37.394230769230774,
+    "totalSpend": 1098.21,
+    "totalMessages": 31,
+    "costPerMessage": 35.42612903225807,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 182.47,
+        "spend": 182.65,
         "messages": 4,
-        "costPerMessage": 45.6175,
+        "costPerMessage": 45.6625,
         "dateStart": "2026-09-15",
         "dateStop": "2026-09-15",
         "decision": {
@@ -50,7 +50,7 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 66.85,
+        "spend": 92.29,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-09-16",
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 193.1,
-        "messages": 5,
-        "costPerMessage": 38.62,
+        "spend": 257.29,
+        "messages": 7,
+        "costPerMessage": 36.75571428571429,
         "dateStart": "2026-09-16",
         "dateStop": "2026-09-16",
         "decision": {
@@ -74,33 +74,33 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 86.38,
-        "messages": 3,
-        "costPerMessage": 28.793333333333333,
+        "spend": 122.53,
+        "messages": 6,
+        "costPerMessage": 20.421666666666667,
         "dateStart": "2026-09-16",
         "dateStop": "2026-09-16",
         "decision": {
-          "label": "Takip et",
-          "level": "watch"
+          "label": "Bütçeyi artır",
+          "level": "good"
         }
       }
     ]
   },
   "crm": {
-    "total": 9233,
-    "dailyTotal": 33,
-    "new": 806,
+    "total": 9239,
+    "dailyTotal": 39,
+    "new": 809,
     "info": 255,
     "instagram": 70,
-    "hot": 88,
-    "offer": 241,
+    "hot": 86,
+    "offer": 244,
     "waiting": 34,
-    "inProgress": 696,
-    "activePipeline": 1502,
-    "priority": 329,
+    "inProgress": 697,
+    "activePipeline": 1506,
+    "priority": 330,
     "won": 19,
     "rejected": 265,
-    "archive": 7447,
+    "archive": 7449,
     "conversionRate": 6.690140845070422,
     "stages": [
       {
@@ -109,7 +109,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 806
+        "count": 809
       },
       {
         "id": "IN_PROCESS",
@@ -133,7 +133,7 @@
         "sort": 40,
         "semantics": "",
         "group": "hot",
-        "count": 88
+        "count": 86
       },
       {
         "id": "UC_G68KST",
@@ -141,7 +141,7 @@
         "sort": 50,
         "semantics": "",
         "group": "offer",
-        "count": 241
+        "count": 244
       },
       {
         "id": "UC_P5MO63",
@@ -237,10 +237,10 @@
         "sort": 170,
         "semantics": "F",
         "group": "archive",
-        "count": 7447
+        "count": 7449
       }
     ],
     "status": "aktif"
   },
-  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. AĞUSTOS Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 33 yeni lead oluştu. Öncelikli takipte 329 müşteri var: 88 sıcak müşteri ve 241 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7447 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. AĞUSTOS Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 39 yeni lead oluştu. Öncelikli takipte 330 müşteri var: 86 sıcak müşteri ve 244 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7449 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
