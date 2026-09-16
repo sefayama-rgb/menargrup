@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T01:26:06.430Z",
+  "generatedAt": "2026-09-16T06:31:06.002Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 705.2399999999999,
+    "totalSpend": 764.21,
     "totalMessages": 20,
-    "costPerMessage": 35.26199999999999,
+    "costPerMessage": 38.2105,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 337.97,
+        "spend": 338.09,
         "messages": 11,
-        "costPerMessage": 30.724545454545456,
+        "costPerMessage": 30.735454545454544,
         "dateStart": "2026-09-15",
         "dateStop": "2026-09-15",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 181.78,
+        "spend": 182.12,
         "messages": 4,
-        "costPerMessage": 45.445,
+        "costPerMessage": 45.53,
         "dateStart": "2026-09-15",
         "dateStop": "2026-09-15",
         "decision": {
@@ -50,7 +50,7 @@
       },
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
-        "spend": 10.93,
+        "spend": 28.1,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-09-16",
@@ -62,7 +62,7 @@
       },
       {
         "campaign": "yaz umresi potansiyel müşteri",
-        "spend": 33.51,
+        "spend": 54.88,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-09-16",
@@ -74,14 +74,14 @@
       },
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
-        "spend": 36.27,
+        "spend": 56.24,
         "messages": 2,
-        "costPerMessage": 18.135,
+        "costPerMessage": 28.12,
         "dateStart": "2026-09-16",
         "dateStop": "2026-09-16",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       }
     ]
