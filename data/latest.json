@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T01:18:03.206Z",
+  "generatedAt": "2026-09-23T06:24:20.863Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 285.36,
-    "totalMessages": 14,
-    "costPerMessage": 20.382857142857144,
+    "totalSpend": 328.05,
+    "totalMessages": 15,
+    "costPerMessage": 21.87,
     "campaigns": [
       {
         "campaign": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya",
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 262.66,
+        "spend": 263.16,
         "messages": 9,
-        "costPerMessage": 29.18444444444445,
+        "costPerMessage": 29.240000000000002,
         "dateStart": "2026-09-22",
         "dateStop": "2026-09-22",
         "decision": {
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 22.7,
-        "messages": 3,
-        "costPerMessage": 7.566666666666666,
+        "spend": 64.89,
+        "messages": 4,
+        "costPerMessage": 16.2225,
         "dateStart": "2026-09-23",
         "dateStop": "2026-09-23",
         "decision": {
@@ -75,16 +75,16 @@
     ]
   },
   "crm": {
-    "total": 9327,
-    "dailyTotal": 19,
-    "new": 832,
+    "total": 9328,
+    "dailyTotal": 20,
+    "new": 833,
     "info": 241,
     "instagram": 70,
     "hot": 91,
     "offer": 265,
     "waiting": 34,
     "inProgress": 709,
-    "activePipeline": 1541,
+    "activePipeline": 1542,
     "priority": 356,
     "won": 19,
     "rejected": 265,
@@ -97,7 +97,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 832
+        "count": 833
       },
       {
         "id": "IN_PROCESS",
@@ -230,5 +230,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya en verimli kampanya. ekim ayı 2026 Yeni Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 19 yeni lead oluştu. Öncelikli takipte 356 müşteri var: 91 sıcak müşteri ve 265 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7502 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "8 gece medine video Özelleştirilmiş mesajlaşma kampanyası 13.05.2026 Kampanya en verimli kampanya. ekim ayı 2026 Yeni Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 20 yeni lead oluştu. Öncelikli takipte 356 müşteri var: 91 sıcak müşteri ve 265 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7502 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
