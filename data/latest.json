@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T12:16:58.432Z",
+  "generatedAt": "2026-09-25T17:26:23.247Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 249,
-    "totalMessages": 13,
-    "costPerMessage": 19.153846153846153,
+    "totalSpend": 315.03000000000003,
+    "totalMessages": 19,
+    "costPerMessage": 16.580526315789474,
     "campaigns": [
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 191.05,
+        "spend": 191.08,
         "messages": 10,
-        "costPerMessage": 19.105,
+        "costPerMessage": 19.108,
         "dateStart": "2026-09-24",
         "dateStop": "2026-09-24",
         "decision": {
@@ -37,35 +37,47 @@
         }
       },
       {
-        "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 57.95,
-        "messages": 2,
-        "costPerMessage": 28.975,
+        "campaign": "AĞUSTOS Etkileşim Kampanyası",
+        "spend": 0,
+        "messages": 0,
+        "costPerMessage": null,
         "dateStart": "2026-09-25",
         "dateStop": "2026-09-25",
         "decision": {
-          "label": "Takip et",
+          "label": "Veri yetersiz",
           "level": "watch"
+        }
+      },
+      {
+        "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
+        "spend": 123.95,
+        "messages": 8,
+        "costPerMessage": 15.49375,
+        "dateStart": "2026-09-25",
+        "dateStop": "2026-09-25",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
         }
       }
     ]
   },
   "crm": {
-    "total": 9356,
-    "dailyTotal": 17,
-    "new": 851,
-    "info": 240,
+    "total": 9367,
+    "dailyTotal": 28,
+    "new": 860,
+    "info": 236,
     "instagram": 70,
-    "hot": 84,
-    "offer": 271,
+    "hot": 63,
+    "offer": 272,
     "waiting": 34,
-    "inProgress": 707,
-    "activePipeline": 1558,
-    "priority": 355,
+    "inProgress": 683,
+    "activePipeline": 1543,
+    "priority": 335,
     "won": 19,
-    "rejected": 265,
-    "archive": 7514,
-    "conversionRate": 6.690140845070422,
+    "rejected": 266,
+    "archive": 7539,
+    "conversionRate": 6.666666666666667,
     "stages": [
       {
         "id": "NEW",
@@ -73,7 +85,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 851
+        "count": 860
       },
       {
         "id": "IN_PROCESS",
@@ -81,7 +93,7 @@
         "sort": 20,
         "semantics": "",
         "group": "info",
-        "count": 240
+        "count": 236
       },
       {
         "id": "5",
@@ -97,7 +109,7 @@
         "sort": 40,
         "semantics": "",
         "group": "hot",
-        "count": 84
+        "count": 63
       },
       {
         "id": "UC_G68KST",
@@ -105,7 +117,7 @@
         "sort": 50,
         "semantics": "",
         "group": "offer",
-        "count": 271
+        "count": 272
       },
       {
         "id": "UC_P5MO63",
@@ -145,7 +157,7 @@
         "sort": 100,
         "semantics": "F",
         "group": "rejected",
-        "count": 143
+        "count": 144
       },
       {
         "id": "1",
@@ -201,10 +213,10 @@
         "sort": 170,
         "semantics": "F",
         "group": "archive",
-        "count": 7514
+        "count": 7539
       }
     ],
     "status": "aktif"
   },
-  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. ekim ayı 2026 Yeni Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 17 yeni lead oluştu. Öncelikli takipte 355 müşteri var: 84 sıcak müşteri ve 271 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7514 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "AĞUSTOS Etkileşim Kampanyası en verimli kampanya. ekim ayı 2026 Yeni Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 28 yeni lead oluştu. Öncelikli takipte 335 müşteri var: 63 sıcak müşteri ve 272 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
