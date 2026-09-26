@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T02:01:38.553Z",
+  "generatedAt": "2026-09-26T07:42:48.505Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 168.71,
+    "totalSpend": 184.63000000000002,
     "totalMessages": 10,
-    "costPerMessage": 16.871000000000002,
+    "costPerMessage": 18.463,
     "campaigns": [
       {
         "campaign": "AĞUSTOS Etkileşim Kampanyası",
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 152.91,
+        "spend": 153.08,
         "messages": 8,
-        "costPerMessage": 19.11375,
+        "costPerMessage": 19.135,
         "dateStart": "2026-09-25",
         "dateStop": "2026-09-25",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 15.8,
+        "spend": 31.55,
         "messages": 2,
-        "costPerMessage": 7.9,
+        "costPerMessage": 15.775,
         "dateStart": "2026-09-26",
         "dateStop": "2026-09-26",
         "decision": {
