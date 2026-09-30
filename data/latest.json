@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T08:21:29.669Z",
+  "generatedAt": "2026-09-30T15:08:02.825Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 260.41,
-    "totalMessages": 17,
-    "costPerMessage": 15.318235294117649,
+    "totalSpend": 316.13,
+    "totalMessages": 22,
+    "costPerMessage": 14.369545454545454,
     "campaigns": [
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 223.81,
+        "spend": 224.02,
         "messages": 15,
-        "costPerMessage": 14.920666666666667,
+        "costPerMessage": 14.934666666666667,
         "dateStart": "2026-09-29",
         "dateStop": "2026-09-29",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 36.6,
-        "messages": 2,
-        "costPerMessage": 18.3,
+        "spend": 92.11,
+        "messages": 7,
+        "costPerMessage": 13.15857142857143,
         "dateStart": "2026-09-30",
         "dateStop": "2026-09-30",
         "decision": {
@@ -39,20 +39,20 @@
     ]
   },
   "crm": {
-    "total": 9443,
-    "dailyTotal": 23,
-    "new": 937,
+    "total": 9452,
+    "dailyTotal": 32,
+    "new": 943,
     "info": 236,
     "instagram": 69,
     "hot": 63,
     "offer": 272,
     "waiting": 34,
-    "inProgress": 682,
-    "activePipeline": 1619,
+    "inProgress": 687,
+    "activePipeline": 1630,
     "priority": 335,
     "won": 19,
     "rejected": 266,
-    "archive": 7539,
+    "archive": 7537,
     "conversionRate": 6.666666666666667,
     "stages": [
       {
@@ -61,7 +61,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 937
+        "count": 943
       },
       {
         "id": "IN_PROCESS",
@@ -72,9 +72,17 @@
         "count": 236
       },
       {
+        "id": "UC_3OEITX",
+        "name": "KAMPANYA YENİDEN İLETİŞİM",
+        "sort": 30,
+        "semantics": "",
+        "group": "inProgress",
+        "count": 5
+      },
+      {
         "id": "5",
         "name": "İNSTAGRAM",
-        "sort": 30,
+        "sort": 40,
         "semantics": "",
         "group": "instagram",
         "count": 69
@@ -82,7 +90,7 @@
       {
         "id": "PROCESSED",
         "name": "SICAK MÜŞTERİ",
-        "sort": 40,
+        "sort": 50,
         "semantics": "",
         "group": "hot",
         "count": 63
@@ -90,7 +98,7 @@
       {
         "id": "UC_G68KST",
         "name": "Teklif Bekleyenler",
-        "sort": 50,
+        "sort": 60,
         "semantics": "",
         "group": "offer",
         "count": 272
@@ -98,7 +106,7 @@
       {
         "id": "UC_P5MO63",
         "name": "yeni sezon için bilgi bekleyenler",
-        "sort": 60,
+        "sort": 70,
         "semantics": "",
         "group": "waiting",
         "count": 34
@@ -106,7 +114,7 @@
       {
         "id": "UC_SE8TXL",
         "name": "İşlemde- Kayıt",
-        "sort": 70,
+        "sort": 80,
         "semantics": "",
         "group": "inProgress",
         "count": 8
@@ -114,7 +122,7 @@
       {
         "id": "UC_SCX727",
         "name": "Ulaşılamadı",
-        "sort": 80,
+        "sort": 90,
         "semantics": "",
         "group": "rejected",
         "count": 31
@@ -122,7 +130,7 @@
       {
         "id": "CONVERTED",
         "name": "Olumlu Müşteri",
-        "sort": 90,
+        "sort": 100,
         "semantics": "S",
         "group": "won",
         "count": 19
@@ -130,7 +138,7 @@
       {
         "id": "JUNK",
         "name": "Olumsuz Tarih Uymadı",
-        "sort": 100,
+        "sort": 110,
         "semantics": "F",
         "group": "rejected",
         "count": 144
@@ -138,7 +146,7 @@
       {
         "id": "1",
         "name": "Fiyat yüksek geldi",
-        "sort": 110,
+        "sort": 120,
         "semantics": "F",
         "group": "rejected",
         "count": 16
@@ -146,7 +154,7 @@
       {
         "id": "UC_LKAD1J",
         "name": "Otel Uymadı",
-        "sort": 120,
+        "sort": 130,
         "semantics": "F",
         "group": "rejected",
         "count": 0
@@ -154,7 +162,7 @@
       {
         "id": "UC_ON8LJ4",
         "name": "Karasız Kaldı",
-        "sort": 130,
+        "sort": 140,
         "semantics": "F",
         "group": "rejected",
         "count": 5
@@ -162,7 +170,7 @@
       {
         "id": "UC_VBOFEP",
         "name": "Rakip Firma Tercihi",
-        "sort": 140,
+        "sort": 150,
         "semantics": "F",
         "group": "rejected",
         "count": 58
@@ -170,7 +178,7 @@
       {
         "id": "UC_0KQ7Z9",
         "name": "Bütçe Yetersiz",
-        "sort": 150,
+        "sort": 160,
         "semantics": "F",
         "group": "rejected",
         "count": 11
@@ -178,7 +186,7 @@
       {
         "id": "UC_C82146",
         "name": "Ulaşılamadı",
-        "sort": 160,
+        "sort": 170,
         "semantics": "F",
         "group": "rejected",
         "count": 1
@@ -186,13 +194,13 @@
       {
         "id": "4",
         "name": "Diğer",
-        "sort": 170,
+        "sort": 180,
         "semantics": "F",
         "group": "archive",
-        "count": 7539
+        "count": 7537
       }
     ],
     "status": "aktif"
   },
-  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. ekim ayı 2026 Yeni Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 23 yeni lead oluştu. Öncelikli takipte 335 müşteri var: 63 sıcak müşteri ve 272 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. ekim ayı 2026 Yeni Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 32 yeni lead oluştu. Öncelikli takipte 335 müşteri var: 63 sıcak müşteri ve 272 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7537 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
