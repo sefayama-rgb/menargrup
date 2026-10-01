@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T04:41:31.132Z",
+  "generatedAt": "2026-10-01T11:11:46.827Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 200.07,
-    "totalMessages": 9,
-    "costPerMessage": 22.23,
+    "totalSpend": 243.12,
+    "totalMessages": 11,
+    "costPerMessage": 22.10181818181818,
     "campaigns": [
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 169.41,
+        "spend": 169.53,
         "messages": 9,
-        "costPerMessage": 18.823333333333334,
+        "costPerMessage": 18.836666666666666,
         "dateStart": "2026-09-30",
         "dateStop": "2026-09-30",
         "decision": {
@@ -26,29 +26,29 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 30.66,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 73.59,
+        "messages": 2,
+        "costPerMessage": 36.795,
         "dateStart": "2026-10-01",
         "dateStop": "2026-10-01",
         "decision": {
-          "label": "Veri yetersiz",
+          "label": "Takip et",
           "level": "watch"
         }
       }
     ]
   },
   "crm": {
-    "total": 9454,
-    "dailyTotal": 14,
-    "new": 946,
+    "total": 9456,
+    "dailyTotal": 16,
+    "new": 854,
     "info": 236,
     "instagram": 69,
     "hot": 63,
     "offer": 272,
     "waiting": 34,
-    "inProgress": 686,
-    "activePipeline": 1632,
+    "inProgress": 780,
+    "activePipeline": 1634,
     "priority": 335,
     "won": 19,
     "rejected": 266,
@@ -61,7 +61,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 946
+        "count": 854
       },
       {
         "id": "IN_PROCESS",
@@ -72,17 +72,41 @@
         "count": 236
       },
       {
-        "id": "UC_3OEITX",
-        "name": "KAMPANYA YENİDEN İLETİŞİM",
+        "id": "UC_9NK464",
+        "name": "HAC",
         "sort": 30,
         "semantics": "",
         "group": "inProgress",
-        "count": 4
+        "count": 1
+      },
+      {
+        "id": "UC_UTCZI7",
+        "name": "YORUM",
+        "sort": 40,
+        "semantics": "",
+        "group": "inProgress",
+        "count": 27
+      },
+      {
+        "id": "UC_XVT8K2",
+        "name": "RAMAZAN",
+        "sort": 50,
+        "semantics": "",
+        "group": "inProgress",
+        "count": 0
+      },
+      {
+        "id": "UC_3OEITX",
+        "name": "KASIM REKLAM İÇERİĞ",
+        "sort": 60,
+        "semantics": "",
+        "group": "inProgress",
+        "count": 70
       },
       {
         "id": "5",
         "name": "İNSTAGRAM",
-        "sort": 40,
+        "sort": 70,
         "semantics": "",
         "group": "instagram",
         "count": 69
@@ -90,7 +114,7 @@
       {
         "id": "PROCESSED",
         "name": "SICAK MÜŞTERİ",
-        "sort": 50,
+        "sort": 80,
         "semantics": "",
         "group": "hot",
         "count": 63
@@ -98,7 +122,7 @@
       {
         "id": "UC_G68KST",
         "name": "Teklif Bekleyenler",
-        "sort": 60,
+        "sort": 90,
         "semantics": "",
         "group": "offer",
         "count": 272
@@ -106,7 +130,7 @@
       {
         "id": "UC_P5MO63",
         "name": "yeni sezon için bilgi bekleyenler",
-        "sort": 70,
+        "sort": 100,
         "semantics": "",
         "group": "waiting",
         "count": 34
@@ -114,7 +138,7 @@
       {
         "id": "UC_SE8TXL",
         "name": "İşlemde- Kayıt",
-        "sort": 80,
+        "sort": 110,
         "semantics": "",
         "group": "inProgress",
         "count": 8
@@ -122,7 +146,7 @@
       {
         "id": "UC_SCX727",
         "name": "Ulaşılamadı",
-        "sort": 90,
+        "sort": 120,
         "semantics": "",
         "group": "rejected",
         "count": 31
@@ -130,7 +154,7 @@
       {
         "id": "CONVERTED",
         "name": "Olumlu Müşteri",
-        "sort": 100,
+        "sort": 130,
         "semantics": "S",
         "group": "won",
         "count": 19
@@ -138,7 +162,7 @@
       {
         "id": "JUNK",
         "name": "Olumsuz Tarih Uymadı",
-        "sort": 110,
+        "sort": 140,
         "semantics": "F",
         "group": "rejected",
         "count": 144
@@ -146,7 +170,7 @@
       {
         "id": "1",
         "name": "Fiyat yüksek geldi",
-        "sort": 120,
+        "sort": 150,
         "semantics": "F",
         "group": "rejected",
         "count": 16
@@ -154,7 +178,7 @@
       {
         "id": "UC_LKAD1J",
         "name": "Otel Uymadı",
-        "sort": 130,
+        "sort": 160,
         "semantics": "F",
         "group": "rejected",
         "count": 0
@@ -162,7 +186,7 @@
       {
         "id": "UC_ON8LJ4",
         "name": "Karasız Kaldı",
-        "sort": 140,
+        "sort": 170,
         "semantics": "F",
         "group": "rejected",
         "count": 5
@@ -170,7 +194,7 @@
       {
         "id": "UC_VBOFEP",
         "name": "Rakip Firma Tercihi",
-        "sort": 150,
+        "sort": 180,
         "semantics": "F",
         "group": "rejected",
         "count": 58
@@ -178,7 +202,7 @@
       {
         "id": "UC_0KQ7Z9",
         "name": "Bütçe Yetersiz",
-        "sort": 160,
+        "sort": 190,
         "semantics": "F",
         "group": "rejected",
         "count": 11
@@ -186,7 +210,7 @@
       {
         "id": "UC_C82146",
         "name": "Ulaşılamadı",
-        "sort": 170,
+        "sort": 200,
         "semantics": "F",
         "group": "rejected",
         "count": 1
@@ -194,7 +218,7 @@
       {
         "id": "4",
         "name": "Diğer",
-        "sort": 180,
+        "sort": 210,
         "semantics": "F",
         "group": "archive",
         "count": 7537
@@ -202,5 +226,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. Son 24 saatte 14 yeni lead oluştu. Öncelikli takipte 335 müşteri var: 63 sıcak müşteri ve 272 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7537 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. ekim ayı 2026 Yeni Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 16 yeni lead oluştu. Öncelikli takipte 335 müşteri var: 63 sıcak müşteri ve 272 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7537 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
