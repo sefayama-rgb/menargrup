@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T23:50:43.722Z",
+  "generatedAt": "2026-10-01T04:41:36.313Z",
   "weeks": [
     {
       "weekStart": "2026-08-17",
@@ -173,10 +173,10 @@
       "weekStart": "2026-09-28",
       "weekEnd": "2026-10-04",
       "asOfDate": "2026-10-01",
-      "generatedAt": "2026-09-30T23:50:43.721Z",
-      "metaSpend": 622.7300000000001,
+      "generatedAt": "2026-10-01T04:41:36.312Z",
+      "metaSpend": 632.39,
       "metaMessages": 34,
-      "metaCostPerMessage": 18.315588235294122,
+      "metaCostPerMessage": 18.59970588235294,
       "crmNewLeads": 52,
       "crmWonClosed": 0,
       "crmRejectedClosed": 0,
