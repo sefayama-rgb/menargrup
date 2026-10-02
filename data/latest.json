@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T19:19:28.799Z",
+  "generatedAt": "2026-10-02T23:10:12.983Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 338.49,
+    "totalSpend": 355.94000000000005,
     "totalMessages": 19,
-    "costPerMessage": 17.815263157894737,
+    "costPerMessage": 18.73368421052632,
     "campaigns": [
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
@@ -26,14 +26,14 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 146.13,
+        "spend": 163.58,
         "messages": 6,
-        "costPerMessage": 24.355,
+        "costPerMessage": 27.263333333333335,
         "dateStart": "2026-10-02",
         "dateStop": "2026-10-02",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       }
     ]
