@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T14:01:37.382Z",
+  "generatedAt": "2026-10-02T19:19:28.799Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 267.4,
-    "totalMessages": 17,
-    "costPerMessage": 15.729411764705882,
+    "totalSpend": 338.49,
+    "totalMessages": 19,
+    "costPerMessage": 17.815263157894737,
     "campaigns": [
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 192.25,
+        "spend": 192.36,
         "messages": 13,
-        "costPerMessage": 14.788461538461538,
+        "costPerMessage": 14.796923076923077,
         "dateStart": "2026-10-01",
         "dateStop": "2026-10-01",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 75.15,
-        "messages": 4,
-        "costPerMessage": 18.7875,
+        "spend": 146.13,
+        "messages": 6,
+        "costPerMessage": 24.355,
         "dateStart": "2026-10-02",
         "dateStop": "2026-10-02",
         "decision": {
@@ -39,16 +39,16 @@
     ]
   },
   "crm": {
-    "total": 9475,
-    "dailyTotal": 21,
-    "new": 844,
-    "info": 236,
+    "total": 9477,
+    "dailyTotal": 23,
+    "new": 662,
+    "info": 239,
     "instagram": 69,
     "hot": 63,
     "offer": 272,
     "waiting": 34,
-    "inProgress": 809,
-    "activePipeline": 1653,
+    "inProgress": 993,
+    "activePipeline": 1655,
     "priority": 335,
     "won": 19,
     "rejected": 266,
@@ -61,31 +61,31 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 844
+        "count": 662
       },
       {
-        "id": "IN_PROCESS",
-        "name": "Bilgi Veriliyor",
+        "id": "UC_3OEITX",
+        "name": "KASIM REKLAM İÇERİĞ",
         "sort": 20,
         "semantics": "",
-        "group": "info",
-        "count": 236
-      },
-      {
-        "id": "UC_9NK464",
-        "name": "HAC",
-        "sort": 30,
-        "semantics": "",
         "group": "inProgress",
-        "count": 1
+        "count": 225
       },
       {
         "id": "UC_UTCZI7",
         "name": "YORUM",
+        "sort": 30,
+        "semantics": "",
+        "group": "inProgress",
+        "count": 77
+      },
+      {
+        "id": "UC_85GQIO",
+        "name": "ARAPÇA",
         "sort": 40,
         "semantics": "",
         "group": "inProgress",
-        "count": 33
+        "count": 4
       },
       {
         "id": "UC_XVT8K2",
@@ -96,17 +96,25 @@
         "count": 0
       },
       {
-        "id": "UC_3OEITX",
-        "name": "KASIM REKLAM İÇERİĞ",
+        "id": "UC_UYC63Q",
+        "name": "Ad",
         "sort": 60,
         "semantics": "",
         "group": "inProgress",
-        "count": 93
+        "count": 0
+      },
+      {
+        "id": "IN_PROCESS",
+        "name": "Bilgi Veriliyor",
+        "sort": 70,
+        "semantics": "",
+        "group": "info",
+        "count": 239
       },
       {
         "id": "5",
         "name": "İNSTAGRAM",
-        "sort": 70,
+        "sort": 80,
         "semantics": "",
         "group": "instagram",
         "count": 69
@@ -114,7 +122,7 @@
       {
         "id": "PROCESSED",
         "name": "SICAK MÜŞTERİ",
-        "sort": 80,
+        "sort": 90,
         "semantics": "",
         "group": "hot",
         "count": 63
@@ -122,7 +130,7 @@
       {
         "id": "UC_G68KST",
         "name": "Teklif Bekleyenler",
-        "sort": 90,
+        "sort": 100,
         "semantics": "",
         "group": "offer",
         "count": 272
@@ -130,7 +138,7 @@
       {
         "id": "UC_P5MO63",
         "name": "yeni sezon için bilgi bekleyenler",
-        "sort": 100,
+        "sort": 110,
         "semantics": "",
         "group": "waiting",
         "count": 34
@@ -138,7 +146,7 @@
       {
         "id": "UC_SE8TXL",
         "name": "İşlemde- Kayıt",
-        "sort": 110,
+        "sort": 120,
         "semantics": "",
         "group": "inProgress",
         "count": 8
@@ -146,15 +154,23 @@
       {
         "id": "UC_SCX727",
         "name": "Ulaşılamadı",
-        "sort": 120,
+        "sort": 130,
         "semantics": "",
         "group": "rejected",
         "count": 31
       },
       {
+        "id": "UC_9NK464",
+        "name": "HAC",
+        "sort": 140,
+        "semantics": "",
+        "group": "inProgress",
+        "count": 2
+      },
+      {
         "id": "CONVERTED",
         "name": "Olumlu Müşteri",
-        "sort": 130,
+        "sort": 150,
         "semantics": "S",
         "group": "won",
         "count": 19
@@ -162,7 +178,7 @@
       {
         "id": "JUNK",
         "name": "Olumsuz Tarih Uymadı",
-        "sort": 140,
+        "sort": 160,
         "semantics": "F",
         "group": "rejected",
         "count": 144
@@ -170,7 +186,7 @@
       {
         "id": "1",
         "name": "Fiyat yüksek geldi",
-        "sort": 150,
+        "sort": 170,
         "semantics": "F",
         "group": "rejected",
         "count": 16
@@ -178,7 +194,7 @@
       {
         "id": "UC_LKAD1J",
         "name": "Otel Uymadı",
-        "sort": 160,
+        "sort": 180,
         "semantics": "F",
         "group": "rejected",
         "count": 0
@@ -186,7 +202,7 @@
       {
         "id": "UC_ON8LJ4",
         "name": "Karasız Kaldı",
-        "sort": 170,
+        "sort": 190,
         "semantics": "F",
         "group": "rejected",
         "count": 5
@@ -194,7 +210,7 @@
       {
         "id": "UC_VBOFEP",
         "name": "Rakip Firma Tercihi",
-        "sort": 180,
+        "sort": 200,
         "semantics": "F",
         "group": "rejected",
         "count": 58
@@ -202,7 +218,7 @@
       {
         "id": "UC_0KQ7Z9",
         "name": "Bütçe Yetersiz",
-        "sort": 190,
+        "sort": 210,
         "semantics": "F",
         "group": "rejected",
         "count": 11
@@ -210,7 +226,7 @@
       {
         "id": "UC_C82146",
         "name": "Ulaşılamadı",
-        "sort": 200,
+        "sort": 220,
         "semantics": "F",
         "group": "rejected",
         "count": 1
@@ -218,7 +234,7 @@
       {
         "id": "4",
         "name": "Diğer",
-        "sort": 210,
+        "sort": 230,
         "semantics": "F",
         "group": "archive",
         "count": 7537
@@ -226,5 +242,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. ekim ayı 2026 Yeni Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 21 yeni lead oluştu. Öncelikli takipte 335 müşteri var: 63 sıcak müşteri ve 272 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7537 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. ekim ayı 2026 Yeni Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 23 yeni lead oluştu. Öncelikli takipte 335 müşteri var: 63 sıcak müşteri ve 272 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7537 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
