@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T23:50:39.872Z",
+  "generatedAt": "2026-10-08T05:00:49.179Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,31 +8,31 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 398.01,
-    "totalMessages": 17,
-    "costPerMessage": 23.41235294117647,
+    "totalSpend": 234.46,
+    "totalMessages": 7,
+    "costPerMessage": 33.494285714285716,
     "campaigns": [
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 204.06,
-        "messages": 10,
-        "costPerMessage": 20.406,
-        "dateStart": "2026-10-06",
-        "dateStop": "2026-10-06",
-        "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
-        }
-      },
-      {
-        "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 193.95,
+        "spend": 194.05,
         "messages": 7,
-        "costPerMessage": 27.707142857142856,
+        "costPerMessage": 27.72142857142857,
         "dateStart": "2026-10-07",
         "dateStop": "2026-10-07",
         "decision": {
           "label": "Takip et",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
+        "spend": 40.41,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-10-08",
+        "dateStop": "2026-10-08",
+        "decision": {
+          "label": "Veri yetersiz",
           "level": "watch"
         }
       }
@@ -40,7 +40,7 @@
   },
   "crm": {
     "total": 9545,
-    "dailyTotal": 22,
+    "dailyTotal": 9,
     "new": 664,
     "info": 241,
     "instagram": 69,
@@ -242,5 +242,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. ekim ayı 2026 Yeni Etkileşim Kampanyası yeniden değerlendirilmeli. Son 24 saatte 22 yeni lead oluştu. Öncelikli takipte 334 müşteri var: 67 sıcak müşteri ve 267 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.6. 7537 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. Son 24 saatte 9 yeni lead oluştu. Öncelikli takipte 334 müşteri var: 67 sıcak müşteri ve 267 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.6. 7537 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
