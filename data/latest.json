@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T10:34:36.402Z",
+  "generatedAt": "2026-10-09T17:11:40.650Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 571.05,
-    "totalMessages": 15,
-    "costPerMessage": 38.07,
+    "totalSpend": 1008.9100000000001,
+    "totalMessages": 25,
+    "costPerMessage": 40.3564,
     "campaigns": [
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 176.45,
+        "spend": 176.65,
         "messages": 5,
-        "costPerMessage": 35.29,
+        "costPerMessage": 35.33,
         "dateStart": "2026-10-08",
         "dateStop": "2026-10-08",
         "decision": {
@@ -26,7 +26,7 @@
       },
       {
         "campaign": "KASIM  2026",
-        "spend": 12.55,
+        "spend": 12.58,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-10-08",
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 53.53,
-        "messages": 2,
-        "costPerMessage": 26.765,
+        "spend": 134.34,
+        "messages": 4,
+        "costPerMessage": 33.585,
         "dateStart": "2026-10-09",
         "dateStop": "2026-10-09",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "KASIM  2026",
-        "spend": 328.52,
-        "messages": 8,
-        "costPerMessage": 41.065,
+        "spend": 685.34,
+        "messages": 16,
+        "costPerMessage": 42.83375,
         "dateStart": "2026-10-09",
         "dateStop": "2026-10-09",
         "decision": {
@@ -63,21 +63,21 @@
     ]
   },
   "crm": {
-    "total": 9561,
-    "dailyTotal": 16,
-    "new": 680,
-    "info": 241,
+    "total": 9565,
+    "dailyTotal": 20,
+    "new": 681,
+    "info": 242,
     "instagram": 69,
-    "hot": 67,
-    "offer": 267,
+    "hot": 68,
+    "offer": 268,
     "waiting": 34,
-    "inProgress": 1058,
-    "activePipeline": 1738,
-    "priority": 334,
+    "inProgress": 1061,
+    "activePipeline": 1742,
+    "priority": 336,
     "won": 19,
-    "rejected": 267,
-    "archive": 7537,
-    "conversionRate": 6.643356643356643,
+    "rejected": 266,
+    "archive": 7538,
+    "conversionRate": 6.666666666666667,
     "stages": [
       {
         "id": "NEW",
@@ -85,7 +85,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 680
+        "count": 681
       },
       {
         "id": "UC_3OEITX",
@@ -133,7 +133,7 @@
         "sort": 70,
         "semantics": "",
         "group": "info",
-        "count": 241
+        "count": 242
       },
       {
         "id": "5",
@@ -149,7 +149,7 @@
         "sort": 90,
         "semantics": "",
         "group": "hot",
-        "count": 67
+        "count": 68
       },
       {
         "id": "UC_G68KST",
@@ -157,7 +157,7 @@
         "sort": 100,
         "semantics": "",
         "group": "offer",
-        "count": 267
+        "count": 268
       },
       {
         "id": "UC_P5MO63",
@@ -181,7 +181,7 @@
         "sort": 130,
         "semantics": "",
         "group": "rejected",
-        "count": 31
+        "count": 30
       },
       {
         "id": "UC_9NK464",
@@ -261,10 +261,10 @@
         "sort": 230,
         "semantics": "F",
         "group": "archive",
-        "count": 7537
+        "count": 7538
       }
     ],
     "status": "aktif"
   },
-  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. KASIM  2026 yeniden değerlendirilmeli. Son 24 saatte 16 yeni lead oluştu. Öncelikli takipte 334 müşteri var: 67 sıcak müşteri ve 267 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.6. 7537 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. KASIM  2026 yeniden değerlendirilmeli. Son 24 saatte 20 yeni lead oluştu. Öncelikli takipte 336 müşteri var: 68 sıcak müşteri ve 268 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
