@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T13:58:37.809Z",
+  "generatedAt": "2026-10-10T18:26:05.405Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1778.3700000000001,
-    "totalMessages": 36,
-    "costPerMessage": 49.39916666666667,
+    "totalSpend": 2115.3599999999997,
+    "totalMessages": 43,
+    "costPerMessage": 49.194418604651155,
     "campaigns": [
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "KASIM  2026",
-        "spend": 896.99,
+        "spend": 897.11,
         "messages": 20,
-        "costPerMessage": 44.8495,
+        "costPerMessage": 44.8555,
         "dateStart": "2026-10-09",
         "dateStop": "2026-10-09",
         "decision": {
@@ -38,21 +38,21 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 85.25,
-        "messages": 3,
-        "costPerMessage": 28.416666666666668,
+        "spend": 108.08,
+        "messages": 5,
+        "costPerMessage": 21.616,
         "dateStart": "2026-10-10",
         "dateStop": "2026-10-10",
         "decision": {
-          "label": "Takip et",
-          "level": "watch"
+          "label": "Bütçeyi artır",
+          "level": "good"
         }
       },
       {
         "campaign": "KASIM  2026",
-        "spend": 593.51,
-        "messages": 7,
-        "costPerMessage": 84.78714285714285,
+        "spend": 907.55,
+        "messages": 12,
+        "costPerMessage": 75.62916666666666,
         "dateStart": "2026-10-10",
         "dateStop": "2026-10-10",
         "decision": {
@@ -63,16 +63,16 @@
     ]
   },
   "crm": {
-    "total": 9587,
-    "dailyTotal": 32,
-    "new": 703,
+    "total": 9590,
+    "dailyTotal": 35,
+    "new": 706,
     "info": 242,
     "instagram": 69,
     "hot": 68,
     "offer": 268,
     "waiting": 34,
     "inProgress": 1061,
-    "activePipeline": 1764,
+    "activePipeline": 1767,
     "priority": 336,
     "won": 19,
     "rejected": 266,
@@ -85,7 +85,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 703
+        "count": 706
       },
       {
         "id": "UC_3OEITX",
@@ -266,5 +266,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. KASIM  2026 yeniden değerlendirilmeli. Son 24 saatte 32 yeni lead oluştu. Öncelikli takipte 336 müşteri var: 68 sıcak müşteri ve 268 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "ekim ayı 2026 Yeni Etkileşim Kampanyası en verimli kampanya. KASIM  2026 yeniden değerlendirilmeli. Son 24 saatte 35 yeni lead oluştu. Öncelikli takipte 336 müşteri var: 68 sıcak müşteri ve 268 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
