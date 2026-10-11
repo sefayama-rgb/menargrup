@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T18:28:19.941Z",
+  "generatedAt": "2026-10-11T22:22:44.395Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1668.5600000000002,
+    "totalSpend": 1723.74,
     "totalMessages": 28,
-    "costPerMessage": 59.59142857142858,
+    "costPerMessage": 61.56214285714286,
     "campaigns": [
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 130.88,
+        "spend": 131.23,
         "messages": 7,
-        "costPerMessage": 18.697142857142858,
+        "costPerMessage": 18.747142857142855,
         "dateStart": "2026-10-10",
         "dateStop": "2026-10-10",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 94.9,
+        "spend": 95.57,
         "messages": 1,
-        "costPerMessage": 94.9,
+        "costPerMessage": 95.57,
         "dateStart": "2026-10-11",
         "dateStop": "2026-10-11",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "KASIM  2026",
-        "spend": 382.42,
+        "spend": 393.16,
         "messages": 4,
-        "costPerMessage": 95.605,
+        "costPerMessage": 98.29,
         "dateStart": "2026-10-11",
         "dateStop": "2026-10-11",
         "decision": {
@@ -62,13 +62,25 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 47.05,
+        "spend": 90.32,
         "messages": 1,
-        "costPerMessage": 47.05,
+        "costPerMessage": 90.32,
         "dateStart": "2026-10-11",
         "dateStop": "2026-10-11",
         "decision": {
-          "label": "Takip et",
+          "label": "Durdur / değiştir",
+          "level": "bad"
+        }
+      },
+      {
+        "campaign": "REMZİ ER",
+        "spend": 0.15,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-10-11",
+        "dateStop": "2026-10-11",
+        "decision": {
+          "label": "Veri yetersiz",
           "level": "watch"
         }
       }
