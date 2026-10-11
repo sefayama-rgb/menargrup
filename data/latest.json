@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T00:44:09.083Z",
+  "generatedAt": "2026-10-11T06:31:04.418Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1202.9099999999999,
+    "totalSpend": 1251.04,
     "totalMessages": 23,
-    "costPerMessage": 52.30043478260869,
+    "costPerMessage": 54.39304347826087,
     "campaigns": [
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 130.77,
+        "spend": 130.88,
         "messages": 7,
-        "costPerMessage": 18.681428571428572,
+        "costPerMessage": 18.697142857142858,
         "dateStart": "2026-10-10",
         "dateStop": "2026-10-10",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "KASIM  2026",
-        "spend": 1010.05,
+        "spend": 1012.33,
         "messages": 15,
-        "costPerMessage": 67.33666666666666,
+        "costPerMessage": 67.48866666666667,
         "dateStart": "2026-10-10",
         "dateStop": "2026-10-10",
         "decision": {
@@ -38,7 +38,7 @@
       },
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
-        "spend": 26.78,
+        "spend": 38.36,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-10-11",
@@ -50,14 +50,14 @@
       },
       {
         "campaign": "KASIM  2026",
-        "spend": 35.31,
+        "spend": 69.47,
         "messages": 1,
-        "costPerMessage": 35.31,
+        "costPerMessage": 69.47,
         "dateStart": "2026-10-11",
         "dateStop": "2026-10-11",
         "decision": {
-          "label": "Takip et",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       }
     ]
