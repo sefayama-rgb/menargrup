@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T01:34:32.931Z",
+  "generatedAt": "2026-10-12T08:01:55.645Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 605.4100000000001,
-    "totalMessages": 6,
-    "costPerMessage": 100.90166666666669,
+    "totalSpend": 687.2699999999999,
+    "totalMessages": 11,
+    "costPerMessage": 62.4790909090909,
     "campaigns": [
       {
         "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "KASIM  2026",
-        "spend": 393.63,
+        "spend": 393.91,
         "messages": 4,
-        "costPerMessage": 98.4075,
+        "costPerMessage": 98.4775,
         "dateStart": "2026-10-11",
         "dateStop": "2026-10-11",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 90.89,
+        "spend": 91.9,
         "messages": 1,
-        "costPerMessage": 90.89,
+        "costPerMessage": 91.9,
         "dateStart": "2026-10-11",
         "dateStop": "2026-10-11",
         "decision": {
@@ -61,8 +61,8 @@
         }
       },
       {
-        "campaign": "KASIM 2026",
-        "spend": 23.97,
+        "campaign": "ekim ayı 2026 Yeni Etkileşim Kampanyası",
+        "spend": 0,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-10-12",
@@ -73,8 +73,56 @@
         }
       },
       {
+        "campaign": "KASIM 2026",
+        "spend": 40.51,
+        "messages": 4,
+        "costPerMessage": 10.1275,
+        "dateStart": "2026-10-12",
+        "dateStop": "2026-10-12",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
         "campaign": "REMZİ ER",
-        "spend": 1.2,
+        "spend": 33.92,
+        "messages": 1,
+        "costPerMessage": 33.92,
+        "dateStart": "2026-10-12",
+        "dateStop": "2026-10-12",
+        "decision": {
+          "label": "Takip et",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "sömestre",
+        "spend": 15.92,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-10-12",
+        "dateStop": "2026-10-12",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "lütfü h thy",
+        "spend": 11.9,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-10-12",
+        "dateStop": "2026-10-12",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "muhammet yazıcı",
+        "spend": 3.49,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-10-12",
@@ -87,16 +135,16 @@
     ]
   },
   "crm": {
-    "total": 9607,
-    "dailyTotal": 5,
-    "new": 723,
+    "total": 9614,
+    "dailyTotal": 12,
+    "new": 730,
     "info": 242,
     "instagram": 69,
     "hot": 68,
     "offer": 268,
     "waiting": 34,
     "inProgress": 1061,
-    "activePipeline": 1784,
+    "activePipeline": 1791,
     "priority": 336,
     "won": 19,
     "rejected": 266,
@@ -109,7 +157,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 723
+        "count": 730
       },
       {
         "id": "UC_3OEITX",
@@ -290,5 +338,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "KASIM 2026 en verimli kampanya. KASIM  2026 yeniden değerlendirilmeli. Son 24 saatte 5 yeni lead oluştu. Öncelikli takipte 336 müşteri var: 68 sıcak müşteri ve 268 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "KASIM 2026 en verimli kampanya. KASIM  2026 yeniden değerlendirilmeli. Son 24 saatte 12 yeni lead oluştu. Öncelikli takipte 336 müşteri var: 68 sıcak müşteri ve 268 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
