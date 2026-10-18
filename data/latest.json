@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T21:41:07.399Z",
+  "generatedAt": "2026-10-18T23:41:18.840Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1184.4299999999998,
+    "totalSpend": 1185.3799999999999,
     "totalMessages": 22,
-    "costPerMessage": 53.837727272727264,
+    "costPerMessage": 53.880909090909086,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 186.29,
+        "spend": 186.49,
         "messages": 4,
-        "costPerMessage": 46.5725,
+        "costPerMessage": 46.6225,
         "dateStart": "2026-10-18",
         "dateStop": "2026-10-18",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "REMZİ ER",
-        "spend": 178.53,
+        "spend": 178.76,
         "messages": 2,
-        "costPerMessage": 89.265,
+        "costPerMessage": 89.38,
         "dateStart": "2026-10-18",
         "dateStop": "2026-10-18",
         "decision": {
@@ -86,9 +86,9 @@
       },
       {
         "campaign": "lütfü h thy",
-        "spend": 203.69,
+        "spend": 204.14,
         "messages": 4,
-        "costPerMessage": 50.9225,
+        "costPerMessage": 51.035,
         "dateStart": "2026-10-18",
         "dateStop": "2026-10-18",
         "decision": {
@@ -98,9 +98,9 @@
       },
       {
         "campaign": "muhammet yazıcı",
-        "spend": 172.14,
+        "spend": 172.21,
         "messages": 2,
-        "costPerMessage": 86.07,
+        "costPerMessage": 86.105,
         "dateStart": "2026-10-18",
         "dateStop": "2026-10-18",
         "decision": {
@@ -111,16 +111,16 @@
     ]
   },
   "crm": {
-    "total": 9743,
-    "dailyTotal": 28,
-    "new": 853,
+    "total": 9744,
+    "dailyTotal": 29,
+    "new": 854,
     "info": 274,
     "instagram": 69,
     "hot": 98,
     "offer": 160,
     "waiting": 35,
     "inProgress": 1016,
-    "activePipeline": 1869,
+    "activePipeline": 1870,
     "priority": 258,
     "won": 20,
     "rejected": 315,
@@ -133,7 +133,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 853
+        "count": 854
       },
       {
         "id": "UC_3OEITX",
@@ -314,5 +314,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "muhammet yazıcı en verimli kampanya. KASIM 2026 yeniden değerlendirilmeli. Son 24 saatte 28 yeni lead oluştu. Öncelikli takipte 258 müşteri var: 98 sıcak müşteri ve 160 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.0. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "muhammet yazıcı en verimli kampanya. KASIM 2026 yeniden değerlendirilmeli. Son 24 saatte 29 yeni lead oluştu. Öncelikli takipte 258 müşteri var: 98 sıcak müşteri ve 160 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.0. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
