@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T00:24:27.047Z",
+  "generatedAt": "2026-10-21T05:08:56.077Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 946.94,
+    "totalSpend": 984.55,
     "totalMessages": 17,
-    "costPerMessage": 55.70235294117647,
+    "costPerMessage": 57.91470588235294,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 144.37,
+        "spend": 144.59,
         "messages": 3,
-        "costPerMessage": 48.123333333333335,
+        "costPerMessage": 48.196666666666665,
         "dateStart": "2026-10-20",
         "dateStop": "2026-10-20",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "REMZİ ER",
-        "spend": 176.08,
+        "spend": 176.11,
         "messages": 3,
-        "costPerMessage": 58.693333333333335,
+        "costPerMessage": 58.70333333333334,
         "dateStart": "2026-10-20",
         "dateStop": "2026-10-20",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "lütfü h thy",
-        "spend": 169.99,
+        "spend": 170.03,
         "messages": 3,
-        "costPerMessage": 56.663333333333334,
+        "costPerMessage": 56.67666666666667,
         "dateStart": "2026-10-20",
         "dateStop": "2026-10-20",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "muhammet yazıcı",
-        "spend": 188.36,
+        "spend": 188.55,
         "messages": 3,
-        "costPerMessage": 62.78666666666667,
+        "costPerMessage": 62.85,
         "dateStart": "2026-10-20",
         "dateStop": "2026-10-20",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 12.87,
+        "spend": 19.09,
         "messages": 2,
-        "costPerMessage": 6.435,
+        "costPerMessage": 9.545,
         "dateStart": "2026-10-21",
         "dateStop": "2026-10-21",
         "decision": {
@@ -86,9 +86,9 @@
       },
       {
         "campaign": "REMZİ ER",
-        "spend": 14.78,
+        "spend": 19.76,
         "messages": 1,
-        "costPerMessage": 14.78,
+        "costPerMessage": 19.76,
         "dateStart": "2026-10-21",
         "dateStop": "2026-10-21",
         "decision": {
@@ -98,7 +98,7 @@
       },
       {
         "campaign": "lütfü h thy",
-        "spend": 15.09,
+        "spend": 27.94,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-10-21",
@@ -110,7 +110,7 @@
       },
       {
         "campaign": "muhammet yazıcı",
-        "spend": 15.8,
+        "spend": 22.28,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-10-21",
@@ -122,7 +122,7 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 15.32,
+        "spend": 21.92,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-10-21",
