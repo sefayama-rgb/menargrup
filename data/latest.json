@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T11:59:54.646Z",
+  "generatedAt": "2026-10-23T16:57:19.196Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1231.9,
-    "totalMessages": 37,
-    "costPerMessage": 33.2945945945946,
+    "totalSpend": 1431.92,
+    "totalMessages": 41,
+    "costPerMessage": 34.92487804878049,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 154.51,
+        "spend": 154.73,
         "messages": 9,
-        "costPerMessage": 17.167777777777776,
+        "costPerMessage": 17.19222222222222,
         "dateStart": "2026-10-22",
         "dateStop": "2026-10-22",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "lütfü h thy",
-        "spend": 127.46,
+        "spend": 127.61,
         "messages": 2,
-        "costPerMessage": 63.73,
+        "costPerMessage": 63.805,
         "dateStart": "2026-10-22",
         "dateStop": "2026-10-22",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 135.1,
+        "spend": 135.13,
         "messages": 5,
-        "costPerMessage": 27.02,
+        "costPerMessage": 27.026,
         "dateStart": "2026-10-22",
         "dateStop": "2026-10-22",
         "decision": {
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 276.55,
+        "spend": 276.58,
         "messages": 10,
-        "costPerMessage": 27.655,
+        "costPerMessage": 27.657999999999998,
         "dateStart": "2026-10-22",
         "dateStop": "2026-10-22",
         "decision": {
@@ -86,9 +86,21 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 75.82,
+        "spend": 103.63,
+        "messages": 5,
+        "costPerMessage": 20.726,
+        "dateStart": "2026-10-23",
+        "dateStop": "2026-10-23",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "lütfü h thy",
+        "spend": 95.27,
         "messages": 2,
-        "costPerMessage": 37.91,
+        "costPerMessage": 47.635,
         "dateStart": "2026-10-23",
         "dateStop": "2026-10-23",
         "decision": {
@@ -97,34 +109,34 @@
         }
       },
       {
-        "campaign": "lütfü h thy",
-        "spend": 58.72,
-        "messages": 2,
-        "costPerMessage": 29.36,
+        "campaign": "muhammet yazıcı",
+        "spend": 0,
+        "messages": 0,
+        "costPerMessage": null,
         "dateStart": "2026-10-23",
         "dateStop": "2026-10-23",
         "decision": {
-          "label": "Takip et",
+          "label": "Veri yetersiz",
           "level": "watch"
         }
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 53.41,
+        "spend": 83.41,
         "messages": 1,
-        "costPerMessage": 53.41,
+        "costPerMessage": 83.41,
         "dateStart": "2026-10-23",
         "dateStop": "2026-10-23",
         "decision": {
-          "label": "Takip et",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 77.15,
-        "messages": 2,
-        "costPerMessage": 38.575,
+        "spend": 143.16,
+        "messages": 3,
+        "costPerMessage": 47.72,
         "dateStart": "2026-10-23",
         "dateStop": "2026-10-23",
         "decision": {
@@ -134,34 +146,34 @@
       },
       {
         "campaign": "12.11.2026",
-        "spend": 79.35,
+        "spend": 118.57,
         "messages": 2,
-        "costPerMessage": 39.675,
+        "costPerMessage": 59.285,
         "dateStart": "2026-10-23",
         "dateStop": "2026-10-23",
         "decision": {
-          "label": "Takip et",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       }
     ]
   },
   "crm": {
-    "total": 9852,
-    "dailyTotal": 40,
-    "new": 959,
-    "info": 284,
+    "total": 9857,
+    "dailyTotal": 45,
+    "new": 964,
+    "info": 283,
     "instagram": 70,
-    "hot": 78,
+    "hot": 76,
     "offer": 22,
     "waiting": 37,
-    "inProgress": 893,
-    "activePipeline": 1852,
-    "priority": 100,
+    "inProgress": 889,
+    "activePipeline": 1853,
+    "priority": 98,
     "won": 28,
-    "rejected": 433,
+    "rejected": 437,
     "archive": 7539,
-    "conversionRate": 6.073752711496746,
+    "conversionRate": 6.021505376344086,
     "stages": [
       {
         "id": "NEW",
@@ -169,7 +181,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 959
+        "count": 964
       },
       {
         "id": "UC_3OEITX",
@@ -185,7 +197,7 @@
         "sort": 30,
         "semantics": "",
         "group": "inProgress",
-        "count": 88
+        "count": 87
       },
       {
         "id": "UC_85GQIO",
@@ -217,7 +229,7 @@
         "sort": 70,
         "semantics": "",
         "group": "info",
-        "count": 284
+        "count": 283
       },
       {
         "id": "5",
@@ -233,7 +245,7 @@
         "sort": 90,
         "semantics": "",
         "group": "hot",
-        "count": 78
+        "count": 76
       },
       {
         "id": "UC_G68KST",
@@ -313,7 +325,7 @@
         "sort": 190,
         "semantics": "F",
         "group": "rejected",
-        "count": 33
+        "count": 34
       },
       {
         "id": "UC_VBOFEP",
@@ -321,7 +333,7 @@
         "sort": 200,
         "semantics": "F",
         "group": "rejected",
-        "count": 166
+        "count": 169
       },
       {
         "id": "UC_0KQ7Z9",
@@ -350,5 +362,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "KASIM 2026 en verimli kampanya. 12.11.2026 yeniden değerlendirilmeli. Son 24 saatte 40 yeni lead oluştu. Öncelikli takipte 100 müşteri var: 78 sıcak müşteri ve 22 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.1. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "KASIM 2026 en verimli kampanya. 12.11.2026 yeniden değerlendirilmeli. Son 24 saatte 45 yeni lead oluştu. Öncelikli takipte 98 müşteri var: 76 sıcak müşteri ve 22 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.0. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
