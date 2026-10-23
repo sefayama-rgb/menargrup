@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T20:16:39.815Z",
+  "generatedAt": "2026-10-23T23:20:43.065Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1686.0799999999997,
-    "totalMessages": 54,
-    "costPerMessage": 31.2237037037037,
+    "totalSpend": 1723.29,
+    "totalMessages": 57,
+    "costPerMessage": 30.23315789473684,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
@@ -86,9 +86,9 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 130.44,
+        "spend": 133.67,
         "messages": 7,
-        "costPerMessage": 18.634285714285713,
+        "costPerMessage": 19.095714285714283,
         "dateStart": "2026-10-23",
         "dateStop": "2026-10-23",
         "decision": {
@@ -110,9 +110,9 @@
       },
       {
         "campaign": "lütfü h thy",
-        "spend": 124.8,
-        "messages": 3,
-        "costPerMessage": 41.6,
+        "spend": 129.11,
+        "messages": 4,
+        "costPerMessage": 32.2775,
         "dateStart": "2026-10-23",
         "dateStop": "2026-10-23",
         "decision": {
@@ -134,9 +134,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 132.98,
-        "messages": 4,
-        "costPerMessage": 33.245,
+        "spend": 139.77,
+        "messages": 5,
+        "costPerMessage": 27.954,
         "dateStart": "2026-10-23",
         "dateStop": "2026-10-23",
         "decision": {
@@ -146,9 +146,9 @@
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 215.34,
-        "messages": 7,
-        "costPerMessage": 30.762857142857143,
+        "spend": 233.29,
+        "messages": 8,
+        "costPerMessage": 29.16125,
         "dateStart": "2026-10-23",
         "dateStop": "2026-10-23",
         "decision": {
@@ -158,9 +158,9 @@
       },
       {
         "campaign": "12.11.2026",
-        "spend": 192.59,
+        "spend": 197.52,
         "messages": 5,
-        "costPerMessage": 38.518,
+        "costPerMessage": 39.504000000000005,
         "dateStart": "2026-10-23",
         "dateStop": "2026-10-23",
         "decision": {
