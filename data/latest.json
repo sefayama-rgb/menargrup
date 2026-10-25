@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T21:48:17.697Z",
+  "generatedAt": "2026-10-25T23:54:05.930Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1874.3499999999997,
+    "totalSpend": 1877.23,
     "totalMessages": 53,
-    "costPerMessage": 35.36509433962264,
+    "costPerMessage": 35.41943396226415,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
@@ -86,9 +86,9 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 192.28,
+        "spend": 193.09,
         "messages": 9,
-        "costPerMessage": 21.364444444444445,
+        "costPerMessage": 21.454444444444444,
         "dateStart": "2026-10-25",
         "dateStop": "2026-10-25",
         "decision": {
@@ -110,9 +110,9 @@
       },
       {
         "campaign": "lütfü h thy",
-        "spend": 228.96,
+        "spend": 229.78,
         "messages": 2,
-        "costPerMessage": 114.48,
+        "costPerMessage": 114.89,
         "dateStart": "2026-10-25",
         "dateStop": "2026-10-25",
         "decision": {
@@ -122,9 +122,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 203.6,
+        "spend": 203.73,
         "messages": 7,
-        "costPerMessage": 29.085714285714285,
+        "costPerMessage": 29.104285714285712,
         "dateStart": "2026-10-25",
         "dateStop": "2026-10-25",
         "decision": {
@@ -134,9 +134,9 @@
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 325.38,
+        "spend": 326.08,
         "messages": 9,
-        "costPerMessage": 36.153333333333336,
+        "costPerMessage": 36.23111111111111,
         "dateStart": "2026-10-25",
         "dateStop": "2026-10-25",
         "decision": {
@@ -146,9 +146,9 @@
       },
       {
         "campaign": "12.11.2026",
-        "spend": 249.72,
+        "spend": 250.14,
         "messages": 4,
-        "costPerMessage": 62.43,
+        "costPerMessage": 62.535,
         "dateStart": "2026-10-25",
         "dateStop": "2026-10-25",
         "decision": {
@@ -159,16 +159,16 @@
     ]
   },
   "crm": {
-    "total": 9925,
-    "dailyTotal": 54,
-    "new": 1028,
+    "total": 9928,
+    "dailyTotal": 57,
+    "new": 1031,
     "info": 283,
     "instagram": 70,
     "hot": 66,
     "offer": 22,
     "waiting": 37,
     "inProgress": 878,
-    "activePipeline": 1906,
+    "activePipeline": 1909,
     "priority": 88,
     "won": 31,
     "rejected": 449,
@@ -181,7 +181,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1028
+        "count": 1031
       },
       {
         "id": "UC_3OEITX",
@@ -362,5 +362,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "KASIM 2026 en verimli kampanya. lütfü h thy yeniden değerlendirilmeli. Son 24 saatte 54 yeni lead oluştu. Öncelikli takipte 88 müşteri var: 66 sıcak müşteri ve 22 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.5. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "KASIM 2026 en verimli kampanya. lütfü h thy yeniden değerlendirilmeli. Son 24 saatte 57 yeni lead oluştu. Öncelikli takipte 88 müşteri var: 66 sıcak müşteri ve 22 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.5. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
