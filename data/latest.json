@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T10:48:31.863Z",
+  "generatedAt": "2026-10-27T16:14:08.491Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1240.94,
-    "totalMessages": 29,
-    "costPerMessage": 42.791034482758626,
+    "totalSpend": 1502.49,
+    "totalMessages": 34,
+    "costPerMessage": 44.19088235294117,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 156.64,
+        "spend": 158.06,
         "messages": 9,
-        "costPerMessage": 17.404444444444444,
+        "costPerMessage": 17.56222222222222,
         "dateStart": "2026-10-26",
         "dateStop": "2026-10-26",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 144.04,
+        "spend": 144.09,
         "messages": 3,
-        "costPerMessage": 48.01333333333333,
+        "costPerMessage": 48.03,
         "dateStart": "2026-10-26",
         "dateStop": "2026-10-26",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 267.21,
+        "spend": 267.5,
         "messages": 9,
-        "costPerMessage": 29.689999999999998,
+        "costPerMessage": 29.72222222222222,
         "dateStart": "2026-10-26",
         "dateStop": "2026-10-26",
         "decision": {
@@ -74,19 +74,19 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 57.11,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 92.79,
+        "messages": 2,
+        "costPerMessage": 46.395,
         "dateStart": "2026-10-27",
         "dateStop": "2026-10-27",
         "decision": {
-          "label": "Veri yetersiz",
+          "label": "Takip et",
           "level": "watch"
         }
       },
       {
         "campaign": "lütfü h thy",
-        "spend": 53.25,
+        "spend": 109.29,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-10-27",
@@ -98,21 +98,21 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 62.31,
-        "messages": 1,
-        "costPerMessage": 62.31,
+        "spend": 105.76,
+        "messages": 3,
+        "costPerMessage": 35.25333333333334,
         "dateStart": "2026-10-27",
         "dateStop": "2026-10-27",
         "decision": {
-          "label": "Durdur / değiştir",
-          "level": "bad"
+          "label": "Takip et",
+          "level": "watch"
         }
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 82.54,
-        "messages": 3,
-        "costPerMessage": 27.513333333333335,
+        "spend": 155.68,
+        "messages": 4,
+        "costPerMessage": 38.92,
         "dateStart": "2026-10-27",
         "dateStop": "2026-10-27",
         "decision": {
@@ -122,34 +122,34 @@
       },
       {
         "campaign": "12.11.2026",
-        "spend": 63.92,
+        "spend": 115.4,
         "messages": 3,
-        "costPerMessage": 21.30666666666667,
+        "costPerMessage": 38.46666666666667,
         "dateStart": "2026-10-27",
         "dateStop": "2026-10-27",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       }
     ]
   },
   "crm": {
-    "total": 9955,
-    "dailyTotal": 31,
-    "new": 1055,
-    "info": 283,
+    "total": 9958,
+    "dailyTotal": 34,
+    "new": 1057,
+    "info": 281,
     "instagram": 70,
-    "hot": 66,
-    "offer": 22,
+    "hot": 56,
+    "offer": 20,
     "waiting": 37,
-    "inProgress": 876,
-    "activePipeline": 1931,
-    "priority": 88,
+    "inProgress": 864,
+    "activePipeline": 1921,
+    "priority": 76,
     "won": 31,
-    "rejected": 454,
+    "rejected": 467,
     "archive": 7539,
-    "conversionRate": 6.391752577319587,
+    "conversionRate": 6.2248995983935735,
     "stages": [
       {
         "id": "NEW",
@@ -157,7 +157,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1055
+        "count": 1057
       },
       {
         "id": "UC_3OEITX",
@@ -189,7 +189,7 @@
         "sort": 50,
         "semantics": "",
         "group": "inProgress",
-        "count": 23
+        "count": 25
       },
       {
         "id": "UC_UYC63Q",
@@ -205,7 +205,7 @@
         "sort": 70,
         "semantics": "",
         "group": "info",
-        "count": 283
+        "count": 281
       },
       {
         "id": "5",
@@ -221,7 +221,7 @@
         "sort": 90,
         "semantics": "",
         "group": "hot",
-        "count": 66
+        "count": 56
       },
       {
         "id": "UC_G68KST",
@@ -229,7 +229,7 @@
         "sort": 100,
         "semantics": "",
         "group": "offer",
-        "count": 22
+        "count": 20
       },
       {
         "id": "UC_P5MO63",
@@ -277,7 +277,7 @@
         "sort": 160,
         "semantics": "F",
         "group": "rejected",
-        "count": 171
+        "count": 172
       },
       {
         "id": "1",
@@ -285,7 +285,7 @@
         "sort": 170,
         "semantics": "F",
         "group": "rejected",
-        "count": 29
+        "count": 34
       },
       {
         "id": "UC_LKAD1J",
@@ -309,7 +309,7 @@
         "sort": 200,
         "semantics": "F",
         "group": "rejected",
-        "count": 173
+        "count": 180
       },
       {
         "id": "UC_0KQ7Z9",
@@ -338,5 +338,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "KASIM 2026 en verimli kampanya. lütfü h thy yeniden değerlendirilmeli. Son 24 saatte 31 yeni lead oluştu. Öncelikli takipte 88 müşteri var: 66 sıcak müşteri ve 22 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.4. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "KASIM 2026 en verimli kampanya. lütfü h thy yeniden değerlendirilmeli. Son 24 saatte 34 yeni lead oluştu. Öncelikli takipte 76 müşteri var: 56 sıcak müşteri ve 20 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.2. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
