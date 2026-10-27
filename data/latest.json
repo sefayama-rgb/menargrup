@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:14:08.491Z",
+  "generatedAt": "2026-10-27T20:45:46.888Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1502.49,
-    "totalMessages": 34,
-    "costPerMessage": 44.19088235294117,
+    "totalSpend": 1754.6100000000001,
+    "totalMessages": 42,
+    "costPerMessage": 41.776428571428575,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 144.09,
+        "spend": 144.2,
         "messages": 3,
-        "costPerMessage": 48.03,
+        "costPerMessage": 48.06666666666666,
         "dateStart": "2026-10-26",
         "dateStop": "2026-10-26",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 267.5,
+        "spend": 267.51,
         "messages": 9,
-        "costPerMessage": 29.72222222222222,
+        "costPerMessage": 29.723333333333333,
         "dateStart": "2026-10-26",
         "dateStop": "2026-10-26",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 92.79,
-        "messages": 2,
-        "costPerMessage": 46.395,
+        "spend": 132.73,
+        "messages": 3,
+        "costPerMessage": 44.24333333333333,
         "dateStart": "2026-10-27",
         "dateStop": "2026-10-27",
         "decision": {
@@ -86,21 +86,21 @@
       },
       {
         "campaign": "lütfü h thy",
-        "spend": 109.29,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 144.45,
+        "messages": 1,
+        "costPerMessage": 144.45,
         "dateStart": "2026-10-27",
         "dateStop": "2026-10-27",
         "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 105.76,
-        "messages": 3,
-        "costPerMessage": 35.25333333333334,
+        "spend": 148.92,
+        "messages": 4,
+        "costPerMessage": 37.23,
         "dateStart": "2026-10-27",
         "dateStop": "2026-10-27",
         "decision": {
@@ -110,9 +110,9 @@
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 155.68,
-        "messages": 4,
-        "costPerMessage": 38.92,
+        "spend": 224.71,
+        "messages": 6,
+        "costPerMessage": 37.45166666666667,
         "dateStart": "2026-10-27",
         "dateStop": "2026-10-27",
         "decision": {
@@ -122,9 +122,9 @@
       },
       {
         "campaign": "12.11.2026",
-        "spend": 115.4,
-        "messages": 3,
-        "costPerMessage": 38.46666666666667,
+        "spend": 180.11,
+        "messages": 6,
+        "costPerMessage": 30.018333333333334,
         "dateStart": "2026-10-27",
         "dateStop": "2026-10-27",
         "decision": {
@@ -135,16 +135,16 @@
     ]
   },
   "crm": {
-    "total": 9958,
-    "dailyTotal": 34,
-    "new": 1057,
+    "total": 9966,
+    "dailyTotal": 42,
+    "new": 1065,
     "info": 281,
     "instagram": 70,
     "hot": 56,
     "offer": 20,
     "waiting": 37,
     "inProgress": 864,
-    "activePipeline": 1921,
+    "activePipeline": 1929,
     "priority": 76,
     "won": 31,
     "rejected": 467,
@@ -157,7 +157,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1057
+        "count": 1065
       },
       {
         "id": "UC_3OEITX",
@@ -338,5 +338,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "KASIM 2026 en verimli kampanya. lütfü h thy yeniden değerlendirilmeli. Son 24 saatte 34 yeni lead oluştu. Öncelikli takipte 76 müşteri var: 56 sıcak müşteri ve 20 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.2. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "KASIM 2026 en verimli kampanya. lütfü h thy yeniden değerlendirilmeli. Son 24 saatte 42 yeni lead oluştu. Öncelikli takipte 76 müşteri var: 56 sıcak müşteri ve 20 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.2. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
