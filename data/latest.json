@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T08:31:16.829Z",
+  "generatedAt": "2026-10-29T15:34:15.345Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 955.77,
-    "totalMessages": 34,
-    "costPerMessage": 28.110882352941175,
+    "totalSpend": 1098.54,
+    "totalMessages": 39,
+    "costPerMessage": 28.167692307692306,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 181.03,
+        "spend": 185.2,
         "messages": 9,
-        "costPerMessage": 20.114444444444445,
+        "costPerMessage": 20.577777777777776,
         "dateStart": "2026-10-28",
         "dateStop": "2026-10-28",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 170.91,
+        "spend": 171.13,
         "messages": 6,
-        "costPerMessage": 28.485,
+        "costPerMessage": 28.521666666666665,
         "dateStart": "2026-10-28",
         "dateStop": "2026-10-28",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 319.89,
+        "spend": 320.85,
         "messages": 10,
-        "costPerMessage": 31.988999999999997,
+        "costPerMessage": 32.085,
         "dateStart": "2026-10-28",
         "dateStop": "2026-10-28",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 47.57,
-        "messages": 1,
-        "costPerMessage": 47.57,
+        "spend": 89.78,
+        "messages": 3,
+        "costPerMessage": 29.926666666666666,
         "dateStart": "2026-10-29",
         "dateStop": "2026-10-29",
         "decision": {
@@ -98,9 +98,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 37.98,
-        "messages": 3,
-        "costPerMessage": 12.659999999999998,
+        "spend": 77.65,
+        "messages": 5,
+        "costPerMessage": 15.530000000000001,
         "dateStart": "2026-10-29",
         "dateStop": "2026-10-29",
         "decision": {
@@ -110,29 +110,41 @@
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 77.43,
-        "messages": 2,
-        "costPerMessage": 38.715,
+        "spend": 132.97,
+        "messages": 3,
+        "costPerMessage": 44.32333333333333,
         "dateStart": "2026-10-29",
         "dateStop": "2026-10-29",
         "decision": {
           "label": "Takip et",
           "level": "watch"
         }
+      },
+      {
+        "campaign": "12.11.2026",
+        "spend": 0,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-10-29",
+        "dateStop": "2026-10-29",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
       }
     ]
   },
   "crm": {
-    "total": 10006,
-    "dailyTotal": 40,
-    "new": 1104,
+    "total": 10010,
+    "dailyTotal": 44,
+    "new": 1108,
     "info": 254,
     "instagram": 70,
     "hot": 56,
     "offer": 20,
     "waiting": 37,
     "inProgress": 845,
-    "activePipeline": 1949,
+    "activePipeline": 1953,
     "priority": 76,
     "won": 31,
     "rejected": 487,
@@ -145,7 +157,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1104
+        "count": 1108
       },
       {
         "id": "UC_3OEITX",
@@ -326,5 +338,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "kasım 12 2026 en verimli kampanya. KASIM 2026 yeniden değerlendirilmeli. Son 24 saatte 40 yeni lead oluştu. Öncelikli takipte 76 müşteri var: 56 sıcak müşteri ve 20 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.0. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "kasım 12 2026 en verimli kampanya. 12 KASIM ARA TATİL yeniden değerlendirilmeli. Son 24 saatte 44 yeni lead oluştu. Öncelikli takipte 76 müşteri var: 56 sıcak müşteri ve 20 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %6.0. 7539 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
