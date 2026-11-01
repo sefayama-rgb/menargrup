@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T19:24:09.159Z",
+  "generatedAt": "2026-11-01T22:57:27.999Z",
   "status": "aktif",
   "summary": {
     "total": 350,
@@ -9,7 +9,7 @@
     "completed": 116,
     "overdue": 8,
     "createdThisWeek": 0,
-    "completedThisWeek": 1
+    "completedThisWeek": 0
   },
   "tasks": [
     {
