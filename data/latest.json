@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T02:16:46.208Z",
+  "generatedAt": "2026-11-02T04:07:26.000Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 568.8100000000001,
+    "totalSpend": 595.2,
     "totalMessages": 14,
-    "costPerMessage": 40.62928571428572,
+    "costPerMessage": 42.51428571428572,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 189.95,
+        "spend": 190.04,
         "messages": 1,
-        "costPerMessage": 189.95,
+        "costPerMessage": 190.04,
         "dateStart": "2026-11-01",
         "dateStop": "2026-11-01",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 323.95,
+        "spend": 324.83,
         "messages": 12,
-        "costPerMessage": 26.995833333333334,
+        "costPerMessage": 27.069166666666664,
         "dateStart": "2026-11-01",
         "dateStop": "2026-11-01",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 25.7,
+        "spend": 36.64,
         "messages": 1,
-        "costPerMessage": 25.7,
+        "costPerMessage": 36.64,
         "dateStart": "2026-11-02",
         "dateStop": "2026-11-02",
         "decision": {
@@ -74,7 +74,7 @@
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 29.21,
+        "spend": 43.69,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-11-02",
@@ -290,5 +290,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "KASIM 2026 en verimli kampanya. KASIM 2026 yeniden değerlendirilmeli. Son 24 saatte 18 yeni lead oluştu. Öncelikli takipte 74 müşteri var: 53 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.8. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "12 KASIM ARA TATİL en verimli kampanya. KASIM 2026 yeniden değerlendirilmeli. Son 24 saatte 18 yeni lead oluştu. Öncelikli takipte 74 müşteri var: 53 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.8. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
