@@ -9,6 +9,7 @@ on:
       - 'automation/report.js'
       - 'automation/weekly_report.js'
       - 'automation/weekly_html.js'
+      - 'automation/social.js'
   schedule:
     - cron: '*/15 * * * *'
 
@@ -52,6 +53,12 @@ jobs:
       - name: Excel web veri tablolarini uret
         run: node automation/weekly_html.js
 
+      - name: Sosyal medya takipci ve paylasim verisini uret
+        continue-on-error: true
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+        run: node automation/social.js
+
       - name: Guncel veri dosyalarini artifact olarak sakla
         uses: actions/upload-artifact@v4
         with:
@@ -76,6 +83,7 @@ jobs:
             data/tasks_latest.csv \
             data/weekly_kpi_table.html \
             data/tasks_latest_table.html
+          if [ -f data/social.json ]; then git add data/social.json; fi
 
           if git diff --cached --quiet; then
             echo "Degisiklik yok."
