@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T23:19:04.028Z",
+  "generatedAt": "2026-11-05T03:37:40.555Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,17 +8,17 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 3629.6800000000003,
-    "totalMessages": 67,
-    "costPerMessage": 54.17432835820896,
+    "totalSpend": 2017.11,
+    "totalMessages": 31,
+    "costPerMessage": 65.06806451612903,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 156.48,
+        "spend": 178.14,
         "messages": 5,
-        "costPerMessage": 31.296,
-        "dateStart": "2026-11-03",
-        "dateStop": "2026-11-03",
+        "costPerMessage": 35.628,
+        "dateStart": "2026-11-04",
+        "dateStop": "2026-11-04",
         "decision": {
           "label": "Takip et",
           "level": "watch"
@@ -26,35 +26,35 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 165.56,
-        "messages": 5,
-        "costPerMessage": 33.112,
-        "dateStart": "2026-11-03",
-        "dateStop": "2026-11-03",
+        "spend": 223.7,
+        "messages": 4,
+        "costPerMessage": 55.925,
+        "dateStart": "2026-11-04",
+        "dateStop": "2026-11-04",
         "decision": {
-          "label": "Takip et",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 269.61,
-        "messages": 10,
-        "costPerMessage": 26.961000000000002,
-        "dateStart": "2026-11-03",
-        "dateStop": "2026-11-03",
+        "spend": 280.37,
+        "messages": 5,
+        "costPerMessage": 56.074,
+        "dateStart": "2026-11-04",
+        "dateStop": "2026-11-04",
         "decision": {
-          "label": "Takip et",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "ara tatil yeni reklam",
-        "spend": 1072.73,
-        "messages": 18,
-        "costPerMessage": 59.596111111111114,
-        "dateStart": "2026-11-03",
-        "dateStop": "2026-11-03",
+        "spend": 1286.6,
+        "messages": 15,
+        "costPerMessage": 85.77333333333333,
+        "dateStart": "2026-11-04",
+        "dateStop": "2026-11-04",
         "decision": {
           "label": "Durdur / değiştir",
           "level": "bad"
@@ -62,65 +62,65 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 177.21,
-        "messages": 5,
-        "costPerMessage": 35.442,
-        "dateStart": "2026-11-04",
-        "dateStop": "2026-11-04",
+        "spend": 17.31,
+        "messages": 2,
+        "costPerMessage": 8.655,
+        "dateStart": "2026-11-05",
+        "dateStop": "2026-11-05",
         "decision": {
-          "label": "Takip et",
-          "level": "watch"
+          "label": "Bütçeyi artır",
+          "level": "good"
         }
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 223.47,
-        "messages": 4,
-        "costPerMessage": 55.8675,
-        "dateStart": "2026-11-04",
-        "dateStop": "2026-11-04",
+        "spend": 0,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-11-05",
+        "dateStop": "2026-11-05",
         "decision": {
-          "label": "Durdur / değiştir",
-          "level": "bad"
+          "label": "Veri yetersiz",
+          "level": "watch"
         }
       },
       {
         "campaign": "12 KASIM ARA TATİL",
-        "spend": 279.49,
-        "messages": 5,
-        "costPerMessage": 55.898,
-        "dateStart": "2026-11-04",
-        "dateStop": "2026-11-04",
+        "spend": 30.99,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-11-05",
+        "dateStop": "2026-11-05",
         "decision": {
-          "label": "Durdur / değiştir",
-          "level": "bad"
+          "label": "Veri yetersiz",
+          "level": "watch"
         }
       },
       {
         "campaign": "ara tatil yeni reklam",
-        "spend": 1285.13,
-        "messages": 15,
-        "costPerMessage": 85.67533333333334,
-        "dateStart": "2026-11-04",
-        "dateStop": "2026-11-04",
+        "spend": 0,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-11-05",
+        "dateStop": "2026-11-05",
         "decision": {
-          "label": "Durdur / değiştir",
-          "level": "bad"
+          "label": "Veri yetersiz",
+          "level": "watch"
         }
       }
     ]
   },
   "crm": {
-    "total": 10181,
-    "dailyTotal": 75,
-    "new": 1267,
+    "total": 10182,
+    "dailyTotal": 33,
+    "new": 1268,
     "info": 243,
     "instagram": 70,
     "hot": 54,
     "offer": 21,
     "waiting": 37,
     "inProgress": 838,
-    "activePipeline": 2105,
+    "activePipeline": 2106,
     "priority": 75,
     "won": 31,
     "rejected": 507,
@@ -133,7 +133,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1267
+        "count": 1268
       },
       {
         "id": "UC_3OEITX",
@@ -314,5 +314,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "12 KASIM ARA TATİL en verimli kampanya. ara tatil yeni reklam yeniden değerlendirilmeli. Son 24 saatte 75 yeni lead oluştu. Öncelikli takipte 75 müşteri var: 54 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.8. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "KASIM 2026 en verimli kampanya. ara tatil yeni reklam yeniden değerlendirilmeli. Son 24 saatte 33 yeni lead oluştu. Öncelikli takipte 75 müşteri var: 54 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.8. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
