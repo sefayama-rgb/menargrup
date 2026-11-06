@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T14:49:22.659Z",
+  "generatedAt": "2026-11-06T20:42:45.305Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,9 +8,9 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1840.4300000000003,
-    "totalMessages": 56,
-    "costPerMessage": 32.86482142857143,
+    "totalSpend": 2039.0900000000001,
+    "totalMessages": 68,
+    "costPerMessage": 29.986617647058825,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "ara tatil yeni reklam",
-        "spend": 836.58,
+        "spend": 836.67,
         "messages": 24,
-        "costPerMessage": 34.8575,
+        "costPerMessage": 34.86125,
         "dateStart": "2026-11-05",
         "dateStop": "2026-11-05",
         "decision": {
@@ -74,26 +74,26 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 96.66,
-        "messages": 3,
-        "costPerMessage": 32.22,
-        "dateStart": "2026-11-06",
-        "dateStop": "2026-11-06",
-        "decision": {
-          "label": "Takip et",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "kasım 12 2026",
-        "spend": 138.78,
-        "messages": 6,
-        "costPerMessage": 23.13,
+        "spend": 150.68,
+        "messages": 7,
+        "costPerMessage": 21.525714285714287,
         "dateStart": "2026-11-06",
         "dateStop": "2026-11-06",
         "decision": {
           "label": "Bütçeyi artır",
           "level": "good"
+        }
+      },
+      {
+        "campaign": "kasım 12 2026",
+        "spend": 176.25,
+        "messages": 6,
+        "costPerMessage": 29.375,
+        "dateStart": "2026-11-06",
+        "dateStop": "2026-11-06",
+        "decision": {
+          "label": "Takip et",
+          "level": "watch"
         }
       },
       {
@@ -122,30 +122,30 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 168.91,
-        "messages": 3,
-        "costPerMessage": 56.303333333333335,
+        "spend": 275.99,
+        "messages": 11,
+        "costPerMessage": 25.09,
         "dateStart": "2026-11-06",
         "dateStop": "2026-11-06",
         "decision": {
-          "label": "Durdur / değiştir",
-          "level": "bad"
+          "label": "Takip et",
+          "level": "watch"
         }
       }
     ]
   },
   "crm": {
-    "total": 10227,
-    "dailyTotal": 47,
-    "new": 1312,
+    "total": 10238,
+    "dailyTotal": 58,
+    "new": 1321,
     "info": 244,
     "instagram": 70,
-    "hot": 54,
+    "hot": 55,
     "offer": 21,
-    "waiting": 37,
-    "inProgress": 839,
-    "activePipeline": 2151,
-    "priority": 75,
+    "waiting": 38,
+    "inProgress": 841,
+    "activePipeline": 2162,
+    "priority": 76,
     "won": 31,
     "rejected": 507,
     "archive": 7538,
@@ -157,7 +157,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1312
+        "count": 1321
       },
       {
         "id": "UC_3OEITX",
@@ -221,7 +221,7 @@
         "sort": 90,
         "semantics": "",
         "group": "hot",
-        "count": 54
+        "count": 55
       },
       {
         "id": "UC_G68KST",
@@ -237,7 +237,7 @@
         "sort": 110,
         "semantics": "",
         "group": "waiting",
-        "count": 37
+        "count": 38
       },
       {
         "id": "UC_SE8TXL",
@@ -338,5 +338,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "12 KASIM ARA TATİL en verimli kampanya. kasım 12 2026 yeniden değerlendirilmeli. Son 24 saatte 47 yeni lead oluştu. Öncelikli takipte 75 müşteri var: 54 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.8. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "12 KASIM ARA TATİL en verimli kampanya. kasım 12 2026 yeniden değerlendirilmeli. Son 24 saatte 58 yeni lead oluştu. Öncelikli takipte 76 müşteri var: 55 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.8. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
