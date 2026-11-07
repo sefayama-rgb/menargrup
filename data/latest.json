@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T13:25:21.972Z",
+  "generatedAt": "2026-11-07T18:11:16.374Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 881.3300000000002,
+    "totalSpend": 924.19,
     "totalMessages": 35,
-    "costPerMessage": 25.180857142857146,
+    "costPerMessage": 26.405428571428573,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 152.43,
+        "spend": 152.65,
         "messages": 7,
-        "costPerMessage": 21.775714285714287,
+        "costPerMessage": 21.807142857142857,
         "dateStart": "2026-11-06",
         "dateStop": "2026-11-06",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 177.51,
+        "spend": 177.53,
         "messages": 6,
-        "costPerMessage": 29.584999999999997,
+        "costPerMessage": 29.588333333333335,
         "dateStart": "2026-11-06",
         "dateStop": "2026-11-06",
         "decision": {
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 286.99,
+        "spend": 287.06,
         "messages": 11,
-        "costPerMessage": 26.09,
+        "costPerMessage": 26.096363636363638,
         "dateStart": "2026-11-06",
         "dateStop": "2026-11-06",
         "decision": {
@@ -74,9 +74,9 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 63.7,
+        "spend": 74.22,
         "messages": 3,
-        "costPerMessage": 21.233333333333334,
+        "costPerMessage": 24.74,
         "dateStart": "2026-11-07",
         "dateStop": "2026-11-07",
         "decision": {
@@ -86,9 +86,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 74.24,
+        "spend": 82.95,
         "messages": 4,
-        "costPerMessage": 18.56,
+        "costPerMessage": 20.7375,
         "dateStart": "2026-11-07",
         "dateStop": "2026-11-07",
         "decision": {
@@ -122,9 +122,9 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 126.46,
+        "spend": 149.78,
         "messages": 3,
-        "costPerMessage": 42.15333333333333,
+        "costPerMessage": 49.92666666666667,
         "dateStart": "2026-11-07",
         "dateStop": "2026-11-07",
         "decision": {
