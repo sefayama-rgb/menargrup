@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T18:34:50.583Z",
+  "generatedAt": "2026-11-12T01:01:10.493Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,87 +8,27 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1155.7,
-    "totalMessages": 29,
-    "costPerMessage": 39.851724137931036,
+    "totalSpend": 667.14,
+    "totalMessages": 17,
+    "costPerMessage": 39.243529411764705,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 145.01,
-        "messages": 4,
-        "costPerMessage": 36.2525,
-        "dateStart": "2026-11-10",
-        "dateStop": "2026-11-10",
-        "decision": {
-          "label": "Takip et",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "kasım 12 2026",
-        "spend": 213.91,
-        "messages": 4,
-        "costPerMessage": 53.4775,
-        "dateStart": "2026-11-10",
-        "dateStop": "2026-11-10",
-        "decision": {
-          "label": "Takip et",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "12 KASIM ARA TATİL",
-        "spend": 0,
-        "messages": 0,
-        "costPerMessage": null,
-        "dateStart": "2026-11-10",
-        "dateStop": "2026-11-10",
-        "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "ara tatil yeni reklam",
-        "spend": 0,
-        "messages": 0,
-        "costPerMessage": null,
-        "dateStart": "2026-11-10",
-        "dateStop": "2026-11-10",
-        "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "grup reklam",
-        "spend": 263.04,
-        "messages": 12,
-        "costPerMessage": 21.92,
-        "dateStart": "2026-11-10",
-        "dateStop": "2026-11-10",
-        "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
-        }
-      },
-      {
-        "campaign": "KASIM 2026",
-        "spend": 136.32,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 150.32,
+        "messages": 2,
+        "costPerMessage": 75.16,
         "dateStart": "2026-11-11",
         "dateStop": "2026-11-11",
         "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 183.66,
+        "spend": 184.72,
         "messages": 3,
-        "costPerMessage": 61.22,
+        "costPerMessage": 61.57333333333333,
         "dateStart": "2026-11-11",
         "dateStop": "2026-11-11",
         "decision": {
@@ -110,9 +50,9 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 170.88,
-        "messages": 5,
-        "costPerMessage": 34.176,
+        "spend": 206.62,
+        "messages": 8,
+        "costPerMessage": 25.8275,
         "dateStart": "2026-11-11",
         "dateStop": "2026-11-11",
         "decision": {
@@ -122,7 +62,7 @@
       },
       {
         "campaign": "MUHAMMET YAZICI",
-        "spend": 42.88,
+        "spend": 70.56,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-11-11",
@@ -131,20 +71,56 @@
           "label": "Veri yetersiz",
           "level": "watch"
         }
+      },
+      {
+        "campaign": "KASIM 2026",
+        "spend": 19.91,
+        "messages": 1,
+        "costPerMessage": 19.91,
+        "dateStart": "2026-11-12",
+        "dateStop": "2026-11-12",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "grup reklam",
+        "spend": 19.03,
+        "messages": 2,
+        "costPerMessage": 9.515,
+        "dateStart": "2026-11-12",
+        "dateStop": "2026-11-12",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "MUHAMMET YAZICI",
+        "spend": 15.98,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-11-12",
+        "dateStop": "2026-11-12",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
       }
     ]
   },
   "crm": {
-    "total": 10339,
-    "dailyTotal": 35,
-    "new": 1407,
+    "total": 10345,
+    "dailyTotal": 19,
+    "new": 1413,
     "info": 238,
     "instagram": 70,
     "hot": 60,
     "offer": 22,
     "waiting": 38,
     "inProgress": 843,
-    "activePipeline": 2250,
+    "activePipeline": 2256,
     "priority": 82,
     "won": 31,
     "rejected": 520,
@@ -157,7 +133,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1407
+        "count": 1413
       },
       {
         "id": "UC_3OEITX",
@@ -338,5 +314,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "12 KASIM ARA TATİL en verimli kampanya. kasım 12 2026 yeniden değerlendirilmeli. Son 24 saatte 35 yeni lead oluştu. Öncelikli takipte 82 müşteri var: 60 sıcak müşteri ve 22 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.6. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "12 KASIM ARA TATİL en verimli kampanya. KASIM 2026 yeniden değerlendirilmeli. Son 24 saatte 19 yeni lead oluştu. Öncelikli takipte 82 müşteri var: 60 sıcak müşteri ve 22 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.6. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
