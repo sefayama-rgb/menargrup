@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T03:35:41.714Z",
+  "generatedAt": "2026-11-14T10:58:07.124Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 879.9,
+    "totalSpend": 1040.24,
     "totalMessages": 15,
-    "costPerMessage": 58.66,
+    "costPerMessage": 69.34933333333333,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 142.68,
+        "spend": 142.92,
         "messages": 4,
-        "costPerMessage": 35.67,
+        "costPerMessage": 35.73,
         "dateStart": "2026-11-13",
         "dateStop": "2026-11-13",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 199.83,
+        "spend": 200.78,
         "messages": 3,
-        "costPerMessage": 66.61,
+        "costPerMessage": 66.92666666666666,
         "dateStart": "2026-11-13",
         "dateStop": "2026-11-13",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 303.39,
+        "spend": 303.54,
         "messages": 3,
-        "costPerMessage": 101.13,
+        "costPerMessage": 101.18,
         "dateStart": "2026-11-13",
         "dateStop": "2026-11-13",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "MUHAMMET YAZICI",
-        "spend": 91.98,
+        "spend": 93.58,
         "messages": 1,
-        "costPerMessage": 91.98,
+        "costPerMessage": 93.58,
         "dateStart": "2026-11-13",
         "dateStop": "2026-11-13",
         "decision": {
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 90.11,
+        "spend": 90.14,
         "messages": 2,
-        "costPerMessage": 45.055,
+        "costPerMessage": 45.07,
         "dateStart": "2026-11-13",
         "dateStop": "2026-11-13",
         "decision": {
@@ -74,7 +74,19 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 22.74,
+        "spend": 68.54,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-11-14",
+        "dateStop": "2026-11-14",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "kasım 12 2026",
+        "spend": 21.61,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-11-14",
@@ -86,26 +98,26 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 22.29,
+        "spend": 68.26,
         "messages": 1,
-        "costPerMessage": 22.29,
+        "costPerMessage": 68.26,
         "dateStart": "2026-11-14",
         "dateStop": "2026-11-14",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 6.88,
+        "spend": 50.87,
         "messages": 1,
-        "costPerMessage": 6.88,
+        "costPerMessage": 50.87,
         "dateStart": "2026-11-14",
         "dateStop": "2026-11-14",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       }
     ]
@@ -314,5 +326,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "MUHAMMET YAZICI YENİ en verimli kampanya. grup reklam yeniden değerlendirilmeli. Son 24 saatte 14 yeni lead oluştu. Öncelikli takipte 84 müşteri var: 62 sıcak müşteri ve 22 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.6. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "KASIM 2026 en verimli kampanya. grup reklam yeniden değerlendirilmeli. Son 24 saatte 14 yeni lead oluştu. Öncelikli takipte 84 müşteri var: 62 sıcak müşteri ve 22 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.6. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
