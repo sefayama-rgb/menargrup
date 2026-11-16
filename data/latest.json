@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T20:29:38.739Z",
+  "generatedAt": "2026-11-16T00:18:28.858Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,63 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1080.29,
+    "totalSpend": 698.2299999999999,
     "totalMessages": 24,
-    "costPerMessage": 45.01208333333333,
+    "costPerMessage": 29.092916666666664,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 105.56,
-        "messages": 0,
-        "costPerMessage": null,
-        "dateStart": "2026-11-14",
-        "dateStop": "2026-11-14",
-        "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "kasım 12 2026",
-        "spend": 65.99,
-        "messages": 0,
-        "costPerMessage": null,
-        "dateStart": "2026-11-14",
-        "dateStop": "2026-11-14",
-        "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "grup reklam",
-        "spend": 175.18,
-        "messages": 3,
-        "costPerMessage": 58.39333333333334,
-        "dateStart": "2026-11-14",
-        "dateStop": "2026-11-14",
-        "decision": {
-          "label": "Durdur / değiştir",
-          "level": "bad"
-        }
-      },
-      {
-        "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 127.4,
-        "messages": 2,
-        "costPerMessage": 63.7,
-        "dateStart": "2026-11-14",
-        "dateStop": "2026-11-14",
-        "decision": {
-          "label": "Durdur / değiştir",
-          "level": "bad"
-        }
-      },
-      {
-        "campaign": "KASIM 2026",
-        "spend": 137.81,
+        "spend": 142.55,
         "messages": 5,
-        "costPerMessage": 27.562,
+        "costPerMessage": 28.51,
         "dateStart": "2026-11-15",
         "dateStop": "2026-11-15",
         "decision": {
@@ -86,9 +38,9 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 270.24,
-        "messages": 8,
-        "costPerMessage": 33.78,
+        "spend": 286.4,
+        "messages": 9,
+        "costPerMessage": 31.82222222222222,
         "dateStart": "2026-11-15",
         "dateStop": "2026-11-15",
         "decision": {
@@ -98,29 +50,65 @@
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 198.11,
+        "spend": 205.22,
         "messages": 6,
-        "costPerMessage": 33.01833333333334,
+        "costPerMessage": 34.20333333333333,
         "dateStart": "2026-11-15",
         "dateStop": "2026-11-15",
         "decision": {
           "label": "Takip et",
           "level": "watch"
         }
+      },
+      {
+        "campaign": "KASIM 2026",
+        "spend": 14.27,
+        "messages": 1,
+        "costPerMessage": 14.27,
+        "dateStart": "2026-11-16",
+        "dateStop": "2026-11-16",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "grup reklam",
+        "spend": 29.65,
+        "messages": 2,
+        "costPerMessage": 14.825,
+        "dateStart": "2026-11-16",
+        "dateStop": "2026-11-16",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "MUHAMMET YAZICI YENİ",
+        "spend": 20.14,
+        "messages": 1,
+        "costPerMessage": 20.14,
+        "dateStart": "2026-11-16",
+        "dateStop": "2026-11-16",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
       }
     ]
   },
   "crm": {
-    "total": 10398,
+    "total": 10405,
     "dailyTotal": 25,
-    "new": 1464,
+    "new": 1471,
     "info": 238,
     "instagram": 70,
     "hot": 62,
     "offer": 22,
     "waiting": 38,
     "inProgress": 845,
-    "activePipeline": 2309,
+    "activePipeline": 2316,
     "priority": 84,
     "won": 31,
     "rejected": 520,
@@ -133,7 +121,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1464
+        "count": 1471
       },
       {
         "id": "UC_3OEITX",
