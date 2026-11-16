@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T07:05:43.166Z",
+  "generatedAt": "2026-11-16T17:01:42.407Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 808.51,
-    "totalMessages": 27,
-    "costPerMessage": 29.944814814814816,
+    "totalSpend": 1221.71,
+    "totalMessages": 33,
+    "costPerMessage": 37.02151515151515,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 142.67,
+        "spend": 142.7,
         "messages": 5,
-        "costPerMessage": 28.534,
+        "costPerMessage": 28.54,
         "dateStart": "2026-11-15",
         "dateStop": "2026-11-15",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 286.78,
+        "spend": 286.99,
         "messages": 9,
-        "costPerMessage": 31.86444444444444,
+        "costPerMessage": 31.887777777777778,
         "dateStart": "2026-11-15",
         "dateStop": "2026-11-15",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 205.71,
+        "spend": 205.99,
         "messages": 6,
-        "costPerMessage": 34.285000000000004,
+        "costPerMessage": 34.33166666666667,
         "dateStart": "2026-11-15",
         "dateStop": "2026-11-15",
         "decision": {
@@ -62,9 +62,9 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 43.35,
-        "messages": 1,
-        "costPerMessage": 43.35,
+        "spend": 129.5,
+        "messages": 3,
+        "costPerMessage": 43.166666666666664,
         "dateStart": "2026-11-16",
         "dateStop": "2026-11-16",
         "decision": {
@@ -73,10 +73,22 @@
         }
       },
       {
+        "campaign": "kasım 12 2026",
+        "spend": 140.52,
+        "messages": 1,
+        "costPerMessage": 140.52,
+        "dateStart": "2026-11-16",
+        "dateStop": "2026-11-16",
+        "decision": {
+          "label": "Durdur / değiştir",
+          "level": "bad"
+        }
+      },
+      {
         "campaign": "grup reklam",
-        "spend": 68.11,
-        "messages": 2,
-        "costPerMessage": 34.055,
+        "spend": 175.13,
+        "messages": 5,
+        "costPerMessage": 35.025999999999996,
         "dateStart": "2026-11-16",
         "dateStop": "2026-11-16",
         "decision": {
@@ -86,34 +98,34 @@
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 61.89,
+        "spend": 140.88,
         "messages": 4,
-        "costPerMessage": 15.4725,
+        "costPerMessage": 35.22,
         "dateStart": "2026-11-16",
         "dateStop": "2026-11-16",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       }
     ]
   },
   "crm": {
-    "total": 10407,
-    "dailyTotal": 27,
-    "new": 1473,
+    "total": 10412,
+    "dailyTotal": 32,
+    "new": 1477,
     "info": 238,
     "instagram": 70,
-    "hot": 62,
-    "offer": 22,
+    "hot": 56,
+    "offer": 21,
     "waiting": 38,
-    "inProgress": 845,
-    "activePipeline": 2318,
-    "priority": 84,
-    "won": 31,
-    "rejected": 520,
+    "inProgress": 838,
+    "activePipeline": 2315,
+    "priority": 77,
+    "won": 32,
+    "rejected": 527,
     "archive": 7538,
-    "conversionRate": 5.626134301270418,
+    "conversionRate": 5.724508050089446,
     "stages": [
       {
         "id": "NEW",
@@ -121,7 +133,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1473
+        "count": 1477
       },
       {
         "id": "UC_3OEITX",
@@ -185,7 +197,7 @@
         "sort": 90,
         "semantics": "",
         "group": "hot",
-        "count": 62
+        "count": 56
       },
       {
         "id": "UC_G68KST",
@@ -193,7 +205,7 @@
         "sort": 100,
         "semantics": "",
         "group": "offer",
-        "count": 22
+        "count": 21
       },
       {
         "id": "UC_P5MO63",
@@ -233,7 +245,7 @@
         "sort": 150,
         "semantics": "S",
         "group": "won",
-        "count": 31
+        "count": 32
       },
       {
         "id": "JUNK",
@@ -241,7 +253,7 @@
         "sort": 160,
         "semantics": "F",
         "group": "rejected",
-        "count": 184
+        "count": 185
       },
       {
         "id": "1",
@@ -265,7 +277,7 @@
         "sort": 190,
         "semantics": "F",
         "group": "rejected",
-        "count": 50
+        "count": 54
       },
       {
         "id": "UC_VBOFEP",
@@ -273,7 +285,7 @@
         "sort": 200,
         "semantics": "F",
         "group": "rejected",
-        "count": 195
+        "count": 197
       },
       {
         "id": "UC_0KQ7Z9",
@@ -302,5 +314,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "MUHAMMET YAZICI YENİ en verimli kampanya. KASIM 2026 yeniden değerlendirilmeli. Son 24 saatte 27 yeni lead oluştu. Öncelikli takipte 84 müşteri var: 62 sıcak müşteri ve 22 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.6. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "KASIM 2026 en verimli kampanya. kasım 12 2026 yeniden değerlendirilmeli. Son 24 saatte 32 yeni lead oluştu. Öncelikli takipte 77 müşteri var: 56 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
