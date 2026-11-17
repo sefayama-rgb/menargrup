@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T00:48:12.160Z",
+  "generatedAt": "2026-11-17T08:52:14.759Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 882.0100000000001,
-    "totalMessages": 20,
-    "costPerMessage": 44.100500000000004,
+    "totalSpend": 1015.5,
+    "totalMessages": 21,
+    "costPerMessage": 48.357142857142854,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 176.54,
+        "spend": 176.61,
         "messages": 4,
-        "costPerMessage": 44.135,
+        "costPerMessage": 44.1525,
         "dateStart": "2026-11-16",
         "dateStop": "2026-11-16",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 142.43,
+        "spend": 144.08,
         "messages": 1,
-        "costPerMessage": 142.43,
+        "costPerMessage": 144.08,
         "dateStart": "2026-11-16",
         "dateStop": "2026-11-16",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 283.43,
+        "spend": 283.88,
         "messages": 11,
-        "costPerMessage": 25.766363636363636,
+        "costPerMessage": 25.80727272727273,
         "dateStart": "2026-11-16",
         "dateStop": "2026-11-16",
         "decision": {
@@ -50,9 +50,9 @@
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 194.45,
+        "spend": 194.7,
         "messages": 4,
-        "costPerMessage": 48.6125,
+        "costPerMessage": 48.675,
         "dateStart": "2026-11-16",
         "dateStop": "2026-11-16",
         "decision": {
@@ -62,7 +62,19 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 22.44,
+        "spend": 42.56,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-11-17",
+        "dateStop": "2026-11-17",
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "kasım 12 2026",
+        "spend": 23.57,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-11-17",
@@ -74,19 +86,19 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 40.68,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 92.54,
+        "messages": 1,
+        "costPerMessage": 92.54,
         "dateStart": "2026-11-17",
         "dateStop": "2026-11-17",
         "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 22.04,
+        "spend": 57.56,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-11-17",
@@ -99,16 +111,16 @@
     ]
   },
   "crm": {
-    "total": 10416,
-    "dailyTotal": 16,
-    "new": 1481,
+    "total": 10417,
+    "dailyTotal": 17,
+    "new": 1482,
     "info": 238,
     "instagram": 70,
     "hot": 56,
     "offer": 21,
     "waiting": 38,
     "inProgress": 838,
-    "activePipeline": 2319,
+    "activePipeline": 2320,
     "priority": 77,
     "won": 32,
     "rejected": 527,
@@ -121,7 +133,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1481
+        "count": 1482
       },
       {
         "id": "UC_3OEITX",
@@ -302,5 +314,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "grup reklam en verimli kampanya. kasım 12 2026 yeniden değerlendirilmeli. Son 24 saatte 16 yeni lead oluştu. Öncelikli takipte 77 müşteri var: 56 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "grup reklam en verimli kampanya. kasım 12 2026 yeniden değerlendirilmeli. Son 24 saatte 17 yeni lead oluştu. Öncelikli takipte 77 müşteri var: 56 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
