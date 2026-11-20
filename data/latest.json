@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T02:59:13.481Z",
+  "generatedAt": "2026-11-20T11:19:37.048Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,15 +8,15 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 580.89,
-    "totalMessages": 28,
-    "costPerMessage": 20.74607142857143,
+    "totalSpend": 741.05,
+    "totalMessages": 37,
+    "costPerMessage": 20.028378378378378,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 139.57,
+        "spend": 141.1,
         "messages": 6,
-        "costPerMessage": 23.261666666666667,
+        "costPerMessage": 23.516666666666666,
         "dateStart": "2026-11-19",
         "dateStop": "2026-11-19",
         "decision": {
@@ -26,9 +26,9 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 144.41,
+        "spend": 144.59,
         "messages": 5,
-        "costPerMessage": 28.881999999999998,
+        "costPerMessage": 28.918,
         "dateStart": "2026-11-19",
         "dateStop": "2026-11-19",
         "decision": {
@@ -38,9 +38,9 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 172.42,
+        "spend": 173.28,
         "messages": 10,
-        "costPerMessage": 17.241999999999997,
+        "costPerMessage": 17.328,
         "dateStart": "2026-11-19",
         "dateStop": "2026-11-19",
         "decision": {
@@ -62,21 +62,33 @@
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 7.98,
-        "messages": 0,
-        "costPerMessage": null,
+        "spend": 36.92,
+        "messages": 4,
+        "costPerMessage": 9.23,
         "dateStart": "2026-11-20",
         "dateStop": "2026-11-20",
         "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "kasım 12 2026",
+        "spend": 61.58,
+        "messages": 1,
+        "costPerMessage": 61.58,
+        "dateStart": "2026-11-20",
+        "dateStop": "2026-11-20",
+        "decision": {
+          "label": "Durdur / değiştir",
+          "level": "bad"
         }
       },
       {
         "campaign": "grup reklam",
-        "spend": 24.81,
-        "messages": 2,
-        "costPerMessage": 12.405,
+        "spend": 63.53,
+        "messages": 6,
+        "costPerMessage": 10.588333333333333,
         "dateStart": "2026-11-20",
         "dateStop": "2026-11-20",
         "decision": {
@@ -86,7 +98,7 @@
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 10.32,
+        "spend": 38.67,
         "messages": 0,
         "costPerMessage": null,
         "dateStart": "2026-11-20",
@@ -99,16 +111,16 @@
     ]
   },
   "crm": {
-    "total": 10479,
-    "dailyTotal": 25,
-    "new": 1540,
+    "total": 10487,
+    "dailyTotal": 33,
+    "new": 1548,
     "info": 233,
     "instagram": 70,
     "hot": 58,
     "offer": 21,
     "waiting": 38,
     "inProgress": 835,
-    "activePipeline": 2375,
+    "activePipeline": 2383,
     "priority": 79,
     "won": 32,
     "rejected": 534,
@@ -121,7 +133,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1540
+        "count": 1548
       },
       {
         "id": "UC_3OEITX",
@@ -302,5 +314,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "grup reklam en verimli kampanya. kasım 12 2026 yeniden değerlendirilmeli. Son 24 saatte 25 yeni lead oluştu. Öncelikli takipte 79 müşteri var: 58 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "KASIM 2026 en verimli kampanya. kasım 12 2026 yeniden değerlendirilmeli. Son 24 saatte 33 yeni lead oluştu. Öncelikli takipte 79 müşteri var: 58 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
