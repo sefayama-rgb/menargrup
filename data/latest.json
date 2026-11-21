@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T19:12:48.649Z",
+  "generatedAt": "2026-11-21T00:49:19.821Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,17 +8,17 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1079.13,
-    "totalMessages": 54,
-    "costPerMessage": 19.98388888888889,
+    "totalSpend": 726.22,
+    "totalMessages": 33,
+    "costPerMessage": 22.006666666666668,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 141.14,
-        "messages": 6,
-        "costPerMessage": 23.52333333333333,
-        "dateStart": "2026-11-19",
-        "dateStop": "2026-11-19",
+        "spend": 128.18,
+        "messages": 7,
+        "costPerMessage": 18.31142857142857,
+        "dateStart": "2026-11-20",
+        "dateStop": "2026-11-20",
         "decision": {
           "label": "Bütçeyi artır",
           "level": "good"
@@ -26,11 +26,11 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 144.67,
-        "messages": 5,
-        "costPerMessage": 28.933999999999997,
-        "dateStart": "2026-11-19",
-        "dateStop": "2026-11-19",
+        "spend": 166.34,
+        "messages": 6,
+        "costPerMessage": 27.723333333333333,
+        "dateStart": "2026-11-20",
+        "dateStop": "2026-11-20",
         "decision": {
           "label": "Takip et",
           "level": "watch"
@@ -38,11 +38,11 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 173.28,
+        "spend": 206.14,
         "messages": 10,
-        "costPerMessage": 17.328,
-        "dateStart": "2026-11-19",
-        "dateStop": "2026-11-19",
+        "costPerMessage": 20.613999999999997,
+        "dateStart": "2026-11-20",
+        "dateStop": "2026-11-20",
         "decision": {
           "label": "Bütçeyi artır",
           "level": "good"
@@ -50,47 +50,35 @@
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 81.38,
-        "messages": 5,
-        "costPerMessage": 16.276,
-        "dateStart": "2026-11-19",
-        "dateStop": "2026-11-19",
+        "spend": 151.46,
+        "messages": 6,
+        "costPerMessage": 25.243333333333336,
+        "dateStart": "2026-11-20",
+        "dateStop": "2026-11-20",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       },
       {
         "campaign": "KASIM 2026",
-        "spend": 94.81,
-        "messages": 7,
-        "costPerMessage": 13.544285714285715,
-        "dateStart": "2026-11-20",
-        "dateStop": "2026-11-20",
+        "spend": 14.59,
+        "messages": 1,
+        "costPerMessage": 14.59,
+        "dateStart": "2026-11-21",
+        "dateStop": "2026-11-21",
         "decision": {
           "label": "Bütçeyi artır",
           "level": "good"
         }
       },
       {
-        "campaign": "kasım 12 2026",
-        "spend": 162.19,
-        "messages": 6,
-        "costPerMessage": 27.031666666666666,
-        "dateStart": "2026-11-20",
-        "dateStop": "2026-11-20",
-        "decision": {
-          "label": "Takip et",
-          "level": "watch"
-        }
-      },
-      {
         "campaign": "grup reklam",
-        "spend": 164.21,
-        "messages": 10,
-        "costPerMessage": 16.421,
-        "dateStart": "2026-11-20",
-        "dateStop": "2026-11-20",
+        "spend": 28.62,
+        "messages": 2,
+        "costPerMessage": 14.31,
+        "dateStart": "2026-11-21",
+        "dateStop": "2026-11-21",
         "decision": {
           "label": "Bütçeyi artır",
           "level": "good"
@@ -98,29 +86,29 @@
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 117.45,
-        "messages": 5,
-        "costPerMessage": 23.490000000000002,
-        "dateStart": "2026-11-20",
-        "dateStop": "2026-11-20",
+        "spend": 30.89,
+        "messages": 1,
+        "costPerMessage": 30.89,
+        "dateStart": "2026-11-21",
+        "dateStop": "2026-11-21",
         "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
+          "label": "Takip et",
+          "level": "watch"
         }
       }
     ]
   },
   "crm": {
-    "total": 10500,
-    "dailyTotal": 46,
-    "new": 1561,
+    "total": 10505,
+    "dailyTotal": 29,
+    "new": 1566,
     "info": 233,
     "instagram": 70,
     "hot": 58,
     "offer": 21,
     "waiting": 38,
     "inProgress": 835,
-    "activePipeline": 2396,
+    "activePipeline": 2401,
     "priority": 79,
     "won": 32,
     "rejected": 534,
@@ -133,7 +121,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1561
+        "count": 1566
       },
       {
         "id": "UC_3OEITX",
@@ -314,5 +302,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "KASIM 2026 en verimli kampanya. kasım 12 2026 yeniden değerlendirilmeli. Son 24 saatte 46 yeni lead oluştu. Öncelikli takipte 79 müşteri var: 58 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "grup reklam en verimli kampanya. MUHAMMET YAZICI YENİ yeniden değerlendirilmeli. Son 24 saatte 29 yeni lead oluştu. Öncelikli takipte 79 müşteri var: 58 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.7. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
