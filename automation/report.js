@@ -15,8 +15,42 @@ async function getJson(url) {
 const isoDate = d => d.toISOString().slice(0, 10);
 const normalize = value => String(value || '').toLocaleLowerCase('tr-TR').trim();
 
+const PLATFORM_KEYS = ['facebook', 'instagram', 'messenger', 'audience_network'];
+const MESSAGE_KEYS = [
+  'onsite_conversion.messaging_conversation_started_7d',
+  'onsite_conversion_messaging_conversation_started_7d',
+  'messaging_conversation_started_7d',
+  'messaging_first_reply',
+  'onsite_conversion.messaging_first_reply'
+];
+
+const emptyPlatforms = () => Object.fromEntries(PLATFORM_KEYS.map(k => [k, { spend: 0, messages: 0, costPerMessage: null }]));
+
+function addToPlatforms(platforms, key, spend, messages) {
+  const k = key || 'unknown';
+  if (!platforms[k]) platforms[k] = { spend: 0, messages: 0, costPerMessage: null };
+  platforms[k].spend += spend;
+  platforms[k].messages += messages;
+}
+
+function finalizePlatforms(platforms) {
+  for (const p of Object.values(platforms)) p.costPerMessage = p.messages ? p.spend / p.messages : null;
+  return platforms;
+}
+
+async function getAllMetaPages(url) {
+  const rows = [];
+  let next = url;
+  for (let page = 0; next && page < 20; page++) {
+    const payload = await getJson(next);
+    rows.push(...(payload.data || []));
+    next = payload.paging?.next || null;
+  }
+  return rows;
+}
+
 async function getMeta() {
-  if (!META_TOKEN) return { campaigns: [], status: 'META_ACCESS_TOKEN eksik' };
+  if (!META_TOKEN) return { campaigns: [], platforms: finalizePlatforms(emptyPlatforms()), status: 'META_ACCESS_TOKEN eksik' };
   const until = new Date();
   const since = new Date();
   since.setDate(until.getDate() - 1);
@@ -24,32 +58,47 @@ async function getMeta() {
     access_token: META_TOKEN,
     fields: 'campaign_name,spend,actions,date_start,date_stop',
     level: 'campaign',
+    breakdowns: 'publisher_platform',
     time_increment: '1',
     time_range: JSON.stringify({ since: isoDate(since), until: isoDate(until) }),
     limit: '500'
   });
-  const payload = await getJson(`https://graph.facebook.com/v23.0/act_${META_AD_ACCOUNT_ID}/insights?${params}`);
-  const campaigns = (payload.data || []).map(row => {
+  const rows = await getAllMetaPages(`https://graph.facebook.com/v23.0/act_${META_AD_ACCOUNT_ID}/insights?${params}`);
+
+  // Kırılımla her kampanya/gün birden fazla satır döner; eski yapıyı korumak için kampanya+gün bazında birleştirilir.
+  const byCampaign = new Map();
+  const totalPlatforms = emptyPlatforms();
+  for (const row of rows) {
     const actions = Object.fromEntries((row.actions || []).map(x => [x.action_type, Number(x.value || 0)]));
-    const messageKeys = [
-      'onsite_conversion.messaging_conversation_started_7d',
-      'onsite_conversion_messaging_conversation_started_7d',
-      'messaging_conversation_started_7d',
-      'messaging_first_reply',
-      'onsite_conversion.messaging_first_reply'
-    ];
-    const messages = messageKeys.reduce((max, key) => Math.max(max, actions[key] || 0), 0);
+    const messages = MESSAGE_KEYS.reduce((max, key) => Math.max(max, actions[key] || 0), 0);
     const spend = Number(row.spend || 0);
-    return {
-      campaign: row.campaign_name || 'İsimsiz kampanya',
-      spend,
-      messages,
-      costPerMessage: messages ? spend / messages : null,
-      dateStart: row.date_start,
-      dateStop: row.date_stop
-    };
-  });
-  return { campaigns, status: 'aktif' };
+    const key = `${row.campaign_name}|${row.date_start}|${row.date_stop}`;
+    if (!byCampaign.has(key)) {
+      byCampaign.set(key, {
+        campaign: row.campaign_name || 'İsimsiz kampanya',
+        spend: 0,
+        messages: 0,
+        dateStart: row.date_start,
+        dateStop: row.date_stop,
+        platforms: emptyPlatforms()
+      });
+    }
+    const c = byCampaign.get(key);
+    c.spend += spend;
+    c.messages += messages;
+    addToPlatforms(c.platforms, row.publisher_platform, spend, messages);
+    addToPlatforms(totalPlatforms, row.publisher_platform, spend, messages);
+  }
+  const campaigns = [...byCampaign.values()].map(c => ({
+    campaign: c.campaign,
+    spend: c.spend,
+    messages: c.messages,
+    costPerMessage: c.messages ? c.spend / c.messages : null,
+    dateStart: c.dateStart,
+    dateStop: c.dateStop,
+    platforms: finalizePlatforms(c.platforms)
+  }));
+  return { campaigns, platforms: finalizePlatforms(totalPlatforms), status: 'aktif' };
 }
 
 function buildBitrixQuery(params = {}, start = 0) {
@@ -183,7 +232,7 @@ function advice(campaigns, crm, metaStatus, crmStatus) {
 
 async function main() {
   let meta, crm;
-  try { meta = await getMeta(); } catch (e) { meta = { campaigns: [], status: `hata: ${e.message}` }; }
+  try { meta = await getMeta(); } catch (e) { meta = { campaigns: [], platforms: finalizePlatforms(emptyPlatforms()), status: `hata: ${e.message}` }; }
   try { crm = await getBitrix(); } catch (e) {
     crm = { total: 0, dailyTotal: 0, new: 0, info: 0, instagram: 0, hot: 0, offer: 0, waiting: 0, inProgress: 0, activePipeline: 0, priority: 0, won: 0, rejected: 0, archive: 0, conversionRate: 0, stages: [], status: `hata: ${e.message}` };
   }
@@ -200,6 +249,7 @@ async function main() {
       totalSpend,
       totalMessages,
       costPerMessage: totalMessages ? totalSpend / totalMessages : null,
+      platforms: meta.platforms,
       campaigns: campaigns.map(x => ({ ...x, decision: decision(x.costPerMessage) }))
     },
     crm,

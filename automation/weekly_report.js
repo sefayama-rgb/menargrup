@@ -88,19 +88,30 @@ function number(value) {
   return Number(value || 0);
 }
 
+const PLATFORM_KEYS = ['facebook', 'instagram', 'messenger', 'audience_network'];
+const emptyPlatforms = () => Object.fromEntries(PLATFORM_KEYS.map(k => [k, { spend: 0, messages: 0, costPerMessage: null }]));
+
 async function getWeeklyMeta(weekStart, today) {
-  if (!META_TOKEN) return { status: 'META_ACCESS_TOKEN eksik', spend: 0, messages: 0, costPerMessage: null };
+  if (!META_TOKEN) return { status: 'META_ACCESS_TOKEN eksik', spend: 0, messages: 0, costPerMessage: null, platforms: emptyPlatforms() };
   const params = new URLSearchParams({
     access_token: META_TOKEN,
     fields: 'campaign_name,spend,actions,date_start,date_stop',
     level: 'campaign',
+    breakdowns: 'publisher_platform',
     time_increment: '1',
     time_range: JSON.stringify({ since: weekStart, until: today }),
     limit: '500'
   });
-  const payload = await getJson(`https://graph.facebook.com/v23.0/act_${META_AD_ACCOUNT_ID}/insights?${params}`);
+  let url = `https://graph.facebook.com/v23.0/act_${META_AD_ACCOUNT_ID}/insights?${params}`;
+  const rows = [];
+  for (let page = 0; url && page < 20; page++) {
+    const payload = await getJson(url);
+    rows.push(...(payload.data || []));
+    url = payload.paging?.next || null;
+  }
   let spend = 0;
   let messages = 0;
+  const platforms = emptyPlatforms();
   const messageKeys = [
     'onsite_conversion.messaging_conversation_started_7d',
     'onsite_conversion_messaging_conversation_started_7d',
@@ -108,12 +119,19 @@ async function getWeeklyMeta(weekStart, today) {
     'messaging_first_reply',
     'onsite_conversion.messaging_first_reply'
   ];
-  for (const row of payload.data || []) {
-    spend += number(row.spend);
+  for (const row of rows) {
+    const rowSpend = number(row.spend);
     const actions = Object.fromEntries((row.actions || []).map(x => [x.action_type, number(x.value)]));
-    messages += messageKeys.reduce((max, key) => Math.max(max, actions[key] || 0), 0);
+    const rowMessages = messageKeys.reduce((max, key) => Math.max(max, actions[key] || 0), 0);
+    spend += rowSpend;
+    messages += rowMessages;
+    const k = row.publisher_platform || 'unknown';
+    if (!platforms[k]) platforms[k] = { spend: 0, messages: 0, costPerMessage: null };
+    platforms[k].spend += rowSpend;
+    platforms[k].messages += rowMessages;
   }
-  return { status: 'aktif', spend, messages, costPerMessage: messages ? spend / messages : null };
+  for (const p of Object.values(platforms)) p.costPerMessage = p.messages ? p.spend / p.messages : null;
+  return { status: 'aktif', spend, messages, costPerMessage: messages ? spend / messages : null, platforms };
 }
 
 async function getWeeklyCrm(weekStart, today) {
@@ -300,7 +318,11 @@ function saveWeekly(record) {
     { key: 'taskCompletedThisWeek', label: 'Bu Hafta Tamamlanan Görev' },
     { key: 'metaStatus', label: 'Meta Durumu' },
     { key: 'bitrixStatus', label: 'Bitrix Durumu' },
-    { key: 'tasksStatus', label: 'Görev Durumu' }
+    { key: 'tasksStatus', label: 'Görev Durumu' },
+    { key: 'metaFbSpend', label: 'FB Harcama' },
+    { key: 'metaIgSpend', label: 'IG Harcama' },
+    { key: 'metaFbMessages', label: 'FB Mesaj' },
+    { key: 'metaIgMessages', label: 'IG Mesaj' }
   ]);
 }
 
@@ -318,7 +340,7 @@ async function main() {
 
   let meta;
   try { meta = await getWeeklyMeta(weekStart, today); }
-  catch (e) { meta = { status: `hata: ${e.message}`, spend: 0, messages: 0, costPerMessage: null }; }
+  catch (e) { meta = { status: `hata: ${e.message}`, spend: 0, messages: 0, costPerMessage: null, platforms: emptyPlatforms() }; }
 
   let crmWeek;
   try { crmWeek = await getWeeklyCrm(weekStart, today); }
@@ -345,6 +367,11 @@ async function main() {
     metaSpend: number(meta.spend),
     metaMessages: number(meta.messages),
     metaCostPerMessage: meta.costPerMessage,
+    metaPlatforms: meta.platforms,
+    metaFbSpend: number(meta.platforms?.facebook?.spend),
+    metaIgSpend: number(meta.platforms?.instagram?.spend),
+    metaFbMessages: number(meta.platforms?.facebook?.messages),
+    metaIgMessages: number(meta.platforms?.instagram?.messages),
     crmNewLeads: number(crmWeek.newLeads),
     crmWonClosed: number(crmWeek.wonClosed),
     crmRejectedClosed: number(crmWeek.rejectedClosed),
