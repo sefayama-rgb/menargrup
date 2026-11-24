@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T09:26:07.901Z",
+  "generatedAt": "2026-11-24T09:56:32.420Z",
   "weeks": [
     {
       "weekStart": "2026-08-17",
@@ -397,10 +397,41 @@
       "weekStart": "2026-11-23",
       "weekEnd": "2026-11-29",
       "asOfDate": "2026-11-24",
-      "generatedAt": "2026-11-24T09:26:07.900Z",
-      "metaSpend": 1034.57,
+      "generatedAt": "2026-11-24T09:56:32.419Z",
+      "metaSpend": 1068.4599990000002,
       "metaMessages": 44,
-      "metaCostPerMessage": 23.512954545454544,
+      "metaCostPerMessage": 24.28318179545455,
+      "metaPlatforms": {
+        "facebook": {
+          "spend": 580.3590029999999,
+          "messages": 23,
+          "costPerMessage": 25.233000130434778
+        },
+        "instagram": {
+          "spend": 467.46272400000004,
+          "messages": 19,
+          "costPerMessage": 24.603301263157896
+        },
+        "messenger": {
+          "spend": 0,
+          "messages": 0,
+          "costPerMessage": null
+        },
+        "audience_network": {
+          "spend": 0,
+          "messages": 0,
+          "costPerMessage": null
+        },
+        "whatsapp": {
+          "spend": 20.638272,
+          "messages": 2,
+          "costPerMessage": 10.319136
+        }
+      },
+      "metaFbSpend": 580.3590029999999,
+      "metaIgSpend": 467.46272400000004,
+      "metaFbMessages": 23,
+      "metaIgMessages": 19,
       "crmNewLeads": 45,
       "crmWonClosed": 0,
       "crmRejectedClosed": 0,
