@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T23:56:57.422Z",
+  "generatedAt": "2026-11-24T09:26:04.602Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,17 +8,17 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 1408.65,
-    "totalMessages": 58,
-    "costPerMessage": 24.287068965517243,
+    "totalSpend": 1034.57,
+    "totalMessages": 44,
+    "costPerMessage": 23.512954545454544,
     "campaigns": [
       {
         "campaign": "KASIM 2026",
-        "spend": 181.11,
-        "messages": 7,
-        "costPerMessage": 25.872857142857146,
-        "dateStart": "2026-11-22",
-        "dateStop": "2026-11-22",
+        "spend": 163.64,
+        "messages": 6,
+        "costPerMessage": 27.27333333333333,
+        "dateStart": "2026-11-23",
+        "dateStop": "2026-11-23",
         "decision": {
           "label": "Takip et",
           "level": "watch"
@@ -26,23 +26,23 @@
       },
       {
         "campaign": "kasım 12 2026",
-        "spend": 0,
-        "messages": 0,
-        "costPerMessage": null,
-        "dateStart": "2026-11-22",
-        "dateStop": "2026-11-22",
+        "spend": 181.91,
+        "messages": 8,
+        "costPerMessage": 22.73875,
+        "dateStart": "2026-11-23",
+        "dateStop": "2026-11-23",
         "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
+          "label": "Bütçeyi artır",
+          "level": "good"
         }
       },
       {
         "campaign": "grup reklam",
-        "spend": 310.19,
-        "messages": 13,
-        "costPerMessage": 23.86076923076923,
-        "dateStart": "2026-11-22",
-        "dateStop": "2026-11-22",
+        "spend": 231.75,
+        "messages": 15,
+        "costPerMessage": 15.45,
+        "dateStart": "2026-11-23",
+        "dateStop": "2026-11-23",
         "decision": {
           "label": "Bütçeyi artır",
           "level": "good"
@@ -50,77 +50,77 @@
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 177.25,
+        "spend": 165.5,
+        "messages": 6,
+        "costPerMessage": 27.583333333333332,
+        "dateStart": "2026-11-23",
+        "dateStop": "2026-11-23",
+        "decision": {
+          "label": "Takip et",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "KASIM 2026",
+        "spend": 53.78,
         "messages": 3,
-        "costPerMessage": 59.083333333333336,
-        "dateStart": "2026-11-22",
-        "dateStop": "2026-11-22",
+        "costPerMessage": 17.926666666666666,
+        "dateStart": "2026-11-24",
+        "dateStop": "2026-11-24",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "kasım 12 2026",
+        "spend": 70.13,
+        "messages": 4,
+        "costPerMessage": 17.5325,
+        "dateStart": "2026-11-24",
+        "dateStop": "2026-11-24",
+        "decision": {
+          "label": "Bütçeyi artır",
+          "level": "good"
+        }
+      },
+      {
+        "campaign": "grup reklam",
+        "spend": 115.64,
+        "messages": 2,
+        "costPerMessage": 57.82,
+        "dateStart": "2026-11-24",
+        "dateStop": "2026-11-24",
         "decision": {
           "label": "Durdur / değiştir",
           "level": "bad"
         }
       },
       {
-        "campaign": "KASIM 2026",
-        "spend": 163.12,
-        "messages": 6,
-        "costPerMessage": 27.186666666666667,
-        "dateStart": "2026-11-23",
-        "dateStop": "2026-11-23",
-        "decision": {
-          "label": "Takip et",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "kasım 12 2026",
-        "spend": 181.44,
-        "messages": 8,
-        "costPerMessage": 22.68,
-        "dateStart": "2026-11-23",
-        "dateStop": "2026-11-23",
-        "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
-        }
-      },
-      {
-        "campaign": "grup reklam",
-        "spend": 231.12,
-        "messages": 15,
-        "costPerMessage": 15.408,
-        "dateStart": "2026-11-23",
-        "dateStop": "2026-11-23",
-        "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
-        }
-      },
-      {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 164.42,
-        "messages": 6,
-        "costPerMessage": 27.403333333333332,
-        "dateStart": "2026-11-23",
-        "dateStop": "2026-11-23",
+        "spend": 52.22,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-11-24",
+        "dateStop": "2026-11-24",
         "decision": {
-          "label": "Takip et",
+          "label": "Veri yetersiz",
           "level": "watch"
         }
       }
     ]
   },
   "crm": {
-    "total": 10585,
-    "dailyTotal": 56,
-    "new": 1644,
+    "total": 10594,
+    "dailyTotal": 45,
+    "new": 1653,
     "info": 233,
     "instagram": 70,
     "hot": 59,
     "offer": 21,
     "waiting": 38,
     "inProgress": 836,
-    "activePipeline": 2480,
+    "activePipeline": 2489,
     "priority": 80,
     "won": 32,
     "rejected": 535,
@@ -133,7 +133,7 @@
         "sort": 10,
         "semantics": "",
         "group": "new",
-        "count": 1644
+        "count": 1653
       },
       {
         "id": "UC_3OEITX",
@@ -314,5 +314,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "grup reklam en verimli kampanya. MUHAMMET YAZICI YENİ yeniden değerlendirilmeli. Son 24 saatte 56 yeni lead oluştu. Öncelikli takipte 80 müşteri var: 59 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.6. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "grup reklam en verimli kampanya. grup reklam yeniden değerlendirilmeli. Son 24 saatte 45 yeni lead oluştu. Öncelikli takipte 80 müşteri var: 59 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.6. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
