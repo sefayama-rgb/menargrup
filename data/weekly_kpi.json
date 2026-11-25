@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T20:17:16.259Z",
+  "generatedAt": "2026-11-25T03:39:41.221Z",
   "weeks": [
     {
       "weekStart": "2026-08-17",
@@ -396,21 +396,21 @@
     {
       "weekStart": "2026-11-23",
       "weekEnd": "2026-11-29",
-      "asOfDate": "2026-11-24",
-      "generatedAt": "2026-11-24T20:17:16.258Z",
-      "metaSpend": 1585.000001,
-      "metaMessages": 58,
-      "metaCostPerMessage": 27.32758622413793,
+      "asOfDate": "2026-11-25",
+      "generatedAt": "2026-11-25T03:39:41.220Z",
+      "metaSpend": 1699.6199990000002,
+      "metaMessages": 62,
+      "metaCostPerMessage": 27.413225790322585,
       "metaPlatforms": {
         "facebook": {
-          "spend": 794.42858,
-          "messages": 30,
-          "costPerMessage": 26.480952666666667
+          "spend": 840.766128,
+          "messages": 33,
+          "costPerMessage": 25.477761454545455
         },
         "instagram": {
-          "spend": 724.812404,
-          "messages": 25,
-          "costPerMessage": 28.99249616
+          "spend": 788.9294570000001,
+          "messages": 26,
+          "costPerMessage": 30.343440653846155
         },
         "messenger": {
           "spend": 0,
@@ -423,21 +423,21 @@
           "costPerMessage": null
         },
         "whatsapp": {
-          "spend": 65.759017,
+          "spend": 69.924414,
           "messages": 3,
-          "costPerMessage": 21.919672333333335
+          "costPerMessage": 23.308138
         }
       },
-      "metaFbSpend": 794.42858,
-      "metaIgSpend": 724.812404,
-      "metaFbMessages": 30,
-      "metaIgMessages": 25,
-      "crmNewLeads": 57,
+      "metaFbSpend": 840.766128,
+      "metaIgSpend": 788.9294570000001,
+      "metaFbMessages": 33,
+      "metaIgMessages": 26,
+      "crmNewLeads": 59,
       "crmWonClosed": 0,
       "crmRejectedClosed": 0,
       "crmCloseConversionRate": 0,
-      "crmTotal": 10606,
-      "crmActivePipeline": 2501,
+      "crmTotal": 10608,
+      "crmActivePipeline": 2503,
       "crmPriority": 80,
       "crmHot": 59,
       "crmOffer": 21,
