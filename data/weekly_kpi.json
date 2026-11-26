@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T22:47:53.941Z",
+  "generatedAt": "2026-11-26T04:43:47.416Z",
   "weeks": [
     {
       "weekStart": "2026-08-17",
@@ -397,20 +397,20 @@
       "weekStart": "2026-11-23",
       "weekEnd": "2026-11-29",
       "asOfDate": "2026-11-26",
-      "generatedAt": "2026-11-25T22:47:53.940Z",
-      "metaSpend": 2080.39,
-      "metaMessages": 80,
-      "metaCostPerMessage": 26.004875,
+      "generatedAt": "2026-11-26T04:43:47.414Z",
+      "metaSpend": 2123.45,
+      "metaMessages": 82,
+      "metaCostPerMessage": 25.895731707317072,
       "metaPlatforms": {
         "facebook": {
-          "spend": 1022.3509829999998,
+          "spend": 1039.2416979999998,
           "messages": 44,
-          "costPerMessage": 23.23524961363636
+          "costPerMessage": 23.619129499999996
         },
         "instagram": {
-          "spend": 968.597283,
-          "messages": 32,
-          "costPerMessage": 30.26866509375
+          "spend": 994.1830209999999,
+          "messages": 34,
+          "costPerMessage": 29.24067708823529
         },
         "messenger": {
           "spend": 0,
@@ -423,15 +423,15 @@
           "costPerMessage": null
         },
         "whatsapp": {
-          "spend": 89.44173400000001,
+          "spend": 90.025281,
           "messages": 4,
-          "costPerMessage": 22.360433500000003
+          "costPerMessage": 22.50632025
         }
       },
-      "metaFbSpend": 1022.3509829999998,
-      "metaIgSpend": 968.597283,
+      "metaFbSpend": 1039.2416979999998,
+      "metaIgSpend": 994.1830209999999,
       "metaFbMessages": 44,
-      "metaIgMessages": 32,
+      "metaIgMessages": 34,
       "crmNewLeads": 72,
       "crmWonClosed": 0,
       "crmRejectedClosed": 0,
