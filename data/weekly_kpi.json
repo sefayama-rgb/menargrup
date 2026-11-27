@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T23:19:30.626Z",
+  "generatedAt": "2026-11-27T05:14:48.374Z",
   "weeks": [
     {
       "weekStart": "2026-08-17",
@@ -397,20 +397,20 @@
       "weekStart": "2026-11-23",
       "weekEnd": "2026-11-29",
       "asOfDate": "2026-11-27",
-      "generatedAt": "2026-11-26T23:19:30.625Z",
-      "metaSpend": 2465.8500009999993,
-      "metaMessages": 100,
-      "metaCostPerMessage": 24.658500009999994,
+      "generatedAt": "2026-11-27T05:14:48.373Z",
+      "metaSpend": 2495.7634179999995,
+      "metaMessages": 102,
+      "metaCostPerMessage": 24.468268803921564,
       "metaPlatforms": {
         "facebook": {
-          "spend": 1202.3060879999998,
-          "messages": 57,
-          "costPerMessage": 21.093089263157893
+          "spend": 1216.9156819999998,
+          "messages": 58,
+          "costPerMessage": 20.981304862068964
         },
         "instagram": {
-          "spend": 1161.0506009999997,
-          "messages": 38,
-          "costPerMessage": 30.553963184210517
+          "spend": 1175.8261069999999,
+          "messages": 39,
+          "costPerMessage": 30.149387358974355
         },
         "messenger": {
           "spend": 0,
@@ -423,21 +423,21 @@
           "costPerMessage": null
         },
         "whatsapp": {
-          "spend": 102.49331200000002,
+          "spend": 103.021629,
           "messages": 5,
-          "costPerMessage": 20.498662400000004
+          "costPerMessage": 20.6043258
         }
       },
-      "metaFbSpend": 1202.3060879999998,
-      "metaIgSpend": 1161.0506009999997,
-      "metaFbMessages": 57,
-      "metaIgMessages": 38,
-      "crmNewLeads": 84,
+      "metaFbSpend": 1216.9156819999998,
+      "metaIgSpend": 1175.8261069999999,
+      "metaFbMessages": 58,
+      "metaIgMessages": 39,
+      "crmNewLeads": 85,
       "crmWonClosed": 0,
       "crmRejectedClosed": 0,
       "crmCloseConversionRate": 0,
-      "crmTotal": 10633,
-      "crmActivePipeline": 2528,
+      "crmTotal": 10634,
+      "crmActivePipeline": 2529,
       "crmPriority": 80,
       "crmHot": 59,
       "crmOffer": 21,
