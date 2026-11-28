@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T23:31:44.456Z",
+  "generatedAt": "2026-11-28T04:58:41.476Z",
   "period": "Son 24 saat reklam / güncel CRM",
   "setupComplete": true,
   "connections": {
@@ -8,19 +8,19 @@
   },
   "meta": {
     "adAccountId": "1521138858696042",
-    "totalSpend": 784.62,
-    "totalMessages": 40,
-    "costPerMessage": 19.6155,
+    "totalSpend": 473.33468200000004,
+    "totalMessages": 22,
+    "costPerMessage": 21.51521281818182,
     "platforms": {
       "facebook": {
-        "spend": 365.72999999999996,
-        "messages": 22,
-        "costPerMessage": 16.624090909090906
+        "spend": 222.22378799999998,
+        "messages": 9,
+        "costPerMessage": 24.691532
       },
       "instagram": {
-        "spend": 395.29,
-        "messages": 16,
-        "costPerMessage": 24.705625
+        "spend": 238.780894,
+        "messages": 11,
+        "costPerMessage": 21.707354
       },
       "messenger": {
         "spend": 0,
@@ -33,9 +33,9 @@
         "costPerMessage": null
       },
       "whatsapp": {
-        "spend": 23.599999999999998,
+        "spend": 12.33,
         "messages": 2,
-        "costPerMessage": 11.799999999999999
+        "costPerMessage": 6.165
       }
     },
     "campaigns": [
@@ -44,152 +44,6 @@
         "spend": 0,
         "messages": 0,
         "costPerMessage": null,
-        "dateStart": "2026-11-26",
-        "dateStop": "2026-11-26",
-        "platforms": {
-          "facebook": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          },
-          "instagram": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          },
-          "messenger": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          },
-          "audience_network": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          }
-        },
-        "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "kasım 12 2026",
-        "spend": 0,
-        "messages": 0,
-        "costPerMessage": null,
-        "dateStart": "2026-11-26",
-        "dateStop": "2026-11-26",
-        "platforms": {
-          "facebook": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          },
-          "instagram": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          },
-          "messenger": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          },
-          "audience_network": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          }
-        },
-        "decision": {
-          "label": "Veri yetersiz",
-          "level": "watch"
-        }
-      },
-      {
-        "campaign": "grup reklam",
-        "spend": 220.20000000000002,
-        "messages": 11,
-        "costPerMessage": 20.01818181818182,
-        "dateStart": "2026-11-26",
-        "dateStop": "2026-11-26",
-        "platforms": {
-          "facebook": {
-            "spend": 105.62,
-            "messages": 9,
-            "costPerMessage": 11.735555555555557
-          },
-          "instagram": {
-            "spend": 104.18,
-            "messages": 2,
-            "costPerMessage": 52.09
-          },
-          "messenger": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          },
-          "audience_network": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          },
-          "whatsapp": {
-            "spend": 10.4,
-            "messages": 0,
-            "costPerMessage": null
-          }
-        },
-        "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
-        }
-      },
-      {
-        "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 154.15,
-        "messages": 8,
-        "costPerMessage": 19.26875,
-        "dateStart": "2026-11-26",
-        "dateStop": "2026-11-26",
-        "platforms": {
-          "facebook": {
-            "spend": 68.94,
-            "messages": 4,
-            "costPerMessage": 17.235
-          },
-          "instagram": {
-            "spend": 84.34,
-            "messages": 4,
-            "costPerMessage": 21.085
-          },
-          "messenger": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          },
-          "audience_network": {
-            "spend": 0,
-            "messages": 0,
-            "costPerMessage": null
-          },
-          "whatsapp": {
-            "spend": 0.87,
-            "messages": 0,
-            "costPerMessage": null
-          }
-        },
-        "decision": {
-          "label": "Bütçeyi artır",
-          "level": "good"
-        }
-      },
-      {
-        "campaign": "KASIM 2026",
-        "spend": 0,
-        "messages": 0,
-        "costPerMessage": null,
         "dateStart": "2026-11-27",
         "dateStop": "2026-11-27",
         "platforms": {
@@ -221,16 +75,16 @@
       },
       {
         "campaign": "grup reklam",
-        "spend": 242.36,
+        "spend": 242.53000000000003,
         "messages": 14,
-        "costPerMessage": 17.31142857142857,
+        "costPerMessage": 17.32357142857143,
         "dateStart": "2026-11-27",
         "dateStop": "2026-11-27",
         "platforms": {
           "facebook": {
-            "spend": 105.34,
+            "spend": 105.51,
             "messages": 7,
-            "costPerMessage": 15.04857142857143
+            "costPerMessage": 15.072857142857144
           },
           "instagram": {
             "spend": 124.78,
@@ -260,16 +114,16 @@
       },
       {
         "campaign": "MUHAMMET YAZICI YENİ",
-        "spend": 167.91,
+        "spend": 168.20000000000002,
         "messages": 7,
-        "costPerMessage": 23.987142857142857,
+        "costPerMessage": 24.028571428571432,
         "dateStart": "2026-11-27",
         "dateStop": "2026-11-27",
         "platforms": {
           "facebook": {
-            "spend": 85.83,
+            "spend": 86.12,
             "messages": 2,
-            "costPerMessage": 42.915
+            "costPerMessage": 43.06
           },
           "instagram": {
             "spend": 81.99,
@@ -296,12 +150,80 @@
           "label": "Bütçeyi artır",
           "level": "good"
         }
+      },
+      {
+        "campaign": "grup reklam",
+        "spend": 35.8,
+        "messages": 0,
+        "costPerMessage": null,
+        "dateStart": "2026-11-28",
+        "dateStop": "2026-11-28",
+        "platforms": {
+          "facebook": {
+            "spend": 17.582606,
+            "messages": 0,
+            "costPerMessage": null
+          },
+          "instagram": {
+            "spend": 18.217394,
+            "messages": 0,
+            "costPerMessage": null
+          },
+          "messenger": {
+            "spend": 0,
+            "messages": 0,
+            "costPerMessage": null
+          },
+          "audience_network": {
+            "spend": 0,
+            "messages": 0,
+            "costPerMessage": null
+          }
+        },
+        "decision": {
+          "label": "Veri yetersiz",
+          "level": "watch"
+        }
+      },
+      {
+        "campaign": "MUHAMMET YAZICI YENİ",
+        "spend": 26.804682,
+        "messages": 1,
+        "costPerMessage": 26.804682,
+        "dateStart": "2026-11-28",
+        "dateStop": "2026-11-28",
+        "platforms": {
+          "facebook": {
+            "spend": 13.011182,
+            "messages": 0,
+            "costPerMessage": null
+          },
+          "instagram": {
+            "spend": 13.7935,
+            "messages": 1,
+            "costPerMessage": 13.7935
+          },
+          "messenger": {
+            "spend": 0,
+            "messages": 0,
+            "costPerMessage": null
+          },
+          "audience_network": {
+            "spend": 0,
+            "messages": 0,
+            "costPerMessage": null
+          }
+        },
+        "decision": {
+          "label": "Takip et",
+          "level": "watch"
+        }
       }
     ]
   },
   "crm": {
     "total": 10648,
-    "dailyTotal": 29,
+    "dailyTotal": 16,
     "new": 1707,
     "info": 233,
     "instagram": 70,
@@ -503,5 +425,5 @@
     ],
     "status": "aktif"
   },
-  "advice": "grup reklam en verimli kampanya. MUHAMMET YAZICI YENİ yeniden değerlendirilmeli. Son 24 saatte 29 yeni lead oluştu. Öncelikli takipte 80 müşteri var: 59 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.6. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
+  "advice": "grup reklam en verimli kampanya. MUHAMMET YAZICI YENİ yeniden değerlendirilmeli. Son 24 saatte 16 yeni lead oluştu. Öncelikli takipte 80 müşteri var: 59 sıcak müşteri ve 21 teklif bekleyen. Anlamlı kapanışlarda olumlu dönüşüm oranı %5.6. 7538 eski kayıt “Diğer/Arşiv” olarak ayrı tutuldu; olumsuz performansı şişirmiyor."
 }
